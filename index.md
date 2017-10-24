@@ -1,37 +1,155 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-You can use the [editor on GitHub](https://github.com/bellmcp/bellmcp.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>About | Danupat Kns</title>
+<meta property="og:title" content="Danupat Khamnuansin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="My bio site see it here: https://jrkns.github.io" />
+<meta property="og:description" content="My bio site see it here: https://jrkns.github.io" />
+<link rel="canonical" href="https://jrkns.github.io/" />
+<meta property="og:url" content="https://jrkns.github.io/" />
+<meta property="og:site_name" content="jrkns.github.io" />
+<script type="application/ld+json">
+{"name":"jrkns.github.io","description":"My bio site see it here: https://jrkns.github.io","author":null,"@type":"WebSite","url":"https://jrkns.github.io/","image":null,"publisher":null,"headline":"Danupat Khamnuansin","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <link rel="stylesheet" href="css/bootstrap.css"> 
+    <link rel="stylesheet" href="/assets/css/style.css?v=17a28c64b815dae2b10baebb9613dc58780165c7">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+          <div class="row">
+              <div class="col-3">
+                <div class="row">
+                  <div class="col-12">
+                  <nav class="nav navbar-light navbar-toggleable-sm">
+                      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation-menu" aria-controls="navigation-menu" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="navbar-collapse collapse.show flex-column mt-md-0 mt-4 pt-md-0 pt-4 no-transition" id="navigation-menu">
+                          <a href="#" class="nav-link active"><font size="4" color="black"><b>About</b></font></a>
+                          <a href="https://jrkns.github.io/blog/" class="nav-link"><font size="4" color="grey">Blog</font></a>
+                          <a href="https://jrkns.github.io/chatbots/" class="nav-link"><font size="4" color="grey">Chatbot</font></a>
+                          <a href="https://jrkns.github.io/dev/" class="nav-link"><font size="4" color="grey">Develop</font></a>
+                          <a href="https://jrkns.github.io/events/" class="nav-link"><font size="4" color="grey">Event</font></a>
+                      </div>
+                  </nav>
+                </div>
+                </div>
+                </div>
+              
+        <div class="col-9">
+          <div class="row">
+              <div class="col-2"></div>
+            <div class="col-10">
+      <img src="https://avatars2.githubusercontent.com/u/13897231?v=4&s=460"; 
+        border-radius: 30px; 
+        background: #FFFFFF;
+        height="175";
+        width="175">
+      <h1>Danupat<br/>Khamnuansin</h1>
+      <p>Thai NLP<br/>
+        Machine Learning<br/>
+        Computer Eng. Student <br/></p>
+        <p class="view"><a href="https://github.com/jrkns" target="_blank">See My Projects!</a><br/>
+          <a href="https://medium.com/@jrkns" target="_blank">See My Articles!</a></p>
+      <h2>Contact</h2>
+      <p>jrkns1996@gmail.com<br/>(+66) 892668633<br/><p><hr>
+      <p style="font-size:13px">Facebook: <a href="https://www.facebook.com/Danupat.Kns" target="_blank">Danupat Kns</a><br/>
+      Linkedin: <a href="https://www.linkedin.com/in/danupat-khamnuansin-443b38130/" target="_blank">Danupat Kns</a><br/>
+      Twitter: <a href="https://twitter.com/jr_kns" target="_blank">@jr_kns</a><br/>
+      Instagram: <a href="https://www.instagram.com/jr_kns/" target="_blank">jr_kns</a><br/>
+      LINE: <a href="http://line.naver.jp/ti/p/W0ZrhnH6ur#~" target="_blank">jr_kns</a><br/>
+      </p>
+    </div>
+  </div>
+      </header>
+      <section>
 
-### Markdown
+<h2 id="education">Education</h2>
+<p><i>2014 - 2017(Present)</i> <br />
+<strong>B.Eng. in Computer Engineering</strong> <br />
+<strong>Chulalongkorn University</strong> (Bangkok, Thailand)</p>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<h2 id="interests">Interests</h2>
+<ul>
+  <li>Machine learning (Deep learning with NN)</li>
+  <li>Natural language processing (Python, NLTK, Tensorflow, Keras)</li>
+  <li>Assistant Chatbots (LINE Message API) </li>
+  <li>Web Developing (CSS, HTML, Django, Node.js, Jade/Pug, Bootstrap)</li>
+  <li>Software implementation (Python, Java, C++)</li>
+  <li>Database Management implementation (mySQL)</li>
+  <li>Distributed System implementation (API)</li>
+  <li>iOS Application developing (Swift)</li>
+  <li>Embed-System implementation (stm32f4discovery, FPGA)</li>
+  <li>Computer Security</li>
+  <li>Data analytic &amp; Data mining</li>
+</ul>
 
-```markdown
-Syntax highlighted code block
+<h2 id="skills">Skills</h2>
+<div class="table-responsive">
+    <table class="table">
+      <tr>
+          <td><h4 class="level-title">Languages</h4></td>
+          <td><div class="">Python, JAVA, C++, C, HTML, CSS, SQL, JavaScript, Swift, Haskell, Verilog, Assembly</div></td>
+      </tr>
+      <tr>
+          <td><h4 class="level-title">Frameworks</h4></td>
+          <td>Tensorflow, Keras, Gensim, Node.js, Django, NLTK, Bootstrap, LINE-API, etc.</td>
+      </tr>
+      <tr>
+          <td><h4 class="level-title">Tools</h4></td>
+          <td>VScode, Pycharm, JupyterNotebook, Git, Docker, Eclipse, Xcode, Office, etc.</td>
+      </tr>
+      <tr>
+          <td><h4 class="level-title">Environment</h4></td>
+          <td>Windows, macOS, Debian, Linux, iOS <br/>&nbsp;</td>
+      </tr>
+    </table>
+  </div>
 
-# Header 1
-## Header 2
-### Header 3
+<h2 id="activities">Activities</h2>
+<ul>
+  <li><i>&lt;Competition&gt;</i> <strong>Finalist</strong> - Techjam by KBTG (2017)</li>
+  <li><i>&lt;Internship&gt;</i> KASIKORN Business - Technology Group (2017)</li>
+  <li><i>&lt;Volunteer&gt;</i> ChulaEngineering - FE Camp (2015)</li>
+  <li><i>&lt;Volunteer&gt;</i> ChulaEngineering - Larngear Camp (2015)</li>
+</ul>
 
-- Bulleted
-- List
+<h2 id="undergraduate-coursework">Undergraduate Coursework</h2>
+<ul>
+  <li>Programming Languages</li>
+  <li>Algorithms Design</li>
+  <li>Data Structure</li>
+  <li>Computer Architecture</li>
+  <li>Computer Security</li>
+  <li>Computer Network</li>
+  <li>Operating Systems</li>
+  <li>Database Design</li>
+  <li>Systems Analysis</li>
+  <li>Distributed Systems</li>
+  <li>Neural Networks</li>
+  <li>Artificial Intelligence</li>
+  <li>Digital Image Processing</li>
+  <li>Software Engineering</li>
+  <li>Formal Languages and Finite Automata</li>
+</ul>
+<br>
+<center><a href="https://jrkns.github.io/cv/cv.pdf" target="_blank"><h3>Download CV</h3></a></center>
+      </section>
+    </div>
+   
+    <script src="/assets/js/scale.fix.js"></script>
+    <script src="js/bootstrap.js"></script>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bellmcp/bellmcp.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  </body>
+</html>
