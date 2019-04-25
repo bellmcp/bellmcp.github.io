@@ -84,14 +84,14 @@
 							<table width="100%">
 								<tr valign="top">
 									<th></th>
-									<th><p style="font-size:2px"><font color="black">findGCD</p></th>
-										<th><p style="font-size:2px"><font color="black">binarySearch</p></th>
-											<th><p style="font-size:2px"><font color="black">decimalToBinary</p></th>
-												<th><p style="font-size:2px"><font color="black">isPalindrome</p></th>
+									<th><p style="font-size:2px"><font color="white">findGCD</p></th>
+										<th><p style="font-size:2px"><font color="white">binarySearch</p></th>
+											<th><p style="font-size:2px"><font color="white">decimalToBinary</p></th>
+												<th><p style="font-size:2px"><font color="white">isPalindrome</p></th>
 												</tr>
 												<tr valign="top">
-													<th><p style="font-size:2px"><font color="black">Java</p></th>
-														<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
+													<th><p style="font-size:2px"><font color="white">Java</p></th>
+														<td valign="top"><p style="font-size:2px"><font color="white">public static void main(String[] args) { <br>
 															System.out.println(gcd(12, 8)); <br>
 														} <br>
 														<br>
@@ -102,7 +102,7 @@
 													return gcd(b, a % b); <br>
 												} <br>
 											} <br></p></td>
-											<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
+											<td valign="top"><p style="font-size:2px"><font color="white">public static void main(String[] args) { <br>
 												int[] data = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19}; <br>
 												System.out.println(binarySearch(data, 7, 0, 9)); <br>
 											} <br>
@@ -121,7 +121,7 @@
 								return binarySearch(data, key, m + 1, stop); <br>
 							} <br>
 						} <br></p></td>
-						<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
+						<td valign="top"><p style="font-size:2px"><font color="white">public static void main(String[] args) { <br>
 							System.out.println(dec2bin(10, 1)); <br>
 						} <br>
 						<br>
@@ -131,7 +131,7 @@
 					} <br>
 					return (y * (x & 1)) + dec2bin(x >> 1, 10 * y); <br>
 				} <br></p></td>
-				<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
+				<td valign="top"><p style="font-size:2px"><font color="white">public static void main(String[] args) { <br>
 					char[] s = {'a', 'b', 'd', 's'}; <br>
 					System.out.println(palindrome(s, 0, 3)); <br>
 				} <br>
@@ -148,8 +148,8 @@
 } <br></p></td>
 </tr>
 <tr valign="top">
-	<th><p style="font-size:2px"><font color="black">Stack</p></th>
-		<td valign="top"><p style="font-size:2px"><font color="black">lit <br>
+	<th><p style="font-size:2px"><font color="white">Stack</p></th>
+		<td valign="top"><p style="font-size:2px"><font color="white">lit <br>
 			15 <br>
 			lit <br>
 			2 <br>
@@ -186,7 +186,7 @@
 			:end <br>
 			drop <br>
 			exit <br></p></td>
-			<td valign="top"><p style="font-size:2px"><font color="black">lit <br>
+			<td valign="top"><p style="font-size:2px"><font color="white">lit <br>
 				1          ;1st <br>
 				lit <br>
 				xff <br>
@@ -398,7 +398,7 @@
 				lit <br>
 				-1 <br>
 				exit <br></p></td>
-				<td valign="top"><p style="font-size:2px"><font color="black">lit <br>
+				<td valign="top"><p style="font-size:2px"><font color="white">lit <br>
 					100     ;dec <br>
 					lit <br>
 					xff <br>
@@ -530,7 +530,7 @@
 					xfc         ;lsb <br>
 					@ <br>
 					exit <br></p></td>
-					<td valign="top"><p style="font-size:2px"><font color="black">lit <br>
+					<td valign="top"><p style="font-size:2px"><font color="white">lit <br>
 						x70     ;1st <br>
 						lit <br>
 						xff <br>
@@ -639,8 +639,8 @@
 						exit <br></p></td>
 					</tr>
 					<tr valign="top">
-						<th><p style="font-size:2px"><font color="black">LC3</p></th>
-							<td valign="top"><p style="font-size:2px"><font color="black">.orig x3000 <br>
+						<th><p style="font-size:2px"><font color="white">LC3</p></th>
+							<td valign="top"><p style="font-size:2px"><font color="white">.orig x3000 <br>
 								ld r6,tos <br>
 								ld r0,a <br>
 								add r6,r6,#-1 <br>
@@ -674,7 +674,7 @@
 								a .fill 15 <br>
 								b .fill 10 <br>
 								.end <br></p></td>
-								<td valign="top"><p style="font-size:2px"><font color="black">.orig x3000 <br>
+								<td valign="top"><p style="font-size:2px"><font color="white">.orig x3000 <br>
 									ld r6,tos <br>
 									ld r0,start <br>
 									str r0,r6,#0 <br>
@@ -769,7 +769,7 @@
 									one   .fill 49 <br>
 									minus .fill 45 <br>
 									.end <br></p></td>
-									<td valign="top"><p style="font-size:2px"><font color="black">.orig x3000    ;xfdfd = lsb <br>
+									<td valign="top"><p style="font-size:2px"><font color="white">.orig x3000    ;xfdfd = lsb <br>
 										ld r6,tos <br>
 										ld r3,two <br>
 										ld r0,dec       ;dec <br>
@@ -866,7 +866,7 @@
 										n .fill 110 <br>
 										s .fill 115 <br>
 										.end <br></p></td>
-										<td valign="top"><p style="font-size:2px"><font color="black">.orig x3000 <br>
+										<td valign="top"><p style="font-size:2px"><font color="white">.orig x3000 <br>
 											lea r0,char     ;char arr addr <br>
 											ld r2,len       ;len-1 <br>
 											add r1,r0,r2    ;last pointer <br>
