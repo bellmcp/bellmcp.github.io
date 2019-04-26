@@ -3,70 +3,70 @@
 <body>
 
 
-							<table width="30%">
-								<tr valign="top">
-									<th></th>
-									<th><p style="font-size:2px"><font color="black">findGCD</p></th>
-										<th><p style="font-size:2px"><font color="black">binarySearch</p></th>
-											<th><p style="font-size:2px"><font color="black">decimalToBinary</p></th>
-												<th><p style="font-size:2px"><font color="black">isPalindrome</p></th>
-												</tr>
-												<tr valign="top">
-													<th><p style="font-size:2px"><font color="black">Java</p></th>
-														<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
-															System.out.println(gcd(12, 8)); <br>
-														} <br>
-														<br>
-														static int gcd(int a, int b) { <br>
-														if (b == 0) { <br>
-														return a; <br>
-													} else { <br>
-													return gcd(b, a % b); <br>
-												} <br>
-											} <br></p></td>
-											<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
-												int[] data = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19}; <br>
-												System.out.println(binarySearch(data, 7, 0, 9)); <br>
-											} <br>
-											<br>
-											static int binarySearch(int[] data, int key, int start, int stop) { <br>
-											if (start > stop) { <br>
-											return -1; <br>
-										} <br>
-										int m = (stop + start) / 2; <br>
-										if (data[m] == key) { <br>
-										return m; <br>
-									} <br>
-									if (key < data[m]) { <br>
-									return binarySearch(data, key, start, m - 1); <br>
-								} else { <br>
-								return binarySearch(data, key, m + 1, stop); <br>
-							} <br>
-						} <br></p></td>
-						<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
-							System.out.println(dec2bin(10, 1)); <br>
+	<table width="30%">
+		<tr valign="top">
+			<th></th>
+			<th><p style="font-size:2px"><font color="black">findGCD</p></th>
+				<th><p style="font-size:2px"><font color="black">binarySearch</p></th>
+					<th><p style="font-size:2px"><font color="black">decimalToBinary</p></th>
+						<th><p style="font-size:2px"><font color="black">isPalindrome</p></th>
+						</tr>
+						<tr valign="top">
+							<th><p style="font-size:2px"><font color="black">Java</p></th>
+								<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
+									System.out.println(gcd(12, 8)); <br>
+								} <br>
+								<br>
+								static int gcd(int a, int b) { <br>
+								if (b == 0) { <br>
+								return a; <br>
+							} else { <br>
+							return gcd(b, a % b); <br>
 						} <br>
-						<br>
-						static int dec2bin(int x, int y) { <br>
-						if (x == 0) { <br>
-						return 0; <br>
+					} <br></p></td>
+					<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
+						int[] data = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19}; <br>
+						System.out.println(binarySearch(data, 7, 0, 9)); <br>
 					} <br>
-					return (y * (x & 1)) + dec2bin(x >> 1, 10 * y); <br>
-				} <br></p></td>
-				<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
-					char[] s = {'a', 'b', 'd', 's'}; <br>
-					System.out.println(palindrome(s, 0, 3)); <br>
+					<br>
+					static int binarySearch(int[] data, int key, int start, int stop) { <br>
+					if (start > stop) { <br>
+					return -1; <br>
 				} <br>
-				<br>
-				static boolean palindrome(char[] s, int start, int stop) { <br>
-				if (stop <= start) { <br>
-				return true; <br>
+				int m = (stop + start) / 2; <br>
+				if (data[m] == key) { <br>
+				return m; <br>
 			} <br>
-			if (s[start] != s[stop]) { <br>
-			return false; <br>
+			if (key < data[m]) { <br>
+			return binarySearch(data, key, start, m - 1); <br>
 		} else { <br>
-		return palindrome(s, start + 1, stop - 1); <br>
+		return binarySearch(data, key, m + 1, stop); <br>
 	} <br>
+} <br></p></td>
+<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
+	System.out.println(dec2bin(10, 1)); <br>
+} <br>
+<br>
+static int dec2bin(int x, int y) { <br>
+if (x == 0) { <br>
+return 0; <br>
+} <br>
+return (y * (x & 1)) + dec2bin(x >> 1, 10 * y); <br>
+} <br></p></td>
+<td valign="top"><p style="font-size:2px"><font color="black">public static void main(String[] args) { <br>
+	char[] s = {'a', 'b', 'd', 's'}; <br>
+	System.out.println(palindrome(s, 0, 3)); <br>
+} <br>
+<br>
+static boolean palindrome(char[] s, int start, int stop) { <br>
+if (stop <= start) { <br>
+return true; <br>
+} <br>
+if (s[start] != s[stop]) { <br>
+return false; <br>
+} else { <br>
+return palindrome(s, start + 1, stop - 1); <br>
+} <br>
 } <br></p></td>
 </tr>
 <tr valign="top">
@@ -789,59 +789,119 @@
 										s .fill 115 <br>
 										.end <br></p></td>
 										<td valign="top"><p style="font-size:2px"><font color="black">.orig x3000 <br>
-											lea r0,char     ;char arr addr <br>
-											ld r2,len       ;len-1 <br>
-											add r1,r0,r2    ;last pointer <br>
-											ldr r3,r0,#0    ;1st char <br>
-											ldr r4,r1,#0    ;last char <br>
-											<br>
-											par  <br>
-											and r5,r5,#0 <br>
-											not r4,r4 <br>
-											add r4,r4,#1 <br>
-											add r5,r3,r4 <br>
-											brz update <br>
-											jsr badend <br>
-											<br>
-											update <br>
+											ld r6,tos <br>
+											ld r0,a <br>
+											ld r4,ascii <br>
+											add r6,r6,#-1 <br>
+											str r0,r6,#0 <br>
+											ld r0,b <br>
+											add r6,r6,#-1 <br>
+											str r0,r6,#0 <br>
+											add r6,r6,#-1 <br>
+											ldr r0,r6,#1 <br>
+											not r0,r0 <br>
 											add r0,r0,#1 <br>
-											add r1,r1,#-1 <br>
-											not r5,r1 <br>
-											add r5,r5,#1 <br>
-											add r5,r0,r5 <br>
-											brzp goodend <br>
-											ldr r3,r0,#0 <br>
-											ldr r4,r1,#0 <br>
-											jsr par <br>
-											halt <br>
 											<br>
-											badend <br>
-											and r0,r0,#0 <br>
+											loop ldr r1,r6,#2 <br>
+											add r2,r0,r1 <br>
+											str r2,r6,#2 <br>
+											brz ans <br>
+											brn swap <br>
+											brp loop <br>
+											<br>
+											ans ldr r0,r6,#1 <br>
+											add r5,r6,#1 <br>
+											add r6,r6,#2 <br>
+											jsr div100 <br>
+											<br>
+											div100 and r3,r3,#0 <br>
+											ld r1,tho <br>
+											not r1,r1 <br>
+											add r1,r1,#1 <br>
+											looop add r0,r0,r1 <br>
+											brn subt2 <br>
+											add r2,r2,#1 <br>
+											jsr looop <br>
+											<br>
+											subt2 str r2,r6,#0 <br>
+											add r6,r6,#1 <br>
+											ld r1,tho <br>
+											sum2 add r2,r2,#-1 <br>
+											brn cor2 <br>
+											add r3,r3,r1 <br>
+											jsr sum2 <br>
+											<br>
+											cor2 not r3,r3 <br>
+											add r3,r3,#1 <br>
+											ldr r0,r5,#0 <br>
+											add r0,r0,r3 <br>
+											str r0,r5,#0 <br>
+											jsr div10 <br>
+											<br>
+											div10 and r2,r2,#0 <br>
+											and r3,r3,#0 <br>
+											ld r1,ten <br>
+											not r1,r1 <br>
+											add r1,r1,#1 <br>
+											loooop add r0,r0,r1 <br>
+											brn subt1 <br>
+											add r2,r2,#1 <br>
+											jsr loooop <br>
+											<br>
+											subt1 str r2,r6,#0 <br>
+											add r6,r6,#1 <br>
+											ld r1,ten <br>
+											sum1 add r2,r2,#-1 <br>
+											brn cor1 <br>
+											add r3,r3,r1 <br>
+											jsr sum1 <br>
+											<br>
+											cor1 not r3,r3 <br>
+											add r3,r3,#1 <br>
+											ldr r0,r5,#0 <br>
+											add r0,r0,r3 <br>
+											and r2,r2,#0 <br>
+											and r3,r3,#0 <br>
+											str r0,r6,#0 <br>
+											add r6,r6,#1 <br>
+											ld r1,tmp <br>
+											str r1,r6,#0 <br>
+											jsr print <br>
+											<br>
+											print ld r6,tos <br>
+											add r6,r6,#-1 <br>
 											ld r1,ascii <br>
-											add r0,r0,#-3 <br>
+											lop ldr r0,r6,#0 <br>
+											brn exit <br>
 											add r0,r0,r1 <br>
-											out <br>
-											add r0,r0,#4 <br>
-											out <br>
+											str r0,r6,#0 <br>
+											add r6,r6,#1 <br>
+											jsr lop <br>
+											<br>
+											exit <br>
+											ld r0,tos <br>
+											add r0,r0,#-1 <br>
+											puts <br>
 											halt <br>
 											<br>
-											goodend <br>
-											and r0,r0,#0 <br>
-											ld r1,ascii <br>
+											swap ldr r5,r6,#1 <br>
+											str r1,r6,#1 <br>
+											str r5,r6,#2 <br>
+											ldr r0,r6,#1 <br>
+											not r0,r0 <br>
 											add r0,r0,#1 <br>
-											add r0,r0,r1 <br>
-											out <br>
-											halt <br>
+											jsr loop <br>
 											<br>
-											len   .fill 3      ;editable <br>
-											char  .fill x70    ;editable <br>
-											.fill x61 <br>
-											.fill x61 <br>
-											.fill x70 <br>
+											tos .fill xfe00 <br>
+											a .fill 1024      ;editable <br>
+											b .fill 512       ;editable <br>
 											ascii .fill 48 <br>
+											tho .fill 100 <br>
+											ten .fill 10 <br>
+											tmp .fill -1 <br>
 											.end <br></p></td>
 										</tr>
 									</table>
 
-</body>
-</html>
+								</body>
+								</html>
