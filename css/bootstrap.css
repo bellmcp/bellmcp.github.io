@@ -73,11 +73,6 @@ strong {
   font-weight: inherit;
 }
 
-b,
-strong {
-  font-weight: bolder;
-}
-
 code,
 kbd,
 samp {
