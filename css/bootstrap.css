@@ -70,6 +70,12 @@ abbr[title] {
 
 b,
 strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
 }
 
 code,
@@ -379,6 +385,7 @@ ul ol {
 }
 
 dt {
+  font-weight: bold;
 }
 
 dd {
@@ -722,6 +729,7 @@ kbd {
 kbd kbd {
   padding: 0;
   font-size: 100%;
+  font-weight: bold;
 }
 
 pre {
@@ -3029,6 +3037,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-link {
+  font-weight: normal;
   color: #0275d8;
   border-radius: 0;
 }
@@ -3047,6 +3056,7 @@ fieldset[disabled] a.btn {
 
 .btn-link:focus, .btn-link:hover {
   color: #014c8c;
+  text-decoration: underline;
   background-color: transparent;
 }
 
@@ -4836,6 +4846,7 @@ tbody.collapse.show {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
+  font-weight: bold;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -5368,6 +5379,7 @@ button.list-group-item-danger.active {
 .close {
   float: right;
   font-size: 1.5rem;
+  font-weight: bold;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
