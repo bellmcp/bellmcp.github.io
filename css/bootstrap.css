@@ -4960,7 +4960,7 @@ a.badge:focus, a.badge:hover {
 }
 
 .alert-link {
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .alert-dismissible .close {
