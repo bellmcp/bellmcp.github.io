@@ -12,6 +12,13 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
 body {
   margin: 0;
 }
