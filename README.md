@@ -16,7 +16,7 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
 
 # Future ideas include :
 
-* Add an ability to enable dark mode and many more accesibility features.
+* Add an ability to enable dark mode and more accesibility features.
 * Implement an image slideshow and click-to-zoom feature.
 * Implement a user's right-click preventation.
 
