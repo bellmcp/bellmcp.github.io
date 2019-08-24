@@ -12,7 +12,7 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
 
 * Developed a website within the GitHub Pages using HTML, CSS and JavaScript.
 * Website domain hosting and redirection. [(bellmcp.work)](http://bellmcp.work)
-* Responsive website design.
+* Responsive web design.
 
 # Future ideas include :
 
