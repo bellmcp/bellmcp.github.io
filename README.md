@@ -1,15 +1,27 @@
-# bellmcp / about
+# bellmcp.github.io
+A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a freelance graphic designer, a dreamer and many more.
 
-[Go to site](http://bellmcp.github.io)
+<p align="center">
+  <img src="https://bellmcp.work/meta_preview.jpg" />
+</p>
 
-A web portfolio of *Wutipat Khamnuansin (bellmcp)*,
-A computer science student, a freelance graphic designer, a dreamer and many more.
+# Go to Site :
+* [bellmcp.github.io](http://bellmcp.github.io)
+
+# What I Learned :
+
+* Developed a website within the HTML, CSS and JavaScript using GitHub Pages.
+* Domain hosting and redirection. [(bellmcp.work)](http://bellmcp.work)
+* Responsive web design.
+
+# Future ideas include :
+
+* Add an ability to enable dark mode and many more accesibility features.
+* Implement an image slideshow and click-to-zoom feature.
+* Implement an right-click preventation.
 
 # License
 
-Except where otherwise noted, content on this site is licensed under a
-[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-*Copyright © 2019 Wutipat Khamnuansin, All rights reserved.*
-
-
+`Copyright © 2019 Wutipat Khamnuansin, All rights reserved.`
