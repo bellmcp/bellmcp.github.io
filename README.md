@@ -18,7 +18,7 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
 
 * Add an ability to enable dark mode and many more accesibility features.
 * Implement an image slideshow and click-to-zoom feature.
-* Implement an right-click preventation.
+* Implement a user's right-click preventation.
 
 # License
 
