@@ -22,6 +22,6 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
 
 # License
 
-Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+* Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-`Copyright © 2019 Wutipat Khamnuansin, All rights reserved.`
+Copyright © 2019 Wutipat Khamnuansin, All rights reserved.
