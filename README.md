@@ -5,16 +5,16 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
   <img src="https://bellmcp.work/meta_preview.jpg" />
 </p>
 
-# Go to Site :
+# Go to Site
 * [bellmcp.github.io](http://bellmcp.github.io)
 
-# What I Learned :
+# What I Learned
 
 * Developed a website within the GitHub Pages using HTML, CSS and JavaScript.
 * Website domain hosting and redirection. [(bellmcp.work)](http://bellmcp.work)
 * Responsive web design.
 
-# Future ideas include :
+# Future Ideas Include
 
 * Add an ability to enable dark mode and more accesibility features.
 * Implement an image slideshow and click-to-zoom feature.
@@ -24,4 +24,4 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
 
 * Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-Copyright © 2019 Wutipat Khamnuansin, All rights reserved.
+> Copyright © 2019 Wutipat Khamnuansin, All rights reserved.
