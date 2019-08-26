@@ -28,6 +28,6 @@ Licensed under [The MIT License](https://github.com/bellmcp/bellmcp.github.io/bl
 
 ### Documentation License
 
-All reading materials from this repository is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You could use this repository as your reference as long as you give the attribution.
+Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 > Copyright © 2019 Wutipat Khamnuansin, All rights reserved.
