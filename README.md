@@ -26,7 +26,7 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
 
 Licensed under [The MIT License](https://github.com/bellmcp/bellmcp.github.io/blob/master/LICENSE). You could use the source code for whatever you want as long as the LICENSE file or the license header in the source code still there.
 
-### Documentation License
+### Content License
 
 Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
