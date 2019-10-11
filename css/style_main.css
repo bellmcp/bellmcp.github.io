@@ -11,8 +11,7 @@
     font-weight: 700;
     font-style: normal;
     src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.eot");
-    src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix") format("embedded-opentype"), local("Noto Sans Bold"), local("Noto-Sans-700"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.woff2") format("woff2"), url("
-        fonts/Noto-Sans-700/Noto-Sans-700.woff") format("woff"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.ttf") format("truetype"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans") format("svg")
+    src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix") format("embedded-opentype"), local("Noto Sans Bold"), local("Noto-Sans-700"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.woff2") format("woff2"), url("fonts/Noto-Sans-700/Noto-Sans-700.woff") format("woff"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.ttf") format("truetype"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans") format("svg")
 }
 
 @font-face {
