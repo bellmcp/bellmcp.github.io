@@ -341,22 +341,14 @@ h3, h4, h5, h6 {
 
 a {
     color: #267CB9;
-    text-decoration: none
-}
-
-.darkmode--activated a {
-    color: #267CB9;
-    text-decoration: none
+    text-decoration: none;
+    isolation: isolate
 }
 
 a:hover, a:focus {
     color: #267CB9;
     text-decoration: underline
-}
-
-.darkmode--activated a:hover, a:focus {
-    color: #267CB9;
-    text-decoration: underline
+    isolation: isolate
 }
 
 a small {
