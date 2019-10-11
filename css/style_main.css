@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .darkmode--activated h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+  color: #ffffff;
   margin: 0 0 20px
 }
 
@@ -341,7 +341,7 @@ h2 {
 }
 
 .darkmode--activated h2 {
-    color: #fff
+    color: #ffffff
 }
 
 h3, h4, h5, h6 {
