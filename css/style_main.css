@@ -320,7 +320,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .darkmode--activated h1, h2, h3, h4, h5, h6 {
-    color: #ffffff; !important
+    color: #ffffff;
+    margin: 0 0 20px;
+    mix-blend-mode: difference
 }
 
 p, ul, ol, table, pre, dl {
@@ -345,7 +347,9 @@ a {
 }
 
 .darkmode--activated a {
-    color: #267CB9; !important
+    color: #267CB9;
+    text-decoration: none;
+    mix-blend-mode: difference
 }
 
 a:hover, a:focus {
@@ -354,7 +358,9 @@ a:hover, a:focus {
 }
 
 .darkmode--activated a:hover, a:focus {
-    color: #267CB9; !important
+    color: #267CB9;
+    text-decoration: underline;
+    mix-blend-mode: difference
 }
 
 a small {
