@@ -336,22 +336,13 @@ h1 {
     font-size: 28px
 }
 
-h2 {
-    color: #393939
-}
-
-.darkmode--activated h2 {
-    color: #ffffff
-}
-
 h3, h4, h5, h6 {
     color: #494949
 }
 
 a {
     color: #267CB9;
-    text-decoration: none;
-    isolation: isolate;
+    text-decoration: none
 }
 
 .darkmode--activated a {
@@ -360,6 +351,11 @@ a {
 }
 
 a:hover, a:focus {
+    color: #267CB9;
+    text-decoration: underline
+}
+
+.darkmode--activated a:hover, a:focus {
     color: #267CB9;
     text-decoration: underline
 }
