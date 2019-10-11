@@ -321,8 +321,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .darkmode--activated h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
-    margin: 0 0 20px;
-    mix-blend-mode: difference
+    margin: 0 0 20px
 }
 
 p, ul, ol, table, pre, dl {
@@ -341,26 +340,14 @@ h3, h4, h5, h6 {
     color: #494949
 }
 
-a {
+darkmode-ignore a {
     color: #267CB9;
     text-decoration: none;
 }
 
-.darkmode--activated a {
-    color: #267CB9;
-    text-decoration: none;
-    mix-blend-mode: difference
-}
-
-a:hover, a:focus {
+darkmode-ignore a:hover, a:focus {
     color: #267CB9; 
     text-decoration: underline
-}
-
-.darkmode--activated a:hover, a:focus {
-    color: #267CB9;
-    text-decoration: underline;
-    mix-blend-mode: difference
 }
 
 a small {
