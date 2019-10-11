@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .darkmode--activated h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
+    color: #ffffff; !important
 }
 
 p, ul, ol, table, pre, dl {
@@ -342,13 +342,19 @@ h3, h4, h5, h6 {
 a {
     color: #267CB9;
     text-decoration: none;
-    isolation: isolate
+}
+
+.darkmode--activated a {
+    color: #267CB9; !important
 }
 
 a:hover, a:focus {
-    color: #267CB9;
+    color: #267CB9; 
     text-decoration: underline
-    isolation: isolate
+}
+
+.darkmode--activated a:hover, a:focus {
+    color: #267CB9; !important
 }
 
 a small {
