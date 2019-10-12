@@ -394,6 +394,10 @@ table {
     border-collapse: collapse
 }
 
+.darkmode--activated th, td {
+    border-bottom: 1px solid #555
+}
+
 th, td {
     text-align: left;
     padding: 5px 10px;
