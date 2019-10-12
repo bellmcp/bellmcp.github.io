@@ -306,20 +306,20 @@
     background-color: #f8f8f8
 }
 
-.darkmode--activated h1, h2, h3, h4, h5, h6 {
-  color: #fff
-}
-
-.darkmode--activated a {
-  color: #267CB9
-}
-
 body {
     background-color: #fff;
     padding: 50px;
     font: 14px / 1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #727272;
     font-weight: 400
+}
+
+.darkmode--activated h1{
+  color: #fff
+}
+
+.darkmode--activated h2{
+  color: #fff
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -392,10 +392,6 @@ pre {
 table {
     width: 100%;
     border-collapse: collapse
-}
-
-.darkmode--activated th, td {
-    border-bottom: 1px solid #555
 }
 
 th, td {
