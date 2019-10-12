@@ -15,8 +15,8 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
 * Responsive web design.
 
 # Latest Release
-* 12/10/19 - Indroducing Dark Mode, Automatically enabled if the OS prefered theme is dark. (supports prefers-color-scheme)
-* 10/10/19 - Introducing LazyLoad.js to enable faster page load.
+* 12/10/19 - Introducing Dark Mode, automatically match the user's OS theme. (require browser supports ```prefers-color-scheme```)
+* 10/10/19 - Introducing LazyLoad.js to enable faster page load with fade-in animation.
 
 # Future Ideas Include
 
