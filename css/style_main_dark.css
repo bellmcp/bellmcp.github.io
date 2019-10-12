@@ -347,7 +347,7 @@ body {
     background: #555;
 }
 
-.darkmode-layer, .darkmode-toggle {
+.darkmode-toggle {
   z-index: 500;
 }
 
