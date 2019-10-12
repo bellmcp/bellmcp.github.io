@@ -102,7 +102,7 @@
                         <div class="col-2"></div>
                         <div class="col-10">
                             <br />
-                            <img class="img-circle" src="https://bellmcp.github.io/img/Profile.jpg" width="50%">
+                            <img class="img-circle" data-src="https://bellmcp.github.io/img/Profile.jpg" width="50%">
                             <br />
                             <br />
                             <h1>Wutipat<br />Khamnuansin</h1>
@@ -591,7 +591,7 @@
                 <tr>
                     <td>
                         <center>
-                            <a href="https://bellmcp.github.io/work/youthquake#top"><img border="0" alt="" src="https://bellmcp.github.io/img/Video_Youthquake.jpg"></a>
+                            <a href="https://bellmcp.github.io/work/youthquake#top"><img border="0" alt="" data-src="https://bellmcp.github.io/img/Video_Youthquake.jpg" ></a>
                         </center>
                         <br />
                         <p style="font-size:13px"><strong>Chula YouthQuake — Sustainable Development</strong>
@@ -612,19 +612,19 @@
             <table>
                 <tr>
                     <td width="20%">
-                        <h4><a href="https://www.facebook.com/chulasccu" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/PR_SCCU.png" width="180"></a></h4>
+                        <h4><a href="https://www.facebook.com/chulasccu" target="_blank"><img class="img-circle" data-src="https://bellmcp.github.io/img/PR_SCCU.png" width="180"></a></h4>
                     </td>
                     <td width="20%">
-                        <h4><a href="https://www.facebook.com/cuband" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/PR_CUBand.png" width="180"></a></h4>
+                        <h4><a href="https://www.facebook.com/cuband" target="_blank"><img class="img-circle" data-src="https://bellmcp.github.io/img/PR_CUBand.png" width="180"></a></h4>
                     </td>
                     <td width="20%">
-                        <h4><a href="https://www.facebook.com/ChulaCMCamp" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/PR_CUCM.png" width="180"></a></h4>
+                        <h4><a href="https://www.facebook.com/ChulaCMCamp" target="_blank"><img class="img-circle" data-src="https://bellmcp.github.io/img/PR_CUCM.png" width="180"></a></h4>
                     </td>
                     <td width="20%">
-                        <h4><a href="https://www.instagram.com/baanlaijai" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/PR_Baanlaijai.png" width="180"></a></h4>
+                        <h4><a href="https://www.instagram.com/baanlaijai" target="_blank"><img class="img-circle" data-src="https://bellmcp.github.io/img/PR_Baanlaijai.png" width="180"></a></h4>
                     </td>
                     <td width="20%">
-                        <h4><a href="https://www.facebook.com/AgeOfJurassic" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/PR_AgeOfJurassic.png" width="180"></a></h4>
+                        <h4><a href="https://www.facebook.com/AgeOfJurassic" target="_blank"><img class="img-circle" data-src="https://bellmcp.github.io/img/PR_AgeOfJurassic.png" width="180"></a></h4>
                     </td>
                     </td>
                 </tr>
@@ -724,7 +724,6 @@
             <script src="js/bootstrap.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-            // DARKMODE
             <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.0/lib/darkmode-js.min.js"></script>
             <script>
             var options = {
@@ -745,7 +744,6 @@
             darkmode.showWidget();
             </script>
 
-            // LAZYLOAD
             <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
 		    <script>
 			(function() {
@@ -770,8 +768,7 @@
 				};
 				var callback_error = function(element) {
 					logElementEvent("ERROR", element);
-					element.src =
-						"https://via.placeholder.com/440x560/?text=Error+Placeholder";
+					element.src = "";
 				};
 				var callback_finish = function() {
 					logElementEvent("FINISHED", document.documentElement);
