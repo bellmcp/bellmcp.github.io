@@ -306,6 +306,14 @@
     background-color: #f8f8f8
 }
 
+.darkmode--activated h1 h2 {
+  color: #fff
+}
+
+.darkmode--activated a {
+  color: #267CB9
+}
+
 body {
     background-color: #fff;
     padding: 50px;
