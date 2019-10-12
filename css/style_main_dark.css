@@ -322,6 +322,22 @@ body {
   color: #fff
 }
 
+.darkmode--activated h4{
+  color: #ddd
+}
+
+.darkmode--activated strong{
+  color: #ddd
+}
+
+.darkmode--activated th, td {
+    border-bottom: 1px solid #555
+}
+
+.darkmode--activated hr {
+    background: #555;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #222;
     margin: 0 0 20px
