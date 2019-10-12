@@ -306,8 +306,9 @@
     background-color: #f8f8f8
 }
 
-.darkmode--activated h1 h2 {
-  color: #fff
+.darkmode--activated h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  isolation: isolate
 }
 
 .darkmode--activated a {
@@ -483,7 +484,8 @@ header ul a strong {
 section {
     width: 500px;
     float: right;
-    padding-bottom: 50px
+    padding-bottom: 50px;
+    isolation: isolate
 }
 
 small {
