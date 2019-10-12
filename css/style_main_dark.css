@@ -334,7 +334,7 @@ body {
     border-bottom: 1px solid #555
 }
 
-.darkmode--activated td {
+.darkmode--activated .table td {
     border-bottom: 1px solid #555;
     border-top: 1px solid #555
 }
