@@ -3852,7 +3852,8 @@ tbody.collapse.show {
 }
 
 .nav-link:focus, .nav-link:hover {
-  text-decoration: none;
+  font-weight: bold;
+  text-decoration: none
 }
 
 .nav-link.disabled {
