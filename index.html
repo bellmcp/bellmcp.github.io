@@ -7,11 +7,32 @@
 
     <!-- Primary Meta Tags -->
     <title>bellmcp / about</title>
+    
     <style type="text/css">
         table.bdrless td {
             border-width: 0px;
         }
     </style>
+    
+        <style>
+			img {
+				display: block;
+				border: 0;
+				opacity: 0;
+			}
+			img:not(.initial) {
+				transition: opacity 1s;
+			}
+			img.initial,
+			img.loaded,
+			img.error {
+				opacity: 1;
+			}
+			img:not([src]) {
+				visibility: hidden;
+			}
+		</style>
+    
     <meta name="title" content="bellmcp / about">
     <meta name="description" content="A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a freelance graphic designer, a dreamer and many more.">
 
@@ -32,7 +53,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_main.css">
+    <link rel="stylesheet" href="css/style_main_dark.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,7 +100,7 @@
                         <div class="col-2"></div>
                         <div class="col-10">
                             <br />
-                            <img class="img-circle" src="https://bellmcp.github.io/img/Profile.jpg" width="50%">
+                            <img class="img-circle" data-src="https://bellmcp.github.io/img/Profile.jpg" width="100px" height="100px">
                             <br />
                             <br />
                             <h1>Wutipat<br />Khamnuansin</h1>
@@ -188,7 +209,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_ASW19.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Recent_ASW19.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>ASEAN Week 2019 Event Backdrop Design</strong>
                             <br />
@@ -204,7 +225,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_JISOTravel.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Recent_JISOTravel.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>JISO Travel Tour Packages Design</strong>
                             <br />
@@ -220,7 +241,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_MedTravel.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Recent_MedTravel.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>MedTravel Portal Company Profile Design</strong>
                             <br />
@@ -236,7 +257,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_Soscity.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Recent_Soscity.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>Soscity.Space Web & Office Front Design</strong>
                             <br />
@@ -252,7 +273,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_4Separate.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Recent_4Separate.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>4 SEPARATE x CU Zero Waste Project</strong>
                             <br />
@@ -268,7 +289,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_Billie.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Recent_Billie.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>Adobe x Billie Eilish's Creative Challenge</strong>
                             <br />
@@ -284,7 +305,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_Cupress.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Recent_Cupress.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>Chula Press Logo Design 2019</strong>
                             <br />
@@ -300,7 +321,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_Afaps.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Recent_Afaps.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>KTB x AFAPS Smart Debit Card 4.0 — Winner</strong>
                             <br />
@@ -318,7 +339,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Projects_TicTacToe.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Projects_TicTacToe.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>Tic. Tac. Toe.</strong>
                             <br>Windows Application
@@ -335,7 +356,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Projects_Calculator.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Projects_Calculator.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>4-Digit Calculator</strong>
                             <br>Logic Gates
@@ -352,7 +373,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Projects_Decibel.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Projects_Decibel.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>Decibel Airlines™ Reservation System</strong>
                             <br>Java Application
@@ -369,7 +390,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Projects_KnightsTour.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Projects_KnightsTour.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>Knight's Tour Solver</strong>
                             <br>Java Application
@@ -387,7 +408,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_Fissix.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Recent_Fissix.jpg" width="100%" height="auto"></center>
                         <br />
                         <p style="font-size:13px"><strong>FISSIX — National Software Contest 2014</strong>
                             <br>Mobile Application
@@ -407,7 +428,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Smoniti.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Artworks_Smoniti.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>Smo Niti Poster</strong>
                             <br />Law Enlightenment Party
@@ -415,7 +436,7 @@
                         </p>
                     </td>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Sccudebate.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Artworks_Sccudebate.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>CU See Your Mind
                 </strong>
@@ -428,7 +449,7 @@
                 <tr>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Chulawatit.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Artworks_Chulawatit.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>202nd Chulavatid</strong>
                             <br />Cultural Center of CU
@@ -437,7 +458,7 @@
                     </td>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Fullmoon.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Artworks_Fullmoon.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>203rd Chulavatid</strong>
                             <br />CU Band
@@ -449,7 +470,7 @@
                 <tr>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Lasttake.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Artworks_Lasttake.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>Lai Jai Last Take</strong>
                             <br />Baanlaijai
@@ -458,7 +479,7 @@
                     </td>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Recruit.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Artworks_Recruit.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>Lai Jai Recruit</strong>
                             <br />Baanlaijai
@@ -470,7 +491,7 @@
                 <tr>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Trip.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Artworks_Trip.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>Lai Jai Trip</strong>
                             <br />Baanlaijai
@@ -479,7 +500,7 @@
                     </td>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Jurassic.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Artworks_Jurassic.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>Age of Jurassic</strong>
                             <br />Gifted Science
@@ -497,7 +518,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Design_CSCUTag.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Design_CSCUTag.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>Avengers, Assemble!</strong>
                             <br />CSCU 25
@@ -505,7 +526,7 @@
                         </p>
                     </td>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Design_CSCUShirt.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Design_CSCUShirt.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>Infinity Wars</strong>
                             <br />CSCU 25
@@ -517,7 +538,7 @@
                 <tr>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Design_LaijaiShirt.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Design_LaijaiShirt.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>The Oasis</strong>
                             <br />Baanlaijai
@@ -526,7 +547,7 @@
                     </td>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Design_YaowaratShirt.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Design_YaowaratShirt.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>Yaowarat
                 </strong>
@@ -539,7 +560,7 @@
                 <tr>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Design_Book1.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Design_Book1.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>Golden Ratio</strong>
                             <br />Montfort College
@@ -548,7 +569,7 @@
                     </td>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Design_Book2.jpg"></center>
+                        <center><img src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/Design_Book2.jpg" width="100%"></center>
                         <br />
                         <p style="font-size:13px"><strong>Distortion</strong>
                             <br />Montfort College
@@ -568,7 +589,7 @@
                 <tr>
                     <td>
                         <center>
-                            <a href="https://bellmcp.github.io/work/youthquake#top"><img border="0" alt="" src="https://bellmcp.github.io/img/Video_Youthquake.jpg"></a>
+                            <a href="https://bellmcp.github.io/work/youthquake#top"><img border="0" alt="" src="https://bellmcp.github.io/img/lazy.jpg" data-src="https://bellmcp.github.io/img/Video_Youthquake.jpg" width="100%"></a>
                         </center>
                         <br />
                         <p style="font-size:13px"><strong>Chula YouthQuake — Sustainable Development</strong>
@@ -589,19 +610,19 @@
             <table>
                 <tr>
                     <td width="20%">
-                        <h4><a href="https://www.facebook.com/chulasccu" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/PR_SCCU.png" width="180"></a></h4>
+                        <h4><a href="https://www.facebook.com/chulasccu" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/PR_SCCU.png" width="180"></a></h4>
                     </td>
                     <td width="20%">
-                        <h4><a href="https://www.facebook.com/cuband" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/PR_CUBand.png" width="180"></a></h4>
+                        <h4><a href="https://www.facebook.com/cuband" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/PR_CUBand.png" width="180"></a></h4>
                     </td>
                     <td width="20%">
-                        <h4><a href="https://www.facebook.com/ChulaCMCamp" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/PR_CUCM.png" width="180"></a></h4>
+                        <h4><a href="https://www.facebook.com/ChulaCMCamp" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/PR_CUCM.png" width="180"></a></h4>
                     </td>
                     <td width="20%">
-                        <h4><a href="https://www.instagram.com/baanlaijai" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/PR_Baanlaijai.png" width="180"></a></h4>
+                        <h4><a href="https://www.instagram.com/baanlaijai" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/PR_Baanlaijai.png" width="180"></a></h4>
                     </td>
                     <td width="20%">
-                        <h4><a href="https://www.facebook.com/AgeOfJurassic" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/PR_AgeOfJurassic.png" width="180"></a></h4>
+                        <h4><a href="https://www.facebook.com/AgeOfJurassic" target="_blank"><img class="img-circle" src="https://bellmcp.github.io/img/lazy_small.jpg" data-src="https://bellmcp.github.io/img/PR_AgeOfJurassic.png" width="180"></a></h4>
                     </td>
                     </td>
                 </tr>
@@ -700,77 +721,69 @@
             <script src="/assets/js/scale.fix.js"></script>
             <script src="js/bootstrap.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script type="text/javascript">
-                var scrolltotop = {
-                    setting: {
-                        startline: 100,
-                        scrollto: 0,
-                        scrollduration: 1e3,
-                        fadeduration: [500, 100]
-                    },
-                    controlHTML: '<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow36.png" />',
-                    controlattrs: {
-                        offsetx: 20,
-                        offsety: 20
-                    },
-                    anchorkeyword: "#top",
-                    state: {
-                        isvisible: !1,
-                        shouldvisible: !1
-                    },
-                    scrollup: function() {
-                        this.cssfixedsupport || this.$control.css({
-                            opacity: 0
-                        });
-                        var t = isNaN(this.setting.scrollto) ? this.setting.scrollto : parseInt(this.setting.scrollto);
-                        t = "string" == typeof t && 1 == jQuery("#" + t).length ? jQuery("#" + t).offset().top : 0, this.$body.animate({
-                            scrollTop: t
-                        }, this.setting.scrollduration)
-                    },
-                    keepfixed: function() {
-                        var t = jQuery(window),
-                            o = t.scrollLeft() + t.width() - this.$control.width() - this.controlattrs.offsetx,
-                            s = t.scrollTop() + t.height() - this.$control.height() - this.controlattrs.offsety;
-                        this.$control.css({
-                            left: o + "px",
-                            top: s + "px"
-                        })
-                    },
-                    togglecontrol: function() {
-                        var t = jQuery(window).scrollTop();
-                        this.cssfixedsupport || this.keepfixed(), this.state.shouldvisible = t >= this.setting.startline ? !0 : !1, this.state.shouldvisible && !this.state.isvisible ? (this.$control.stop().animate({
-                            opacity: 1
-                        }, this.setting.fadeduration[0]), this.state.isvisible = !0) : 0 == this.state.shouldvisible && this.state.isvisible && (this.$control.stop().animate({
-                            opacity: 0
-                        }, this.setting.fadeduration[1]), this.state.isvisible = !1)
-                    },
-                    init: function() {
-                        jQuery(document).ready(function(t) {
-                            var o = scrolltotop,
-                                s = document.all;
-                            o.cssfixedsupport = !s || s && "CSS1Compat" == document.compatMode && window.XMLHttpRequest, o.$body = t(window.opera ? "CSS1Compat" == document.compatMode ? "html" : "body" : "html,body"), o.$control = t(
-                                '<div id="topcontrol">' + o.controlHTML + "</div>").css({
-                                position: o.cssfixedsupport ? "fixed" : "absolute",
-                                bottom: o.controlattrs.offsety,
-                                right: o.controlattrs.offsetx,
-                                opacity: 0,
-                                cursor: "pointer"
-                            }).attr({
-                                title: "Scroll to Top"
-                            }).click(function() {
-                                return o.scrollup(), !1
-                            }).appendTo("body"), document.all && !window.XMLHttpRequest && "" != o.$control.text() && o.$control.css({
-                                width: o.$control.width()
-                            }), o.togglecontrol(), t('a[href="' + o.anchorkeyword + '"]').click(function() {
-                                return o.scrollup(), !1
-                            }), t(window).bind("scroll resize", function(t) {
-                                o.togglecontrol()
-                            })
-                        })
-                    }
-                };
-                scrolltotop.init();
-           </script>
+
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.0/lib/darkmode-js.min.js"></script>
+            <script>
+            var options = {
+              bottom: '32px', // default: '32px'
+              right: '32px', // default: '32px'
+              left: 'unset', // default: 'unset'
+              time: '0.5s', // default: '0.3s'
+              mixColor: '#fff', // default: '#fff'
+              backgroundColor: '#fff',  // default: '#fff'
+              buttonColorDark: '#111',  // default: '#100f2c'
+              buttonColorLight: '#fff', // default: '#fff'
+              saveInCookies: true, // default: true,
+              label: '', // default: ''
+              autoMatchOsTheme: true // default: true
+            }
+
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+            </script>
+
+            <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
+		    <script>
+			(function() {
+				function logElementEvent(eventName, element) {
+					console.log(
+						Date.now(),
+						eventName,
+						element.getAttribute("data-src")
+					);
+				}
+				var callback_enter = function(element) {
+					logElementEvent("ENTERED", element);
+				};
+				var callback_exit = function(element) {
+					logElementEvent("EXITED", element);
+				};
+				var callback_reveal = function(element) {
+					logElementEvent("REVEALED", element);
+				};
+				var callback_loaded = function(element) {
+					logElementEvent("LOADED", element);
+				};
+				var callback_error = function(element) {
+					logElementEvent("ERROR", element);
+					element.src = "";
+				};
+				var callback_finish = function() {
+					logElementEvent("FINISHED", document.documentElement);
+				};
+				var ll = new LazyLoad({
+					threshold: 0,
+					// Assign the callbacks defined above
+					callback_enter: callback_enter,
+					callback_exit: callback_exit,
+					callback_reveal: callback_reveal,
+					callback_loaded: callback_loaded,
+					callback_error: callback_error,
+					callback_finish: callback_finish
+				});
+			})();
+		</script>
+
 </body>
 
 </html>
