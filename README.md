@@ -14,6 +14,10 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
 * Website domain hosting and redirection. [(bellmcp.work)](http://bellmcp.work)
 * Responsive web design.
 
+# Latest Release
+* 12/10/19 - Indroducing Dark Mode, Automatically enabled if the OS prefered theme is dark. (supports prefers-color-scheme)
+* 10/10/19 - Introducing LazyLoad.js to enable faster page load.
+
 # Future Ideas Include
 
 * Add an ability to enable dark mode and more accesibility features.
