@@ -7,11 +7,49 @@
 
     <!-- Primary Meta Tags -->
     <title>bellmcp / about</title>
+    
     <style type="text/css">
         table.bdrless td {
             border-width: 0px;
         }
     </style>
+    
+    <style>
+			body {
+				font-family: sans-serif;
+			}
+			.intro {
+				margin: 1em 0;
+			}
+			p {
+				margin: 0.3em 0;
+			}
+			ul,
+			li {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			img {
+				display: block;
+				border: 0;
+				opacity: 0;
+				width: 220px;
+				height: 280px;
+			}
+			img:not(.initial) {
+				transition: opacity 1s;
+			}
+			img.initial,
+			img.loaded,
+			img.error {
+				opacity: 1;
+			}
+			img:not([src]) {
+				visibility: hidden;
+			}
+		</style>
+    
     <meta name="title" content="bellmcp / about">
     <meta name="description" content="A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a freelance graphic designer, a dreamer and many more.">
 
@@ -188,7 +226,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_ASW19.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Recent_ASW19.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>ASEAN Week 2019 Event Backdrop Design</strong>
                             <br />
@@ -204,7 +242,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_JISOTravel.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Recent_JISOTravel.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>JISO Travel Tour Packages Design</strong>
                             <br />
@@ -220,7 +258,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_MedTravel.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Recent_MedTravel.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>MedTravel Portal Company Profile Design</strong>
                             <br />
@@ -236,7 +274,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_Soscity.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Recent_Soscity.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Soscity.Space Web & Office Front Design</strong>
                             <br />
@@ -252,7 +290,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_4Separate.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Recent_4Separate.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>4 SEPARATE x CU Zero Waste Project</strong>
                             <br />
@@ -268,7 +306,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_Billie.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Recent_Billie.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Adobe x Billie Eilish's Creative Challenge</strong>
                             <br />
@@ -284,7 +322,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_Cupress.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Recent_Cupress.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Chula Press Logo Design 2019</strong>
                             <br />
@@ -300,7 +338,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_Afaps.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Recent_Afaps.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>KTB x AFAPS Smart Debit Card 4.0 — Winner</strong>
                             <br />
@@ -318,7 +356,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Projects_TicTacToe.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Projects_TicTacToe.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Tic. Tac. Toe.</strong>
                             <br>Windows Application
@@ -335,7 +373,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Projects_Calculator.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Projects_Calculator.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>4-Digit Calculator</strong>
                             <br>Logic Gates
@@ -352,7 +390,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Projects_Decibel.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Projects_Decibel.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Decibel Airlines™ Reservation System</strong>
                             <br>Java Application
@@ -369,7 +407,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Projects_KnightsTour.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Projects_KnightsTour.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Knight's Tour Solver</strong>
                             <br>Java Application
@@ -387,7 +425,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Recent_Fissix.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Recent_Fissix.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>FISSIX — National Software Contest 2014</strong>
                             <br>Mobile Application
@@ -407,7 +445,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Smoniti.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Artworks_Smoniti.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Smo Niti Poster</strong>
                             <br />Law Enlightenment Party
@@ -415,7 +453,7 @@
                         </p>
                     </td>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Sccudebate.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Artworks_Sccudebate.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>CU See Your Mind
                 </strong>
@@ -428,7 +466,7 @@
                 <tr>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Chulawatit.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Artworks_Chulawatit.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>202nd Chulavatid</strong>
                             <br />Cultural Center of CU
@@ -437,7 +475,7 @@
                     </td>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Fullmoon.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Artworks_Fullmoon.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>203rd Chulavatid</strong>
                             <br />CU Band
@@ -449,7 +487,7 @@
                 <tr>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Lasttake.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Artworks_Lasttake.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Lai Jai Last Take</strong>
                             <br />Baanlaijai
@@ -458,7 +496,7 @@
                     </td>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Recruit.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Artworks_Recruit.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Lai Jai Recruit</strong>
                             <br />Baanlaijai
@@ -470,7 +508,7 @@
                 <tr>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Trip.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Artworks_Trip.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Lai Jai Trip</strong>
                             <br />Baanlaijai
@@ -479,7 +517,7 @@
                     </td>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Artworks_Jurassic.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Artworks_Jurassic.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Age of Jurassic</strong>
                             <br />Gifted Science
@@ -497,7 +535,7 @@
             <table>
                 <tr>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Design_CSCUTag.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Design_CSCUTag.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Avengers, Assemble!</strong>
                             <br />CSCU 25
@@ -505,7 +543,7 @@
                         </p>
                     </td>
                     <td>
-                        <center><img src="https://bellmcp.github.io/img/Design_CSCUShirt.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Design_CSCUShirt.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Infinity Wars</strong>
                             <br />CSCU 25
@@ -517,7 +555,7 @@
                 <tr>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Design_LaijaiShirt.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Design_LaijaiShirt.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>The Oasis</strong>
                             <br />Baanlaijai
@@ -526,7 +564,7 @@
                     </td>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Design_YaowaratShirt.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Design_YaowaratShirt.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Yaowarat
                 </strong>
@@ -539,7 +577,7 @@
                 <tr>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Design_Book1.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Design_Book1.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Golden Ratio</strong>
                             <br />Montfort College
@@ -548,7 +586,7 @@
                     </td>
                     <td>
                         <br />
-                        <center><img src="https://bellmcp.github.io/img/Design_Book2.jpg"></center>
+                        <center><img data-src="https://bellmcp.github.io/img/Design_Book2.jpg"></center>
                         <br />
                         <p style="font-size:13px"><strong>Distortion</strong>
                             <br />Montfort College
@@ -700,26 +738,48 @@
             <script src="/assets/js/scale.fix.js"></script>
             <script src="js/bootstrap.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.0/lib/darkmode-js.min.js"></script>
-            <script>
-            var options = {
-              bottom: '32px', // default: '32px'
-              right: '32px', // default: '32px'
-              left: 'unset', // default: 'unset'
-              time: '0.5s', // default: '0.3s'
-              mixColor: '#fff', // default: '#fff'
-              backgroundColor: '#fff',  // default: '#fff'
-              buttonColorDark: '#111',  // default: '#100f2c'
-              buttonColorLight: '#fff', // default: '#fff'
-              saveInCookies: true, // default: true,
-              label: 'L/D', // default: ''
-              autoMatchOsTheme: true // default: true
-            }
-
-            const darkmode = new Darkmode(options);
-            darkmode.showWidget();
-            </script>
+            <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
+		<script>
+			(function() {
+				function logElementEvent(eventName, element) {
+					console.log(
+						Date.now(),
+						eventName,
+						element.getAttribute("data-src")
+					);
+				}
+				var callback_enter = function(element) {
+					logElementEvent("🔑 ENTERED", element);
+				};
+				var callback_exit = function(element) {
+					logElementEvent("🚪 EXITED", element);
+				};
+				var callback_reveal = function(element) {
+					logElementEvent("👁️ REVEALED", element);
+				};
+				var callback_loaded = function(element) {
+					logElementEvent("👍 LOADED", element);
+				};
+				var callback_error = function(element) {
+					logElementEvent("💀 ERROR", element);
+					element.src =
+						"https://via.placeholder.com/440x560/?text=Error+Placeholder";
+				};
+				var callback_finish = function() {
+					logElementEvent("✔️ FINISHED", document.documentElement);
+				};
+				var ll = new LazyLoad({
+					threshold: 0,
+					// Assign the callbacks defined above
+					callback_enter: callback_enter,
+					callback_exit: callback_exit,
+					callback_reveal: callback_reveal,
+					callback_loaded: callback_loaded,
+					callback_error: callback_error,
+					callback_finish: callback_finish
+				});
+			})();
+		</script>
 </body>
 
 </html>
