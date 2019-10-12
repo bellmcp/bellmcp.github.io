@@ -330,17 +330,16 @@ body {
   color: #ddd
 }
 
-.darkmode--activated th, td {
+.darkmode--activated th {
+    border-bottom: 1px solid #555
+}
+
+.darkmode--activated td {
     border-bottom: 1px solid #555
 }
 
 .darkmode--activated hr {
     background: #555;
-}
-
-.darkmode--activated table {
-    border-top: 1px solid #555;
-    border-bottom: 1px solid #555
 }
 
 h1, h2, h3, h4, h5, h6 {
