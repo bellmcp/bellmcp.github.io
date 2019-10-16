@@ -6,7 +6,7 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
 </p>
 
 # Go to Site
-* [bellmcp.github.io](http://bellmcp.github.io)
+* [bellmcp.work](http://bellmcp.work)
 
 # What I Learned
 
