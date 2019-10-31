@@ -1,4 +1,4 @@
-html, body {
+html, body, section {
     max-width: 100%;
     overflow-x: hidden;
 }
