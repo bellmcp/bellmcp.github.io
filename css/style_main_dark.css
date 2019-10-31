@@ -362,6 +362,26 @@ body {
     position: absolute;
 }
 
+.followMeBar {
+  background: #ffffff;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.followMeBar.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.followMeBar.fixed.absolute {
+  position: absolute;
+}
+
 .darkmode--activated h1{
   color: #fff
 }
