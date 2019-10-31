@@ -363,19 +363,23 @@ body {
 }
 
 .followMeBar {
-  background: #ffffff;
-  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 0px;
   position: relative;
   z-index: 1;
   color: #fff;
 }
 
+.darkmode--activated followMeBar{
+  background: rgba(0, 0, 0, 0.9)
+}
+
 .followMeBar.fixed {
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
   box-sizing: border-box;
-  z-index: 0;
+  z-index: 999;
 }
 
 .followMeBar.fixed.absolute {
