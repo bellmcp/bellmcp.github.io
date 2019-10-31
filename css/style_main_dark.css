@@ -314,6 +314,11 @@ body {
     font-weight: 400
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .darkmode--activated h1{
   color: #fff
 }
