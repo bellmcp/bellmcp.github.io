@@ -379,20 +379,24 @@ body {
     color: #fff;
 }
 
+.darkmode--activated .followMeBar {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px 0px 0px 0px;
+    position: relative;
+    z-index: 1;
+    color: #000000;
+}
+
 .followMeBar.fixed {
     position: fixed;
     top: 0px;
     width: 100%;
     box-sizing: border-box;
-    z-index: 999;
+    z-index: 2;
 }
 
 .followMeBar.fixed.absolute {
     position: fixed;
-}
-
-.darkmode--activated followMeBar, .darkmode--activated followMeBar.fixed, .darkmode--activated followMeBar.fixed.absolute {
-    background: rgba(0, 0, 0, 0.9);
 }
 
 .darkmode--activated h1{
