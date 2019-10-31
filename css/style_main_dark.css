@@ -388,7 +388,7 @@ body {
 }
 
 .followMeBar.fixed.absolute {
-    position: absolute;
+    position: fixed;
 }
 
 .darkmode--activated followMeBar, .darkmode--activated followMeBar.fixed, .darkmode--activated followMeBar.fixed.absolute {
