@@ -145,7 +145,7 @@
             </p>
 
             <br>
-            
+
             <h2>Experience</h2>
             <p><i> &nbsp;&nbsp;&nbsp;2019 - Present</i>
                 <br /> &nbsp;&nbsp;&nbsp;
@@ -157,7 +157,7 @@
             </p>
 
             <br>
-            
+
             <h2>Volunteers</h2>
             <p><i> &nbsp;&nbsp;&nbsp;2019 - Present</i>
                 <br /> &nbsp;&nbsp;&nbsp;
@@ -206,7 +206,7 @@
                             <br />
                         </td>
                     </tr>
-                    
+
                     <tr>
                         <td>
                             <h4 class="level-title">UI/UX Design</h4>
@@ -214,7 +214,7 @@
                         <td>Adobe XD, InVision, Sketch
                         </td>
                     </tr>
-                    
+
                     <tr>
                         <td>
                             <h4 class="level-title">Web Development</h4>
@@ -222,7 +222,7 @@
                         <td> HTML, CSS, JavaScript, Wordpress, Elementor
                         </td>
                     </tr>
-                    
+
                     <tr>
                         <td>
                             <h4 class="level-title">Programming</h4>
@@ -266,7 +266,7 @@
                     </tr>
                 </table>
             </div>
-            
+
             <br>
 
             <h2>Honors & Awards</h2>
@@ -285,7 +285,7 @@
                             <br /><a href="#">See Credential</a>
                         </td>
                     </tr>
-                   
+
                     <tr>
                         <td>
                             <h4 class="level-title">Contestant</h4>
@@ -296,13 +296,13 @@
                             <br />
                         </td>
                     </tr>
-                    
+
                 </table>
             </div>
-            
+
             <a class="anchor" id="works"></a>
             <br>
-            
+
             <h1>Works</h1>
             <br>
             <h2>Latest Works</h2>
@@ -454,7 +454,7 @@
             <br>
 
             <h2>Projects</h2>
-            
+
             <a class="anchor" id="tictactoe"></a>
             <table>
                 <tr>
@@ -475,7 +475,7 @@
             </table>
 
             <br>
-            
+
             <a class="anchor" id="calculator"></a>
             <table>
                 <tr>
@@ -496,7 +496,7 @@
             </table>
 
             <br>
-            
+
             <a class="anchor" id="airlines"></a>
             <table>
                 <tr>
@@ -517,7 +517,7 @@
             </table>
 
             <br>
-            
+
             <a class="anchor" id="knightstour"></a>
             <table>
                 <tr>
@@ -955,6 +955,76 @@
                         callback_finish: callback_finish
                     });
                 })();
+            </script>
+
+            <script>
+                var stickyHeaders = (function() {
+
+                    var $window = $(window),
+                        $stickies;
+
+                    var load = function(stickies) {
+
+                        if (typeof stickies === "object" && stickies instanceof jQuery && stickies.length > 0) {
+
+                            $stickies = stickies.each(function() {
+
+                                var $thisSticky = $(this).wrap('<div class="followWrap" />');
+
+                                $thisSticky
+                                    .data('originalPosition', $thisSticky.offset().top)
+                                    .data('originalHeight', $thisSticky.outerHeight())
+                                    .parent()
+                                    .height($thisSticky.outerHeight());
+                            });
+
+                            $window.off("scroll.stickies").on("scroll.stickies", function() {
+                                _whenScrolling();
+                            });
+                        }
+                    };
+
+                    var _whenScrolling = function() {
+
+                        $stickies.each(function(i) {
+
+                            var $thisSticky = $(this),
+                                $stickyPosition = $thisSticky.data('originalPosition');
+
+                            if ($stickyPosition <= $window.scrollTop()) {
+
+                                var $nextSticky = $stickies.eq(i + 1),
+                                    $nextStickyPosition = $nextSticky.data('originalPosition') - $thisSticky.data('originalHeight');
+
+                                $thisSticky.addClass("fixed");
+
+                                if ($nextSticky.length > 0 && $thisSticky.offset().top >= $nextStickyPosition) {
+
+                                    $thisSticky.addClass("absolute").css("top", $nextStickyPosition);
+                                }
+
+                            } else {
+
+                                var $prevSticky = $stickies.eq(i - 1);
+
+                                $thisSticky.removeClass("fixed");
+
+                                if ($prevSticky.length > 0 && $window.scrollTop() <= $thisSticky.data('originalPosition') - $thisSticky.data('originalHeight')) {
+
+                                    $prevSticky.removeClass("absolute").removeAttr("style");
+                                }
+                            }
+                        });
+                    };
+
+                    return {
+                        load: load
+                    };
+                })();
+
+                $(function() {
+                    stickyHeaders.load($(".followMeBar"));
+                });
             </script>
 
 </body>
