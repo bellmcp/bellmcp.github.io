@@ -685,7 +685,7 @@ footer {
     }
 
     header li, header ul li + li + li {
-        width: 210px;}
+        width: 100%;}
 }
 
 @media print {
