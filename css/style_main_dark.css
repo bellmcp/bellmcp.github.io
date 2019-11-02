@@ -550,6 +550,11 @@ header li {
     height: 40px
 }
 
+.darkmode--activated header ul {
+    background: #111111;
+    border: 1px solid #555555;
+}
+
 header li:first-child a {
     border-radius: 5px 0 0 5px
 }
