@@ -545,7 +545,6 @@ header ul {
 
 header li {
     width: 146px;
-    float: left;
     /* border-right: 1px solid #e0e0e0; */
     height: 40px
 }
@@ -651,7 +650,6 @@ footer {
     }
 
     header ul {
-        position: absolute;
         right: 50px;
         top: 52px
     }
