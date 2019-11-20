@@ -15,12 +15,13 @@ A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a 
 * Responsive web design.
 
 # Latest Release
+* 2 Nov 2019 - Introducing Sticky Header, easy to read and more categorized profile section.
 * 12 Oct 2019 - Introducing Dark Mode, automatically match the user's OS theme. (require browser supports ```prefers-color-scheme```)
 * 10 Oct 2019 - Introducing LazyLoad.js to enable faster page load with fade-in animation.
 
 # Future Ideas Include
 
-* Add an ability to enable dark mode and more accesibility features.
+* Add LazyLoad.js loading indicator.
 * Implement an image slideshow and click-to-zoom feature.
 * Implement a user's right-click preventation.
 
