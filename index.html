@@ -38,9 +38,14 @@
         }
         
         img.initial,
-        img.loaded,
+        img.loaded {
+            opacity: 1;
+        }
+        
         img.error {
             opacity: 1;
+            background-image: url("https://bellmcp.work/img/lazy_troubleshoot.png");
+            background-repeat: no-repeat;
         }
         
         img:not([src]) {
