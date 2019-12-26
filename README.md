@@ -2,7 +2,7 @@
 A web portfolio of Wutipat Khamnuansin (bellmcp), A computer science student, a freelance graphic designer, a dreamer and many more.
 
 <p align="center">
-  <img src="https://bellmcp.work/meta_preview.jpg" />
+  <img src="https://bellmcp.work/screenshot_271219.png" />
 </p>
 
 # Go to Site
