@@ -35,4 +35,4 @@ Licensed under [The MIT License](https://github.com/bellmcp/bellmcp.github.io/bl
 
 Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-> Copyright © 2019 Wutipat Khamnuansin, All rights reserved.
+> Copyright © 2020 Wutipat Khamnuansin, All rights reserved.
