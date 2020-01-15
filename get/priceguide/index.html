@@ -47,6 +47,28 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#ffffff">
     <!-- End of FavIcons -->
+    <style>
+        .button {
+            font-size: 14px;
+            color: #222;
+            font-weight: 700;
+            height: 40px;
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        input[type=text] {
+            font-size: 14px;
+            color: #222;
+            font-weight: 700;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 
 <body>
@@ -107,8 +129,7 @@
                             <center></center>
 
                             <p style="font-size:13px">
-                                The following request is contained personal information,
-                                <br>please submit your contact email to proceed.
+                                The following request is contained personal information, please submit your contact e-mail to proceed.
 
                             </p>
                             <form action="https://formspree.io/mzbboyzl" method="POST">
@@ -125,7 +146,7 @@
 
                                 <br>
                                 <br>
-                                <button type="submit">&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;</button>
+                                <button class="button">&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;</button>
                             </form>
                             <p></p>
                         </td>
@@ -139,82 +160,10 @@
             <script src="https://bellmcp.work/css/js/bootstrap.js"></script>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script type="text/javascript">
-                var scrolltotop = {
-                    setting: {
-                        startline: 100,
-                        scrollto: 0,
-                        scrollduration: 1e3,
-                        fadeduration: [500, 100]
-                    },
-                    controlHTML: '<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow36.png" />',
-                    controlattrs: {
-                        offsetx: 20,
-                        offsety: 20
-                    },
-                    anchorkeyword: "#top",
-                    state: {
-                        isvisible: !1,
-                        shouldvisible: !1
-                    },
-                    scrollup: function() {
-                        this.cssfixedsupport || this.$control.css({
-                            opacity: 0
-                        });
-                        var t = isNaN(this.setting.scrollto) ? this.setting.scrollto : parseInt(this.setting.scrollto);
-                        t = "string" == typeof t && 1 == jQuery("#" + t).length ? jQuery("#" + t).offset().top : 0, this.$body.animate({
-                            scrollTop: t
-                        }, this.setting.scrollduration)
-                    },
-                    keepfixed: function() {
-                        var t = jQuery(window),
-                            o = t.scrollLeft() + t.width() - this.$control.width() - this.controlattrs.offsetx,
-                            s = t.scrollTop() + t.height() - this.$control.height() - this.controlattrs.offsety;
-                        this.$control.css({
-                            left: o + "px",
-                            top: s + "px"
-                        })
-                    },
-                    togglecontrol: function() {
-                        var t = jQuery(window).scrollTop();
-                        this.cssfixedsupport || this.keepfixed(), this.state.shouldvisible = t >= this.setting.startline ? !0 : !1, this.state.shouldvisible && !this.state.isvisible ? (this.$control.stop().animate({
-                            opacity: 1
-                        }, this.setting.fadeduration[0]), this.state.isvisible = !0) : 0 == this.state.shouldvisible && this.state.isvisible && (this.$control.stop().animate({
-                            opacity: 0
-                        }, this.setting.fadeduration[1]), this.state.isvisible = !1)
-                    },
-                    init: function() {
-                        jQuery(document).ready(function(t) {
-                            var o = scrolltotop,
-                                s = document.all;
-                            o.cssfixedsupport = !s || s && "CSS1Compat" == document.compatMode && window.XMLHttpRequest, o.$body = t(window.opera ? "CSS1Compat" == document.compatMode ? "html" : "body" : "html,body"), o.$control = t(
-                                '<div id="topcontrol">' + o.controlHTML + "</div>").css({
-                                position: o.cssfixedsupport ? "fixed" : "absolute",
-                                bottom: o.controlattrs.offsety,
-                                right: o.controlattrs.offsetx,
-                                opacity: 0,
-                                cursor: "pointer"
-                            }).attr({
-                                title: "Scroll to Top"
-                            }).click(function() {
-                                return o.scrollup(), !1
-                            }).appendTo("body"), document.all && !window.XMLHttpRequest && "" != o.$control.text() && o.$control.css({
-                                width: o.$control.width()
-                            }), o.togglecontrol(), t('a[href="' + o.anchorkeyword + '"]').click(function() {
-                                return o.scrollup(), !1
-                            }), t(window).bind("scroll resize", function(t) {
-                                o.togglecontrol()
-                            })
-                        })
-                    }
-                };
-                scrolltotop.init();
-            </script>
-
+            <p style="font-size:9px">
+                Copyright © 2020 Wutipat Khamnuansin, All rights reserved.
+            </p>
         </section>
-    </div>
-    <div id="topcontrol" title="Scroll to Top" style="position: fixed; bottom: 20px; right: 20px; opacity: 0; cursor: pointer;"><img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow36.png"></div>
-    <div id="topcontrol" title="Scroll to Top" style="position: fixed; bottom: 20px; right: 20px; opacity: 0; cursor: pointer;"><img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow36.png"></div>
 </body>
 
 </html>
