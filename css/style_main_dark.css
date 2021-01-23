@@ -1,768 +1,843 @@
-html, body, section {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body,
+section {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .main-navigation {
-    position: fixed !important;
+  position: fixed !important;
 }
 
 @font-face {
-    font-family: 'Noto Sans';
-    font-weight: 400;
-    font-style: normal;
-    src: url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.eot");
-    src: url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.eot?#iefix") format("embedded-opentype"), local("Noto Sans"), local("Noto-Sans-regular"), url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.woff2") format("woff2"), url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.woff") format("woff"), url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.ttf") format("truetype"), url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.svg#NotoSans") format("svg")
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.eot");
+  src: url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.eot?#iefix")
+      format("embedded-opentype"),
+    local("Noto Sans"), local("Noto-Sans-regular"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.woff2")
+      format("woff2"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.woff")
+      format("woff"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.ttf")
+      format("truetype"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.svg#NotoSans")
+      format("svg");
 }
 
 @font-face {
-    font-family: 'Noto Sans';
-    font-weight: 700;
-    font-style: normal;
-    src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.eot");
-    src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix") format("embedded-opentype"), local("Noto Sans Bold"), local("Noto-Sans-700"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.woff2") format("woff2"), url("fonts/Noto-Sans-700/Noto-Sans-700.woff") format("woff"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.ttf") format("truetype"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans") format("svg")
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.eot");
+  src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix")
+      format("embedded-opentype"),
+    local("Noto Sans Bold"), local("Noto-Sans-700"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.woff2")
+      format("woff2"),
+    url("fonts/Noto-Sans-700/Noto-Sans-700.woff") format("woff"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.ttf")
+      format("truetype"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans")
+      format("svg");
 }
 
 @font-face {
-    font-family: 'Noto Sans';
-    font-weight: 400;
-    font-style: italic;
-    src: url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.eot");
-    src: url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.eot?#iefix") format("embedded-opentype"), local("Noto Sans Italic"), local("Noto-Sans-italic"), url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.woff2") format("woff2"), url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.woff") format("woff"), url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.ttf") format("truetype"), url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.svg#NotoSans") format("svg")
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.eot");
+  src: url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.eot?#iefix")
+      format("embedded-opentype"),
+    local("Noto Sans Italic"), local("Noto-Sans-italic"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.woff2")
+      format("woff2"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.woff")
+      format("woff"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.ttf")
+      format("truetype"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-italic/Noto-Sans-italic.svg#NotoSans")
+      format("svg");
 }
 
 @font-face {
-    font-family: 'Noto Sans';
-    font-weight: 700;
-    font-style: italic;
-    src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot");
-    src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix") format("embedded-opentype"), local("Noto Sans Bold Italic"), local("Noto-Sans-700italic"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2") format("woff2"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff") format("woff"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf") format("truetype"), url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans") format("svg")
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot");
+  src: url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix")
+      format("embedded-opentype"),
+    local("Noto Sans Bold Italic"), local("Noto-Sans-700italic"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2")
+      format("woff2"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff")
+      format("woff"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf")
+      format("truetype"),
+    url("https://bellmcp.work/assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans")
+      format("svg");
 }
 
 .highlight table td {
-    padding: 5px
+  padding: 5px;
 }
 
 .highlight table pre {
-    margin: 0
+  margin: 0;
 }
 
 .highlight .cm {
-    color: #999988;
-    font-style: italic
+  color: #999988;
+  font-style: italic;
 }
 
 .highlight .cp {
-    color: #999999;
-    font-weight: bold
+  color: #999999;
+  font-weight: bold;
 }
 
 .highlight .c1 {
-    color: #999988;
-    font-style: italic
+  color: #999988;
+  font-style: italic;
 }
 
 .highlight .cs {
-    color: #999999;
-    font-weight: bold;
-    font-style: italic
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.highlight .c, .highlight .cd {
-    color: #999988;
-    font-style: italic
+.highlight .c,
+.highlight .cd {
+  color: #999988;
+  font-style: italic;
 }
 
 .highlight .err {
-    color: #a61717;
-    background-color: #e3d2d2
+  color: #a61717;
+  background-color: #e3d2d2;
 }
 
 .highlight .gd {
-    color: #000000;
-    background-color: #ffdddd
+  color: #000000;
+  background-color: #ffdddd;
 }
 
 .highlight .ge {
-    color: #000000;
-    font-style: italic
+  color: #000000;
+  font-style: italic;
 }
 
 .highlight .gr {
-    color: #aa0000
+  color: #aa0000;
 }
 
 .highlight .gh {
-    color: #999999
+  color: #999999;
 }
 
 .highlight .gi {
-    color: #000000;
-    background-color: #ddffdd
+  color: #000000;
+  background-color: #ddffdd;
 }
 
 .highlight .go {
-    color: #888888
+  color: #888888;
 }
 
 .highlight .gp {
-    color: #555555
+  color: #555555;
 }
 
 .highlight .gs {
-    font-weight: bold
+  font-weight: bold;
 }
 
 .highlight .gu {
-    color: #aaaaaa
+  color: #aaaaaa;
 }
 
 .highlight .gt {
-    color: #aa0000
+  color: #aa0000;
 }
 
 .highlight .kc {
-    color: #000000;
-    font-weight: bold
+  color: #000000;
+  font-weight: bold;
 }
 
 .highlight .kd {
-    color: #000000;
-    font-weight: bold
+  color: #000000;
+  font-weight: bold;
 }
 
 .highlight .kn {
-    color: #000000;
-    font-weight: bold
+  color: #000000;
+  font-weight: bold;
 }
 
 .highlight .kp {
-    color: #000000;
-    font-weight: bold
+  color: #000000;
+  font-weight: bold;
 }
 
 .highlight .kr {
-    color: #000000;
-    font-weight: bold
+  color: #000000;
+  font-weight: bold;
 }
 
 .highlight .kt {
-    color: #445588;
-    font-weight: bold
+  color: #445588;
+  font-weight: bold;
 }
 
-.highlight .k, .highlight .kv {
-    color: #000000;
-    font-weight: bold
+.highlight .k,
+.highlight .kv {
+  color: #000000;
+  font-weight: bold;
 }
 
 .highlight .mf {
-    color: #009999
+  color: #009999;
 }
 
 .highlight .mh {
-    color: #009999
+  color: #009999;
 }
 
 .highlight .il {
-    color: #009999
+  color: #009999;
 }
 
 .highlight .mi {
-    color: #009999
+  color: #009999;
 }
 
 .highlight .mo {
-    color: #009999
+  color: #009999;
 }
 
-.highlight .m, .highlight .mb, .highlight .mx {
-    color: #009999
+.highlight .m,
+.highlight .mb,
+.highlight .mx {
+  color: #009999;
 }
 
 .highlight .sb {
-    color: #d14
+  color: #d14;
 }
 
 .highlight .sc {
-    color: #d14
+  color: #d14;
 }
 
 .highlight .sd {
-    color: #d14
+  color: #d14;
 }
 
 .highlight .s2 {
-    color: #d14
+  color: #d14;
 }
 
 .highlight .se {
-    color: #d14
+  color: #d14;
 }
 
 .highlight .sh {
-    color: #d14
+  color: #d14;
 }
 
 .highlight .si {
-    color: #d14
+  color: #d14;
 }
 
 .highlight .sx {
-    color: #d14
+  color: #d14;
 }
 
 .highlight .sr {
-    color: #009926
+  color: #009926;
 }
 
 .highlight .s1 {
-    color: #d14
+  color: #d14;
 }
 
 .highlight .ss {
-    color: #990073
+  color: #990073;
 }
 
 .highlight .s {
-    color: #d14
+  color: #d14;
 }
 
 .highlight .na {
-    color: #008080
+  color: #008080;
 }
 
 .highlight .bp {
-    color: #999999
+  color: #999999;
 }
 
 .highlight .nb {
-    color: #0086B3
+  color: #0086b3;
 }
 
 .highlight .nc {
-    color: #445588;
-    font-weight: bold
+  color: #445588;
+  font-weight: bold;
 }
 
 .highlight .no {
-    color: #008080
+  color: #008080;
 }
 
 .highlight .nd {
-    color: #3c5d5d;
-    font-weight: bold
+  color: #3c5d5d;
+  font-weight: bold;
 }
 
 .highlight .ni {
-    color: #800080
+  color: #800080;
 }
 
 .highlight .ne {
-    color: #990000;
-    font-weight: bold
+  color: #990000;
+  font-weight: bold;
 }
 
 .highlight .nf {
-    color: #990000;
-    font-weight: bold
+  color: #990000;
+  font-weight: bold;
 }
 
 .highlight .nl {
-    color: #990000;
-    font-weight: bold
+  color: #990000;
+  font-weight: bold;
 }
 
 .highlight .nn {
-    color: #555555
+  color: #555555;
 }
 
 .highlight .nt {
-    color: #000080
+  color: #000080;
 }
 
 .highlight .vc {
-    color: #008080
+  color: #008080;
 }
 
 .highlight .vg {
-    color: #008080
+  color: #008080;
 }
 
 .highlight .vi {
-    color: #008080
+  color: #008080;
 }
 
 .highlight .nv {
-    color: #008080
+  color: #008080;
 }
 
 .highlight .ow {
-    color: #000000;
-    font-weight: bold
+  color: #000000;
+  font-weight: bold;
 }
 
 .highlight .o {
-    color: #000000;
-    font-weight: bold
+  color: #000000;
+  font-weight: bold;
 }
 
 .highlight .w {
-    color: #bbbbbb
+  color: #bbbbbb;
 }
 
 .highlight {
-    background-color: #f8f8f8
+  background-color: #f8f8f8;
 }
 
 body {
-    background-color: #fff;
-    padding: 50px;
-    font: 14px / 1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #727272;
-    font-weight: 400
+  background-color: #fff;
+  padding: 50px;
+  font: 14px / 1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #727272;
+  font-weight: 400;
 }
 
 .main-image-wrapper {
-    background-color: #eeeeee;
-    width: 100%;
-    height: 0;
-    padding-bottom: 62.5%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 0;
+  padding-bottom: 62.5%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .darkmode--activated .main-image-wrapper {
-    background-color: #111111;
-    width: 100%;
-    height: 0;
-    padding-bottom: 62.5%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #111111;
+  width: 100%;
+  height: 0;
+  padding-bottom: 62.5%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .main-special-image-wrapper {
-    background-color: #eeeeee;
-    width: 100%;
-    height: 0;
-    padding-bottom: 66.67%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 0;
+  padding-bottom: 66.67%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .darkmode--activated .main-special-image-wrapper {
-    background-color: #111111;
-    width: 100%;
-    height: 0;
-    padding-bottom: 66.67%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #111111;
+  width: 100%;
+  height: 0;
+  padding-bottom: 66.67%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .vdo-image-wrapper {
-    background-color: #eeeeee;
-    width: 100%;
-    height: 0;
-    padding-bottom: 51.77%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 0;
+  padding-bottom: 51.77%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .darkmode--activated .vdo-image-wrapper {
-    background-color: #111111;
-    width: 100%;
-    height: 0;
-    padding-bottom: 51.77%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #111111;
+  width: 100%;
+  height: 0;
+  padding-bottom: 51.77%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .poster1-image-wrapper {
-    background-color: #eeeeee;
-    width: 100%;
-    height: 0;
-    padding-bottom: 140.25%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 0;
+  padding-bottom: 140.25%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .darkmode--activated .poster1-image-wrapper {
-    background-color: #111111;
-    width: 100%;
-    height: 0;
-    padding-bottom: 140.25%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #111111;
+  width: 100%;
+  height: 0;
+  padding-bottom: 140.25%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .poster2-image-wrapper {
-    background-color: #eeeeee;
-    width: 100%;
-    height: 0;
-    padding-bottom: 150.25%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150.25%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .darkmode--activated .poster2-image-wrapper {
-    background-color: #111111;
-    width: 100%;
-    height: 0;
-    padding-bottom: 150.25%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #111111;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150.25%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .poster3-image-wrapper {
-    background-color: #eeeeee;
-    width: 100%;
-    height: 0;
-    padding-bottom: 150.9%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150.9%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .darkmode--activated .poster3-image-wrapper {
-    background-color: #111111;
-    width: 100%;
-    height: 0;
-    padding-bottom: 150.9%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #111111;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150.9%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .logo-image-wrapper {
-    background-color: #eeeeee;
-    border-radius: 500px;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #eeeeee;
+  border-radius: 500px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .darkmode--activated .logo-image-wrapper {
-    background-color: #111111;
-    border-radius: 500px;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%; /* You define this doing image height / width * 100% */
-    position: relative;
+  background-color: #111111;
+  border-radius: 500px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* You define this doing image height / width * 100% */
+  position: relative;
 }
 
 .image {
-    width: 100%;
-    height: auto;
-    position: absolute;
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 
 .followMeBar {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px 0px 0px 0px;
-    position: relative;
-    z-index: 1;
-    color: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: saturate(180%) blur(8px);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  padding: 30px 0px 0px 0px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
 }
 
 .darkmode--activated .followMeBar {
-    background: rgba(0, 0, 0, 0.85);
-    padding: 30px 0px 0px 0px;
-    position: relative;
-    z-index: 1;
-    color: #000000;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: saturate(180%) blur(8px);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  padding: 30px 0px 0px 0px;
+  position: relative;
+  z-index: 1;
+  color: #000000;
 }
 
 .followMeBar.fixed {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 2;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
 }
 
 .followMeBar.fixed.absolute {
-    position: fixed;
+  position: fixed;
 }
 
-.darkmode--activated h1{
-  color: #fff
+.darkmode--activated h1 {
+  color: #fff;
 }
 
-.darkmode--activated h2{
-  color: #fff
+.darkmode--activated h2 {
+  color: #fff;
 }
 
-.darkmode--activated h4{
-  color: #ddd
+.darkmode--activated h4 {
+  color: #ddd;
 }
 
-.darkmode--activated strong{
-  color: #ddd
+.darkmode--activated strong {
+  color: #ddd;
 }
 
 .darkmode--activated th {
-    border-bottom: 1px solid #555
+  border-bottom: 1px solid #555;
 }
 
 .darkmode--activated .table td {
-    border-bottom: 1px solid #555;
-    border-top: 1px solid #555
+  border-bottom: 1px solid #555;
+  border-top: 1px solid #555;
 }
 
 .darkmode--activated td {
-    border-bottom: 1px solid #555
+  border-bottom: 1px solid #555;
 }
 
 .darkmode--activated hr {
-    background: #555;
+  background: #555;
 }
 
 .darkmode-toggle {
   z-index: 500;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #222;
-    margin: 0 0 20px
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  margin: 0 0 20px;
 }
 
-p, ul, ol, table, pre, dl {
-    margin: 0 0 20px
+p,
+ul,
+ol,
+table,
+pre,
+dl {
+  margin: 0 0 20px;
 }
 
-h1, h2, h3 {
-    line-height: 1.1
+h1,
+h2,
+h3 {
+  line-height: 1.1;
 }
 
 h1 {
-    font-size: 28px
+  font-size: 28px;
 }
 
-h3, h4, h5, h6 {
-    color: #494949
+h3,
+h4,
+h5,
+h6 {
+  color: #494949;
 }
 
 a {
-    color: #267CB9;
-    text-decoration: none;
+  color: #267cb9;
+  text-decoration: none;
 }
 
-a:hover, a:focus {
-    color: #267CB9; 
-    text-decoration: underline
+a:hover,
+a:focus {
+  color: #267cb9;
+  text-decoration: underline;
 }
 
 a small {
-    font-size: 11px;
-    color: #777;
-    margin-top: -0.3em;
-    display: block
+  font-size: 11px;
+  color: #777;
+  margin-top: -0.3em;
+  display: block;
 }
 
 a:hover small {
-    color: #777
+  color: #777;
 }
 
 .wrapper {
-    width: 860px;
-    margin: 0 auto
+  width: 860px;
+  margin: 0 auto;
 }
 
 blockquote {
-    border-left: 1px solid #e5e5e5;
-    margin: 0;
-    padding: 0 0 0 20px;
-    font-style: italic
+  border-left: 1px solid #e5e5e5;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
 }
 
-code, pre {
-    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-    color: #333
+code,
+pre {
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal,
+    Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color: #333;
 }
 
 pre {
-    padding: 8px 15px;
-    background: #f8f8f8;
-    border-radius: 5px;
-    border: 1px solid #e5e5e5;
-    overflow-x: auto
+  padding: 8px 15px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  overflow-x: auto;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse
+  width: 100%;
+  border-collapse: collapse;
 }
 
-th, td {
-    text-align: left;
-    padding: 5px 10px;
-    border-bottom: 1px solid #e5e5e5
+th,
+td {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 dt {
-    color: #444;
-    font-weight: 700
+  color: #444;
+  font-weight: 700;
 }
 
 th {
-    color: #444
+  color: #444;
 }
 
 img {
-    max-width: 100%
+  max-width: 100%;
 }
 
 header {
-    width: 270px;
-    float: left;
-    position: fixed;
-    -webkit-font-smoothing: subpixel-antialiased
+  width: 270px;
+  float: left;
+  position: fixed;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 header ul {
-    list-style: none;
-    height: 40px;
-    padding: 5px;
-    background: #f4f4f4;
-    border-radius: 5px;
-    border: 1px solid #e0e0e0;
-    /* width: 270px */}
+  list-style: none;
+  height: 40px;
+  padding: 5px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  /* width: 270px */
+}
 
 header li {
-    width: 146px;
-    /* border-right: 1px solid #e0e0e0; */
-    height: 40px
+  width: 146px;
+  /* border-right: 1px solid #e0e0e0; */
+  height: 40px;
 }
 
 .darkmode--activated header ul {
-    background: #111111;
-    border: 1px solid #555555;
+  background: #111111;
+  border: 1px solid #555555;
 }
 
 header li:first-child a {
-    border-radius: 5px 0 0 5px
+  border-radius: 5px 0 0 5px;
 }
 
 header li:last-child a {
-    border-radius: 0 5px 5px 0
+  border-radius: 0 5px 5px 0;
 }
 
 header ul a {
-    line-height: 1;
-    font-size: 11px;
-    color: #676767;
-    display: block;
-    text-align: center;
-    padding-top: 6px;
-    height: 34px
+  line-height: 1;
+  font-size: 11px;
+  color: #676767;
+  display: block;
+  text-align: center;
+  padding-top: 6px;
+  height: 34px;
 }
 
-header ul a:hover, header ul a:focus {
-    color: #675C5C;
-    font-weight: bold
+header ul a:hover,
+header ul a:focus {
+  color: #675c5c;
+  font-weight: bold;
 }
 
 header ul a:active {
-    /* background-color: #f0f0f0 */
+  /* background-color: #f0f0f0 */
 }
 
 strong {
-    color: #222;
-    font-weight: 700
+  color: #222;
+  font-weight: 700;
 }
 
 header ul li + li + li {
-    border-right: none;
-    width: 89px
+  border-right: none;
+  width: 89px;
 }
 
 header ul a strong {
-    font-size: 14px;
-    display: block;
-    color: #222
+  font-size: 14px;
+  display: block;
+  color: #222;
 }
 
 section {
-    width: 500px;
-    float: right;
-    padding-bottom: 50px;
-    isolation: isolate
+  width: 500px;
+  float: right;
+  padding-bottom: 50px;
+  isolation: isolate;
 }
 
 small {
-    font-size: 11px
+  font-size: 11px;
 }
 
 hr {
-    border: 0;
-    background: #e5e5e5;
-    height: 1px;
-    margin: 0 0 20px
+  border: 0;
+  background: #e5e5e5;
+  height: 1px;
+  margin: 0 0 20px;
 }
 
 footer {
-    width: 270px;
-    float: left;
-    position: fixed;
-    bottom: 50px;
-    -webkit-font-smoothing: subpixel-antialiased
+  width: 270px;
+  float: left;
+  position: fixed;
+  bottom: 50px;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 @media print, screen and (max-width: 960px) {
-    div.wrapper {
-        width: auto;
-        margin: 0
-    }
+  div.wrapper {
+    width: auto;
+    margin: 0;
+  }
 
-    header, section, footer {
-        float: none;
-        position: static;
-        width: auto
-    }
+  header,
+  section,
+  footer {
+    float: none;
+    position: static;
+    width: auto;
+  }
 
-    header {
-        padding-right: 320px
-    }
+  header {
+    padding-right: 320px;
+  }
 
-    section {
-        border-width: 1px 0;
-        padding: 20px 0;
-        margin: 0 0 20px
-    }
+  section {
+    border-width: 1px 0;
+    padding: 20px 0;
+    margin: 0 0 20px;
+  }
 
-    header a small {
-        display: inline
-    }
+  header a small {
+    display: inline;
+  }
 
-    header ul {
-        right: 50px;
-        top: 52px
-    }
+  header ul {
+    right: 50px;
+    top: 52px;
+  }
 }
 
 @media print, screen and (max-width: 720px) {
-    body {
-        word-wrap: break-word
-    }
+  body {
+    word-wrap: break-word;
+  }
 
-    header {
-        padding: 0
-    }
+  header {
+    padding: 0;
+  }
 
-    header ul, header p.view {
-        position: static
-    }
+  header ul,
+  header p.view {
+    position: static;
+  }
 
-    pre, code {
-        word-wrap: normal
-    }
+  pre,
+  code {
+    word-wrap: normal;
+  }
 }
 
 @media print, screen and (max-width: 480px) {
-    body {
-        padding: 15px
-    }
+  body {
+    padding: 15px;
+  }
 
-    header ul {
-        width: 99%
-    }
+  header ul {
+    width: 99%;
+  }
 
-    header li, header ul li + li + li {
-        width: 100%;}
+  header li,
+  header ul li + li + li {
+    width: 100%;
+  }
 }
 
 @media print {
-    body {
-        padding: 0.4in;
-        font-size: 12pt;
-        color: #444
-    }
+  body {
+    padding: 0.4in;
+    font-size: 12pt;
+    color: #444;
+  }
 }
-
