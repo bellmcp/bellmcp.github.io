@@ -536,6 +536,14 @@ body {
   color: #ddd;
 }
 
+.caption {
+  color: #222222;
+}
+
+.darkmode--activated .caption {
+  color: #fff;
+}
+
 .darkmode--activated th {
   border-bottom: 1px solid #555;
 }
