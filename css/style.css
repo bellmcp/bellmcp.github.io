@@ -320,3 +320,22 @@
 .text-xs {
   font-size: 9px;
 }
+
+/* Stands in for the single-cell <table> elements these pages used as section
+   containers. Reproduces the box the browser gave them: the table's bottom
+   margin, and the cell's padding, separator rule and left alignment, which
+   came from `table { width: 100%; margin: 0 0 20px }` and
+   `th, td { text-align: left; padding: 5px 10px; border-bottom: 1px solid }`.
+   box-sizing is stated outright because a table's width: 100% is a border-box
+   width, with cell padding inside it. */
+.section-block {
+  box-sizing: border-box;
+  margin: 0 0 20px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.darkmode--activated .section-block {
+  border-bottom: 1px solid #555;
+}
