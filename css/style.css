@@ -291,3 +291,83 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+/* ---------------------------------------------------------------------------
+   Replacements for deprecated presentational markup.
+
+   <font size="3"> computes to 1rem, which overrides the 14px sidebar default,
+   so the size has to be restated explicitly rather than left to inherit.
+   --------------------------------------------------------------------------- */
+.nav-link-lg {
+  font-size: 1rem;
+}
+
+.nav-back {
+  font-size: 1rem;
+  color: #2C7DB7;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+/* Stand-ins for the two inline font-size declarations that were repeated
+   across the hand-written pages. */
+.text-sm {
+  font-size: 13px;
+}
+
+.text-xs {
+  font-size: 9px;
+}
+
+/* Stands in for the single-cell <table> elements these pages used as section
+   containers. Reproduces the box the browser gave them: the table's bottom
+   margin, and the cell's padding, separator rule and left alignment, which
+   came from `table { width: 100%; margin: 0 0 20px }` and
+   `th, td { text-align: left; padding: 5px 10px; border-bottom: 1px solid }`.
+   box-sizing is stated outright because a table's width: 100% is a border-box
+   width, with cell padding inside it. */
+.section-block {
+  box-sizing: border-box;
+  margin: 0 0 20px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.darkmode--activated .section-block {
+  border-bottom: 1px solid #555;
+}
+
+/* Replaces the multi-column layout tables on the homepage. Mirrors the box the
+   table produced: full width with a 20px bottom margin, and per-cell padding,
+   separator rule and alignment -- the same `table` / `th, td` rules that
+   .section-block stands in for. */
+.layout-grid {
+  display: grid;
+  margin: 0 0 20px;
+}
+
+.layout-grid > div {
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.darkmode--activated .layout-grid > div {
+  border-bottom-color: #555;
+}
+
+.grid-halves {
+  grid-template-columns: repeat(2, 50%);
+}
+
+.grid-thirds {
+  grid-template-columns: repeat(3, 33.33%);
+}
+
+.grid-fifths {
+  grid-template-columns: repeat(5, 20%);
+}

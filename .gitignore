@@ -1,1 +1,10 @@
+# macOS
 .DS_Store
+
+# Jekyll build output & local gem install
+_site/
+.jekyll-cache/
+.sass-cache/
+vendor/
+.bundle/
+Gemfile.lock
