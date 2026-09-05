@@ -339,3 +339,35 @@
 .darkmode--activated .section-block {
   border-bottom: 1px solid #555;
 }
+
+/* Replaces the multi-column layout tables on the homepage. Mirrors the box the
+   table produced: full width with a 20px bottom margin, and per-cell padding,
+   separator rule and alignment -- the same `table` / `th, td` rules that
+   .section-block stands in for. */
+.layout-grid {
+  display: grid;
+  margin: 0 0 20px;
+}
+
+.layout-grid > div {
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.darkmode--activated .layout-grid > div {
+  border-bottom-color: #555;
+}
+
+.grid-halves {
+  grid-template-columns: repeat(2, 50%);
+}
+
+.grid-thirds {
+  grid-template-columns: repeat(3, 33.33%);
+}
+
+.grid-fifths {
+  grid-template-columns: repeat(5, 20%);
+}
