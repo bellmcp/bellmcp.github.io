@@ -291,3 +291,32 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+/* ---------------------------------------------------------------------------
+   Replacements for deprecated presentational markup.
+
+   <font size="3"> computes to 1rem, which overrides the 14px sidebar default,
+   so the size has to be restated explicitly rather than left to inherit.
+   --------------------------------------------------------------------------- */
+.nav-link-lg {
+  font-size: 1rem;
+}
+
+.nav-back {
+  font-size: 1rem;
+  color: #2C7DB7;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+/* Stand-ins for the two inline font-size declarations that were repeated
+   across the hand-written pages. */
+.text-sm {
+  font-size: 13px;
+}
+
+.text-xs {
+  font-size: 9px;
+}
