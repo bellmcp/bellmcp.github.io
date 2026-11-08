@@ -28,6 +28,26 @@
     placeHeader()
   }
 
+  var stickyBars = document.querySelectorAll('section .followMeBar')
+  if (stickyBars.length) {
+    var pending = false
+    var markStuck = function () {
+      pending = false
+      stickyBars.forEach(function (bar) {
+        var top = parseFloat(getComputedStyle(bar).top) || 0
+        bar.classList.toggle('is-stuck', bar.getBoundingClientRect().top <= top + 0.5)
+      })
+    }
+    var queue = function () {
+      if (pending) return
+      pending = true
+      requestAnimationFrame(markStuck)
+    }
+    window.addEventListener('scroll', queue, { passive: true })
+    window.addEventListener('resize', queue)
+    markStuck()
+  }
+
   document.querySelectorAll('.back-to-top').forEach(function (link) {
     link.addEventListener('click', function (event) {
       event.preventDefault()
