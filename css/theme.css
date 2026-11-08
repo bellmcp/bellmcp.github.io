@@ -2179,3 +2179,7 @@ header .contact-list > :first-child {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
     opacity, box-shadow;
 }
+
+.contact-modal:focus {
+  outline: none;
+}

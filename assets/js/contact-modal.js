@@ -40,7 +40,8 @@
     topic.value = config.topic
     modal.showModal()
     document.documentElement.classList.add('modal-open')
-    form.elements.name.focus()
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) form.elements.name.focus()
+    else modal.focus()
   }
 
   document.querySelectorAll('[data-contact-modal]').forEach(function (link) {
