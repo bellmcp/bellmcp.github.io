@@ -15,8 +15,12 @@
   }
   if (header && window.ResizeObserver) {
     var sidebar = window.matchMedia('(min-width: 768px)')
-    var compactLevels = ['sidebar-compact', 'sidebar-compact-more']
-    var fitSidebar = function (gap) {
+    var compactLevels = ['sidebar-compact', 'sidebar-compact-more', 'sidebar-compact-most']
+    var fitSize = null
+    var fitSidebar = function (gap, force) {
+      var size = [window.innerWidth, window.innerHeight]
+      if (!force && fitSize && fitSize[0] === size[0] && Math.abs(fitSize[1] - size[1]) < 120) return
+      fitSize = size
       var root = document.documentElement
       root.classList.remove.apply(root.classList, compactLevels)
       if (!sidebar.matches) return
@@ -25,9 +29,9 @@
         root.classList.add(compactLevels[i])
       }
     }
-    var placeHeader = function () {
+    var placeHeader = function (force) {
       var gap = parseFloat(getComputedStyle(document.body).paddingTop) || 0
-      fitSidebar(gap)
+      fitSidebar(gap, force === true)
       var top = Math.min(gap, window.innerHeight - header.offsetHeight - 16)
       document.documentElement.style.setProperty('--header-top', top + 'px')
       if (firstBar) {
@@ -35,9 +39,18 @@
         document.documentElement.style.setProperty('--bar-top', barTop + 'px')
       }
     }
-    new ResizeObserver(placeHeader).observe(header)
-    window.addEventListener('resize', placeHeader)
-    placeHeader()
+    new ResizeObserver(function () {
+      placeHeader()
+    }).observe(header)
+    window.addEventListener('resize', function () {
+      placeHeader()
+    })
+    placeHeader(true)
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(function () {
+        placeHeader(true)
+      })
+    }
   }
 
   var stickyBars = document.querySelectorAll('section .followMeBar')
