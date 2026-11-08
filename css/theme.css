@@ -259,6 +259,14 @@ form .button:focus {
   box-shadow: 0 0 0 1px #2e2e2e !important;
 }
 
+img.img-circle[data-src^='./logo/'] {
+  box-shadow: 0 1px 2px rgba(19, 25, 34, 0.04), 0 2px 8px rgba(19, 25, 34, 0.06) !important;
+}
+
+.darkmode--activated img.img-circle[data-src^='./logo/'] {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
 .darkmode--activated hr {
   border-color: #2e2e2e;
 }
@@ -478,6 +486,21 @@ header img.img-circle + br + br {
   #about + .followMeBar {
     margin-top: -22px;
   }
+
+  .followMeBar,
+  .darkmode--activated .followMeBar {
+    top: var(--bar-top, 0px);
+  }
+
+  .followMeBar::before {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    height: max(0px, var(--bar-top, 0px));
+    background: inherit;
+    content: '';
+  }
 }
 
 .about-text {
@@ -654,7 +677,7 @@ header img.img-circle + br + br {
   height: 45px;
   border-radius: 50%;
   background: #fff;
-  box-shadow: 0 0 0 1px var(--line);
+  box-shadow: 0 1px 2px rgba(19, 25, 34, 0.04), 0 2px 8px rgba(19, 25, 34, 0.06);
   color: var(--ink-soft);
 }
 
@@ -670,7 +693,7 @@ header img.img-circle + br + br {
 
 .darkmode--activated .edu-badge {
   background: #222;
-  box-shadow: 0 0 0 1px #2e2e2e;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.3);
   color: #e6e8eb;
 }
 
@@ -733,10 +756,37 @@ header img.img-circle + br + br {
 }
 
 .app-icon {
+  position: relative;
+  display: block;
   width: 44px;
   height: 44px;
-  border-radius: 11px;
-  box-shadow: 0 0 0 1px var(--line);
+  border-radius: 23%;
+  box-shadow: 0 1px 2px rgba(19, 25, 34, 0.04), 0 2px 8px rgba(19, 25, 34, 0.06);
+  overflow: hidden;
+}
+
+.app-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.app-icon::after {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 45%);
+  box-shadow: inset 0 0 0 0.5px rgba(255, 255, 255, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+  pointer-events: none;
+  content: '';
+}
+
+.darkmode--activated .app-icon {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.darkmode--activated .app-icon::after {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 40%);
+  box-shadow: none;
 }
 
 .app-bullets {
@@ -881,10 +931,20 @@ header img.img-circle + br + br {
 
 .pr-item .logo-image-wrapper {
   margin-bottom: 8px;
-  transition: transform 0.2s ease;
+  box-shadow: 0 1px 2px rgba(19, 25, 34, 0.04), 0 2px 8px rgba(19, 25, 34, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pr-item .img-circle {
+  box-shadow: none !important;
+}
+
+.darkmode--activated .pr-item .logo-image-wrapper {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .pr-item:hover .logo-image-wrapper {
+  box-shadow: 0 1px 3px rgba(19, 25, 34, 0.06), 0 4px 12px rgba(19, 25, 34, 0.09);
   transform: translateY(-2px);
 }
 
@@ -1709,6 +1769,7 @@ textarea {
     flex-direction: column !important;
     align-items: flex-start;
     padding: 0 !important;
+    margin-top: 13px !important;
     border: 0;
     background: none;
     box-shadow: none;

@@ -390,8 +390,8 @@
                 ><span class="name-typer-caret" aria-hidden="true"></span></span
               >,</span
             >
-            a full-stack software engineer with 5+ years of experience building
-            web and mobile products at scale.
+            a full-stack software engineer with 5+ years building polished,
+            user-friendly web and mobile products at scale.
           </p>
           <div class="about-ctas">
             <a class="about-talk" href="#jobs">
@@ -1418,13 +1418,9 @@
         <h2>Featured Apps</h2>
         <div class="app-list">
           <div class="app-row">
-            <img
-              class="app-icon"
-              data-src="./img/App_OCSCLearningSpace.webp"
-              width="44"
-              height="44"
-              alt=""
-            />
+            <span class="app-icon"
+              ><img data-src="./img/App_OCSCLearningSpace.webp" width="44" height="44" alt=""
+            /></span>
             <div>
               <div class="app-title">
                 <strong>OCSC Learning Space</strong
@@ -1460,13 +1456,9 @@
             </div>
           </div>
           <div class="app-row">
-            <img
-              class="app-icon"
-              data-src="./img/App_LINEMAN.webp"
-              width="44"
-              height="44"
-              alt=""
-            />
+            <span class="app-icon"
+              ><img data-src="./img/App_LINEMAN.webp" width="44" height="44" alt=""
+            /></span>
             <div>
               <div class="app-title">
                 <strong>Dine-in Deals</strong
@@ -1501,13 +1493,9 @@
             </div>
           </div>
           <div class="app-row">
-            <img
-              class="app-icon"
-              data-src="./img/App_WMA.webp"
-              width="44"
-              height="44"
-              alt=""
-            />
+            <span class="app-icon"
+              ><img data-src="./img/App_WMA.webp" width="44" height="44" alt=""
+            /></span>
             <div>
               <div class="app-title">
                 <strong>Wongnai Merchant App</strong
@@ -3983,7 +3971,10 @@
                   if (target.is('a.anchor') && bar.length) {
                     var position = bar[0].style.position
                     bar[0].style.position = 'static'
-                    top = Math.ceil(bar.offset().top)
+                    top = Math.ceil(
+                      bar.offset().top -
+                        (parseFloat(getComputedStyle(bar[0]).top) || 0),
+                    )
                     bar[0].style.position = position
                   }
                   $('html, body').animate(

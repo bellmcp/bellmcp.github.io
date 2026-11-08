@@ -5,11 +5,23 @@
   })
 
   var header = document.querySelector('header')
+  var firstBar = document.querySelector('section .followMeBar')
+  var naturalTop = function (el) {
+    var position = el.style.position
+    el.style.position = 'static'
+    var top = el.getBoundingClientRect().top + window.scrollY
+    el.style.position = position
+    return top
+  }
   if (header && window.ResizeObserver) {
     var placeHeader = function () {
       var gap = parseFloat(getComputedStyle(document.body).paddingTop) || 0
-      var top = Math.min(gap, window.innerHeight - header.offsetHeight - gap)
+      var top = Math.min(gap, window.innerHeight - header.offsetHeight - 16)
       document.documentElement.style.setProperty('--header-top', top + 'px')
+      if (firstBar) {
+        var barTop = Math.max(0, naturalTop(firstBar))
+        document.documentElement.style.setProperty('--bar-top', barTop + 'px')
+      }
     }
     new ResizeObserver(placeHeader).observe(header)
     window.addEventListener('resize', placeHeader)
@@ -87,6 +99,7 @@
       lastBar.style.position = 'static'
       var top = lastBar.getBoundingClientRect().top + window.scrollY
       lastBar.style.position = position
+      top -= parseFloat(getComputedStyle(lastBar).top) || 0
       var gap = Math.max(window.innerHeight, document.documentElement.clientHeight) - (document.documentElement.scrollHeight - top)
       if (gap > 0) footer.style.marginTop = Math.ceil(gap) + parseFloat(getComputedStyle(footer).marginTop) + 'px'
     }
