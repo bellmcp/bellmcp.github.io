@@ -339,8 +339,19 @@ section {
   background: #fff;
 }
 
-.followMeBar h1 {
-  margin-bottom: 0;
+.followMeBar h1,
+.followMeBar h2 {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.darkmode--activated .followMeBar h1,
+.darkmode--activated .followMeBar h2 {
+  color: #fff;
 }
 
 .darkmode--activated .followMeBar {
