@@ -12,10 +12,17 @@
   var copyLabel = copy.firstChild.textContent
 
   var modes = {
+    talk: {
+      title: "Let's talk",
+      lead: "Say hi, ask a question, or tell me about your project. I'll reply within a few days.",
+      placeholder: "What's on your mind?",
+      topic: 'Just saying hi',
+    },
     contact: {
       title: "Let's talk",
       lead: "Tell me a bit about your project. I'll reply within a few days.",
       placeholder: 'What are you building, and when do you need it?',
+      topic: 'Consulting & mentoring',
     },
     pricing: {
       title: 'Request pricing guidelines',
@@ -30,8 +37,7 @@
     title.textContent = config.title
     lead.textContent = config.lead
     message.placeholder = config.placeholder
-    if (config.topic) topic.value = config.topic
-    else if (topic.value === modes.pricing.topic) topic.selectedIndex = 0
+    topic.value = config.topic
     modal.showModal()
     document.documentElement.classList.add('modal-open')
     form.elements.name.focus()
