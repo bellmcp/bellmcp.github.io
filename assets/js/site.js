@@ -42,8 +42,13 @@
     new ResizeObserver(function () {
       placeHeader()
     }).observe(header)
+    var settle = null
     window.addEventListener('resize', function () {
       placeHeader()
+      clearTimeout(settle)
+      settle = setTimeout(function () {
+        placeHeader(true)
+      }, 250)
     })
     placeHeader(true)
     if (document.fonts && document.fonts.ready) {

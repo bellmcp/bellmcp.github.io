@@ -2174,3 +2174,8 @@ header .contact-list > :first-child {
   background-repeat: no-repeat;
   background-size: 16px;
 }
+
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
+    opacity, box-shadow;
+}
