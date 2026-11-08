@@ -14,8 +14,20 @@
     return top
   }
   if (header && window.ResizeObserver) {
+    var sidebar = window.matchMedia('(min-width: 768px)')
+    var compactLevels = ['sidebar-compact', 'sidebar-compact-more']
+    var fitSidebar = function (gap) {
+      var root = document.documentElement
+      root.classList.remove.apply(root.classList, compactLevels)
+      if (!sidebar.matches) return
+      for (var i = 0; i < compactLevels.length; i++) {
+        if (header.offsetHeight + gap + 16 <= window.innerHeight) return
+        root.classList.add(compactLevels[i])
+      }
+    }
     var placeHeader = function () {
       var gap = parseFloat(getComputedStyle(document.body).paddingTop) || 0
+      fitSidebar(gap)
       var top = Math.min(gap, window.innerHeight - header.offsetHeight - 16)
       document.documentElement.style.setProperty('--header-top', top + 'px')
       if (firstBar) {

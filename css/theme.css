@@ -1574,13 +1574,15 @@ textarea {
 
   #navigation-menu.flex-column {
     position: fixed;
-    left: 50%;
+    right: 0;
     bottom: calc(16px + env(safe-area-inset-bottom));
+    left: 0;
     z-index: 600;
     flex-direction: row !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
     border-radius: 999px;
     box-shadow: 0 8px 28px rgba(19, 25, 34, 0.14), inset 0 0 0 1px rgba(19, 25, 34, 0.05);
-    transform: translateX(-50%);
   }
 
   .theme-toggle {
@@ -2042,5 +2044,19 @@ textarea {
   .contact-modal[open],
   .contact-modal[open]::backdrop {
     animation: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-compact header .contact-list,
+  .sidebar-compact-more header .profile-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 14px;
+  }
+
+  .sidebar-compact-more header img.img-circle {
+    width: 72px;
+    height: 72px;
   }
 }
