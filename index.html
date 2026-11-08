@@ -135,10 +135,10 @@
                       <span class="nav-link-lg">Works</span>
                     </a>
                     <a href="#jobs" class="nav-link">
-                      <span class="nav-link-lg">Hiring</span>
+                      <span class="nav-link-lg">Services</span>
                     </a>
                     <a href="#files" class="nav-link">
-                      <span class="nav-link-lg">Files</span>
+                      <span class="nav-link-lg">Talks</span>
                     </a>
                     <!-- <a
                       href="/graduation/"
@@ -320,7 +320,7 @@
                       <a
                         href="https://calendly.com/bellmcp/30min"
                         target="_blank"
-                        ><strong>Book a Meeting</strong></a
+                        ><svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" /></svg><strong>Book a call</strong></a
                       >
                     </li>
                   </div>
@@ -351,10 +351,16 @@
             a full-stack software engineer with 5+ years of experience building
             web and mobile products at scale.
           </p>
-          <a class="about-cta" href="#works">
-            See my works
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 6 5 5 5-5" /><path d="m7 13 5 5 5-5" /></svg>
-          </a>
+          <div class="about-ctas">
+            <a class="about-talk" href="#jobs">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
+              Let's talk
+            </a>
+            <a class="about-cta" href="#works">
+              See my works
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 6 5 5 5-5" /><path d="m7 13 5 5 5-5" /></svg>
+            </a>
+          </div>
           <!--
           <div class="about-item">
             <svg class="about-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -2886,195 +2892,217 @@
         <br />
         <a class="anchor" id="admin"></a>
         <h2>Public Relations</h2>
-        <div class="layout-grid grid-fifths">
-          <div>
-            <h4>
-              <a href="https://www.facebook.com/chulasccu" target="_blank"
-                ><div class="logo-image-wrapper">
-                  <img
-                    class="img-circle"
-                    data-src="./img/PR_SCCU-min.png"
-                    width="auto"
-                    height="auto"
-                    alt="SCCU"
-                  /></div
-              ></a>
-            </h4>
-          </div>
-          <div>
-            <h4>
-              <a href="https://www.facebook.com/cuband" target="_blank">
-                <div class="logo-image-wrapper">
-                  <img
-                    class="img-circle"
-                    data-src="./img/PR_CUBand-min.png"
-                    width="auto"
-                    height="auto"
-                    alt="CU Band"
-                  /></div
-              ></a>
-            </h4>
-          </div>
-          <div>
-            <h4>
-              <a href="https://www.facebook.com/ChulaCMCamp" target="_blank"
-                ><div class="logo-image-wrapper">
-                  <img
-                    class="img-circle"
-                    data-src="./img/PR_CUCM-min.png"
-                    width="auto"
-                    height="auto"
-                    alt="CUCM"
-                  /></div
-              ></a>
-            </h4>
-          </div>
-          <div>
-            <h4>
-              <a href="https://www.instagram.com/baanlaijai" target="_blank"
-                ><div class="logo-image-wrapper">
-                  <img
-                    class="img-circle"
-                    data-src="./img/PR_Baanlaijai-min.png"
-                    width="auto"
-                    height="auto"
-                    alt="Baanlaijai"
-                  /></div
-              ></a>
-            </h4>
-          </div>
-          <div>
-            <h4>
-              <a href="https://www.facebook.com/AgeOfJurassic" target="_blank"
-                ><div class="logo-image-wrapper">
-                  <img
-                    class="img-circle"
-                    data-src="./img/PR_AgeOfJurassic-min.png"
-                    width="auto"
-                    height="auto"
-                    alt="Age Of Jurassic"
-                  /></div
-              ></a>
-            </h4>
-          </div>
+        <div class="pr-grid">
+          <a class="pr-item" href="https://www.facebook.com/ChulaCMCamp" target="_blank" rel="noopener">
+            <div class="logo-image-wrapper">
+              <img class="img-circle" data-src="./img/PR_CUCM-min.png" alt="CUCM Camp" />
+            </div>
+            <span class="pr-name">CUCM Camp</span>
+            <span class="pr-role">Head of PR</span>
+            <span class="pr-year">2019</span>
+          </a>
+          <a class="pr-item" href="https://www.instagram.com/baanlaijai" target="_blank" rel="noopener">
+            <div class="logo-image-wrapper">
+              <img class="img-circle" data-src="./img/PR_Baanlaijai-min.png" alt="Baanlaijai" />
+            </div>
+            <span class="pr-name">Baanlaijai</span>
+            <span class="pr-role">Head of PR</span>
+            <span class="pr-year">2018</span>
+          </a>
+          <a class="pr-item" href="https://www.facebook.com/cuband" target="_blank" rel="noopener">
+            <div class="logo-image-wrapper">
+              <img class="img-circle" data-src="./img/PR_CUBand-min.png" alt="CU Band" />
+            </div>
+            <span class="pr-name">CU Band</span>
+            <span class="pr-role">PR</span>
+            <span class="pr-year">2018</span>
+          </a>
+          <a class="pr-item" href="https://www.facebook.com/chulasccu" target="_blank" rel="noopener">
+            <div class="logo-image-wrapper">
+              <img class="img-circle" data-src="./img/PR_SCCU-min.png" alt="CU Student Council" />
+            </div>
+            <span class="pr-name">CU Student Council</span>
+            <span class="pr-role">PR</span>
+            <span class="pr-year">2018</span>
+          </a>
+          <a class="pr-item" href="https://www.facebook.com/AgeOfJurassic" target="_blank" rel="noopener">
+            <div class="logo-image-wrapper">
+              <img class="img-circle" data-src="./img/PR_AgeOfJurassic-min.png" alt="Age of Jurassic" />
+            </div>
+            <span class="pr-name">Age of Jurassic</span>
+            <span class="pr-role">PR</span>
+            <span class="pr-year">2015</span>
+          </a>
         </div>
+        <hr class="section-divider" />
         <a class="anchor" id="jobs"></a>
         <br />
         <div class="followMeBar">
-          <h1>Hiring</h1>
+          <h1>Services</h1>
         </div>
-        <br />
-        <div>
-          <tr>
-            I’m available to hire for freelance work or projects.
-            <a href="/contact/">Contact me</a>
-            or See the
-            <a href="./get/priceguide/">Pricing Guidelines</a>
-            for consideration. Offers, haggling, and negotiations are accepted.
-            Here is the scope of works:<br />
-          </tr>
+        <p class="freelance-intro">
+          Open to freelance projects and consulting alongside my full-time role.
+          Not sure where to start? Book a call and we'll figure out the scope
+          together.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-group skill-group-wide">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z" />
+                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
+              </svg>
+              Consulting &amp; Mentoring
+            </div>
+            <div class="skill-items">Project scoping, Tech stack advice, Code review, React Native workshops</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+                <path d="M12 18h.01" />
+              </svg>
+              Web &amp; Mobile Apps
+            </div>
+            <div class="skill-items">Web apps, Mobile apps, Landing pages, LINE OA / LIFF</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z" />
+                <path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18" />
+                <path d="m2.3 2.3 7.286 7.286" />
+                <circle cx="11" cy="11" r="2" />
+              </svg>
+              UI &amp; Graphic Design
+            </div>
+            <div class="skill-items">Web / App UI, Logo, Brand identity, Poster, Artwork, Mockup</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M2 3h20" />
+                <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" />
+                <path d="m7 21 5-5 5 5" />
+              </svg>
+              Presentation &amp; Print
+            </div>
+            <div class="skill-items">Presentation, CV / Portfolio, Brochure, Book, Magazine</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z" />
+                <path d="m6.2 5.3 3.1 3.9" />
+                <path d="m12.4 3.4 3.1 4" />
+                <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z" />
+              </svg>
+              Video Production
+            </div>
+            <div class="skill-items">Video editing, Color grading, Sound editing, Subtitles, 2D motion</div>
+          </div>
         </div>
-        <div class="layout-grid grid-thirds">
-          <div>
-            <h4><br />Graphic Design</h4>
-          </div>
-          <div>
-            <h4><br />Media Design</h4>
-          </div>
-          <div>
-            <h4><br />VDO Production</h4>
-          </div>
-          <div>
-            <br />- Poster <br />- Artwork <br />- Logo <br />- Mockup <br />-
-            Brand Identity <br />- Web / UI
-          </div>
-          <div>
-            <br />- PDF <br />- Presentation <br />- Book <br />- Magazine
-            <br />- Brochure <br />- CV / Portfolio
-            <br />
-            <br />
-          </div>
-          <div>
-            <br />- Video Editing <br />- Color Grading <br />- Sound Editing
-            <br />- Subtitles <br />- 2D Motion
-            <br />
-          </div>
+        <div class="services-cta">
+          <a class="pill-btn" href="https://calendly.com/bellmcp/30min" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" /></svg>
+            Book a call
+          </a>
+          <p class="freelance-links">
+            <a class="more-link" href="/contact/" data-contact-modal="contact">Contact me <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+            <span class="link-sep">·</span>
+            <a class="more-link" href="./get/priceguide/" data-contact-modal="pricing">Pricing guidelines <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
         </div>
         <br />
         <a class="anchor" id="files"></a>
         <div class="followMeBar">
-          <h1>Files</h1>
+          <h1>Talks</h1>
         </div>
-        <br />
-        <div class="section-block">
-          <p class="text-sm">
-            <strong>SCB EPPd Dev Sharing Session — YWC 18</strong> (23 September
-            2021) <br /><a class="more-link" href="./ywc18/#0" target="_blank"
-              >View live keynote <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a><br />
-          </p>
-          <p class="text-sm">
-            <strong>CU Pop+ (Formerly CU PopQ) Project Keynote</strong> (23
-            April 2020) <br /><a class="more-link"
-              href="./work/UI_DesignThinking_CUPopPlus.pdf"
-              target="_blank"
-              >Download (.pdf | 7.9 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a><br />
-          </p>
-          <p class="text-sm">
-            <strong>Blackboard VS Zoom UI Research Keynote</strong> (16 April
-            2020) <br /><a class="more-link" href="./work/UI_BlackboardVsZoom.pdf" target="_blank"
-              >Download (.pdf | 10.8 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a><br />
-          </p>
-          <p class="text-sm">
-            <strong>CUCM 20 PR First Meet Keynote</strong> (29 October 2019)
-            <br /><a class="more-link" href="./work/PR_cucm_291019.pdf" target="_blank"
-              >Download (.pdf | 6.3 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
-          </p>
-          <p class="text-sm">
-            <strong>PulseSense Sample UI Elements Design</strong> (16 October
-            2019) <br /><a class="more-link" href="./work/PulseSense_sample.pdf" target="_blank"
-              >Download (.pdf | 1.1 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
-          </p>
-          <p class="text-sm">
-            <strong>CU PopQ Project Keynote</strong> (28 August 2019) <br /><a class="more-link"
-              href="./work/CU_PopQ_final.pdf"
-              target="_blank"
-              >Download (.pdf | 3.8 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
-          </p>
-          <p class="text-sm">
-            <strong>Soscity.Space Office Front Design</strong> (4 July 2019)
-            <br /><a class="more-link"
-              href="./work/soscity_officefront_design.pdf"
-              target="_blank"
-              >Download (.pdf | 435 KB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
-          </p>
-          <p class="text-sm">
-            <strong>JISO Travel PDF Guidelines</strong> (27 June 2019) <br /><a class="more-link"
-              href="./work/jiso_pdf_guidelines.pdf"
-              target="_blank"
-              >Download (.pdf | 2.7 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
-          </p>
-          <p class="text-sm">
-            <strong>Soscity.Space Web Redesign Keynote</strong> (10 June 2019)
-            <br /><a class="more-link" href="./work/soscityspace_redesign.pdf" target="_blank"
-              >Download (.pdf | 1.1 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
-          </p>
-          <p class="text-sm">
-            <strong>4 Separate Project Keynote</strong> (15 April 2019) <br /><a class="more-link"
-              href="./work/4 Separate_final.pdf"
-              target="_blank"
-              >Download (.pdf | 11.5 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
-          </p>
-          <p class="text-sm">
-            <strong>Baanlaijai PR Recruitment Keynote</strong> (9 April 2019)
-            <br /><a class="more-link" href="./work/Baanlaijai_PR.pdf" target="_blank"
-              >Download (.pdf | 7.6 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
-          </p>
-          <p class="text-sm">
-            <strong>SCCU Debate PR Keynote</strong> (21 March 2018) <br /><a class="more-link"
-              href="./work/SCCU_debate_PR.pdf"
-              target="_blank"
-              >Download (.pdf | 1.5 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
-          </p>
+        <div class="talks">
+          <div class="talk">
+            <span class="talk-date">Sep 2021</span>
+            <div>
+              <strong>SCB EPPd Dev Sharing Session - YWC 18</strong>
+              <div class="talk-meta"><span class="talk-tag">Talk</span><a class="more-link" href="./ywc18/#0" target="_blank">View slides <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Apr 2020</span>
+            <div>
+              <strong>CU Pop+ (formerly CU PopQ) Project</strong>
+              <div class="talk-meta"><span class="talk-tag">Keynote</span><a class="more-link" href="./work/UI_DesignThinking_CUPopPlus.pdf" target="_blank">PDF · 7.9 MB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Apr 2020</span>
+            <div>
+              <strong>Blackboard vs Zoom UI Research</strong>
+              <div class="talk-meta"><span class="talk-tag">Research</span><a class="more-link" href="./work/UI_BlackboardVsZoom.pdf" target="_blank">PDF · 10.8 MB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Oct 2019</span>
+            <div>
+              <strong>CUCM 20 PR First Meet</strong>
+              <div class="talk-meta"><span class="talk-tag">Keynote</span><a class="more-link" href="./work/PR_cucm_291019.pdf" target="_blank">PDF · 6.3 MB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Oct 2019</span>
+            <div>
+              <strong>PulseSense Sample UI Elements</strong>
+              <div class="talk-meta"><span class="talk-tag">Design</span><a class="more-link" href="./work/PulseSense_sample.pdf" target="_blank">PDF · 1.1 MB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Aug 2019</span>
+            <div>
+              <strong>CU PopQ Project</strong>
+              <div class="talk-meta"><span class="talk-tag">Keynote</span><a class="more-link" href="./work/CU_PopQ_final.pdf" target="_blank">PDF · 3.8 MB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Jul 2019</span>
+            <div>
+              <strong>Soscity.Space Office Front</strong>
+              <div class="talk-meta"><span class="talk-tag">Design</span><a class="more-link" href="./work/soscity_officefront_design.pdf" target="_blank">PDF · 435 KB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Jun 2019</span>
+            <div>
+              <strong>JISO Travel PDF Guidelines</strong>
+              <div class="talk-meta"><span class="talk-tag">Design</span><a class="more-link" href="./work/jiso_pdf_guidelines.pdf" target="_blank">PDF · 2.7 MB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Jun 2019</span>
+            <div>
+              <strong>Soscity.Space Web Redesign</strong>
+              <div class="talk-meta"><span class="talk-tag">Keynote</span><a class="more-link" href="./work/soscityspace_redesign.pdf" target="_blank">PDF · 1.1 MB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Apr 2019</span>
+            <div>
+              <strong>4 Separate Project</strong>
+              <div class="talk-meta"><span class="talk-tag">Keynote</span><a class="more-link" href="./work/4 Separate_final.pdf" target="_blank">PDF · 11.5 MB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Apr 2019</span>
+            <div>
+              <strong>Baanlaijai PR Recruitment</strong>
+              <div class="talk-meta"><span class="talk-tag">Keynote</span><a class="more-link" href="./work/Baanlaijai_PR.pdf" target="_blank">PDF · 7.6 MB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
+          <div class="talk">
+            <span class="talk-date">Mar 2018</span>
+            <div>
+              <strong>SCCU Debate PR</strong>
+              <div class="talk-meta"><span class="talk-tag">Keynote</span><a class="more-link" href="./work/SCCU_debate_PR.pdf" target="_blank">PDF · 1.5 MB <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a></div>
+            </div>
+          </div>
         </div>
         <div class="site-footer">
           <p>© <span class="current-year">2026</span> Wutipat Khamnuansin</p>
@@ -3122,9 +3150,20 @@
                   : $('[name=' + this.hash.slice(1) + ']')
                 if (target.length) {
                   event.preventDefault()
+                  var top = target.offset().top
+                  var bar = target
+                    .nextUntil('a.anchor')
+                    .filter('.followMeBar')
+                    .first()
+                  if (target.is('a.anchor') && bar.length) {
+                    var position = bar[0].style.position
+                    bar[0].style.position = 'static'
+                    top = Math.ceil(bar.offset().top)
+                    bar[0].style.position = position
+                  }
                   $('html, body').animate(
                     {
-                      scrollTop: target.offset().top,
+                      scrollTop: top,
                     },
                     1000,
                     function () {
@@ -3197,7 +3236,53 @@
         </script>
       </section>
     </div>
+    <dialog class="contact-modal" aria-labelledby="contact-modal-title">
+      <form class="contact-modal-card" method="dialog">
+        <button class="contact-modal-close" type="submit" value="close" formnovalidate aria-label="Close">
+          <svg class="modal-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
+        </button>
+        <h2 id="contact-modal-title" class="contact-modal-title">Let's talk</h2>
+        <p class="contact-modal-lead">Tell me a bit about your project. I'll reply within a few days.</p>
+        <label class="contact-field">
+          <span>Your name</span>
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label class="contact-field">
+          <span>What can I help with?</span>
+          <select name="topic">
+            <option>Consulting &amp; mentoring</option>
+            <option>Web &amp; mobile app</option>
+            <option>UI &amp; graphic design</option>
+            <option>Presentation &amp; print</option>
+            <option>Video production</option>
+            <option>Pricing guidelines</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label class="contact-field">
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <div class="contact-modal-actions">
+          <button class="pill-btn" type="submit" value="send">
+            <svg class="modal-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+            Open email draft
+          </button>
+          <a class="more-link" href="https://calendly.com/bellmcp/30min" target="_blank" rel="noopener">Or book a call <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+        </div>
+        <div class="contact-modal-alt">
+          <span>Or reach me at</span>
+          <button class="contact-copy" type="button" data-email="wutipat.k@gmail.com">
+            wutipat.k@gmail.com
+            <svg class="modal-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" /><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></svg>
+          </button>
+          <span class="link-sep">·</span>
+          <a href="http://line.naver.jp/ti/p/s9ZY1H2nCz#~" target="_blank" rel="noopener">LINE</a>
+        </div>
+      </form>
+    </dialog>
     <script src="assets/js/theme-toggle.js"></script>
     <script src="assets/js/site.js"></script>
+    <script src="assets/js/contact-modal.js"></script>
   </body>
 </html>
