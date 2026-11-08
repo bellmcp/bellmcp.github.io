@@ -47,14 +47,14 @@
     <meta name="title" content="bellmcp / about" />
     <meta
       name="description"
-      content="Wutipat Khamnuansin, a computer science student, graphic designer, dreamer and many more."
+      content="Wutipat Khamnuansin (Bell), a Full-Stack Software Engineer at LINE MAN Wongnai building web and mobile products."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bellmcp.work/" />
     <meta property="og:title" content="bellmcp / about" />
     <meta
       property="og:description"
-      content="Wutipat Khamnuansin, a computer science student, graphic designer, dreamer and many more."
+      content="Wutipat Khamnuansin (Bell), a Full-Stack Software Engineer at LINE MAN Wongnai building web and mobile products."
     />
     <meta property="og:image" content="./meta_preview.jpg" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -62,12 +62,32 @@
     <meta property="twitter:title" content="bellmcp / about" />
     <meta
       property="twitter:description"
-      content="Wutipat Khamnuansin, a computer science student, graphic designer, dreamer and many more."
+      content="Wutipat Khamnuansin (Bell), a Full-Stack Software Engineer at LINE MAN Wongnai building web and mobile products."
     />
     <meta property="twitter:image" content="./meta_preview.jpg" />
+    <script>
+      ;(function () {
+        try {
+          var saved = localStorage.getItem('darkmode')
+          var dark =
+            saved === null
+              ? window.matchMedia('(prefers-color-scheme: dark)').matches
+              : saved === 'true'
+          if (dark)
+            document.documentElement.classList.add('darkmode--activated')
+        } catch (e) {}
+      })()
+    </script>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style_main_dark.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/theme.css" />
     <meta name="viewport" content="width=device-width" />
     <link
       rel="apple-touch-icon"
@@ -109,7 +129,7 @@
                     id="navigation-menu"
                   >
                     <a href="#about" class="nav-link active">
-                      <span class="nav-link-lg"><b>About</b></span>
+                      <span class="nav-link-lg">About</span>
                     </a>
                     <a href="#works" class="nav-link">
                       <span class="nav-link-lg">Works</span>
@@ -148,35 +168,117 @@
                 <br />
                 <br />
                 <h1>Wutipat<br />Khamnuansin</h1>
-                <p>
-                  comsci 25 <br />chulalongkorn 101 <br />ywc 18
-                  <br />
-                </p>
+                <div class="profile-meta">
+                  <div class="profile-meta-item">
+                    <svg
+                      class="profile-meta-icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <rect width="20" height="14" x="2" y="7" rx="2" />
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                    </svg>
+                    <span>SWE @ LMWN</span>
+                  </div>
+                  <div class="profile-meta-item">
+                    <svg
+                      class="profile-meta-icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <rect width="16" height="20" x="4" y="2" rx="2" />
+                      <path d="M9 22v-4h6v4" />
+                      <path d="M8 6h.01" />
+                      <path d="M12 6h.01" />
+                      <path d="M16 6h.01" />
+                      <path d="M8 10h.01" />
+                      <path d="M12 10h.01" />
+                      <path d="M16 10h.01" />
+                      <path d="M8 14h.01" />
+                      <path d="M12 14h.01" />
+                      <path d="M16 14h.01" />
+                    </svg>
+                    <span>ex-LINE · ex-SCB</span>
+                  </div>
+                  <div class="profile-meta-item">
+                    <svg
+                      class="profile-meta-icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                      />
+                      <path d="M22 10v6" />
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+                    </svg>
+                    <span>Chulalongkorn U.</span>
+                  </div>
+                </div>
                 <hr />
                 <h2><a name="contact"></a>Contact</h2>
-                <p>wutipat.k@gmail.com <br /></p>
-                <p></p>
-                <p class="text-sm">
-                  LINE :
-                  <a
-                    href="http://line.naver.jp/ti/p/s9ZY1H2nCz#~"
-                    target="_blank"
-                    >bellmcp</a
-                  >
-                  <br />
-                  GitHub :
-                  <a href="https://github.com/bellmcp" target="_blank"
-                    >bellmcp</a
-                  >
-                  <br />
-                  LinkedIn :
-                  <a href="https://www.linkedin.com/in/bellmcp/" target="_blank"
-                    >bellmcp</a
-                  >
-                  <br />
-                </p>
+                <div class="profile-meta contact-list">
+                  <div class="profile-meta-item">
+                    <svg
+                      class="profile-meta-icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <rect width="20" height="16" x="2" y="4" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    <a href="mailto:wutipat.k@gmail.com">wutipat.k@gmail.com</a>
+                  </div>
+                  <div class="profile-meta-item">
+                    <svg
+                      class="profile-meta-icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                    </svg>
+                    <a
+                      href="http://line.naver.jp/ti/p/s9ZY1H2nCz#~"
+                      target="_blank"
+                      >LINE</a
+                    >
+                  </div>
+                  <div class="profile-meta-item">
+                    <svg
+                      class="profile-meta-icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                      />
+                      <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                    <a href="https://github.com/bellmcp" target="_blank"
+                      >GitHub</a
+                    >
+                  </div>
+                  <div class="profile-meta-item">
+                    <svg
+                      class="profile-meta-icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      />
+                      <rect width="4" height="12" x="2" y="9" />
+                      <circle cx="4" cy="4" r="2" />
+                    </svg>
+                    <a
+                      href="https://www.linkedin.com/in/bellmcp/"
+                      target="_blank"
+                      >LinkedIn</a
+                    >
+                  </div>
+                </div>
                 <ul
-                  class="downloads"
+                  class="downloads downloads-primary"
                   style="
                     box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 6px;
                     border-radius: 8px;
@@ -187,8 +289,20 @@
                   <div class="text-center">
                     <li>
                       <a
-                        href="./get/Wutipat-Khamnuansin-Resume-210625.pdf"
+                        href="./get/Wutipat-Khamnuansin-Resume-081126.pdf"
                         target="_blank"
+                        ><svg
+                          class="btn-icon"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                          />
+                          <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                          <path d="M10 9H8" />
+                          <path d="M16 13H8" />
+                          <path d="M16 17H8" /></svg
                         ><strong>Resume</strong></a
                       >
                     </li>
@@ -213,7 +327,7 @@
                 </ul>
                 <p class="text-xs">
                   <span class="caption" style="margin-right: 4px">Updated</span>
-                  28 Mar 2026
+                  8 Nov 2026
                 </p>
               </div>
             </div>
@@ -225,26 +339,193 @@
         <div class="followMeBar">
           <h1>About</h1>
         </div>
-        <br />
+        <div class="about-text">
+          <p class="about-greeting">
+            <span class="about-hello"
+              >Hi, I'm
+              <span class="name-typer" aria-label="Bell"
+                ><span class="name-typer-text" aria-hidden="true">Bell</span
+                ><span class="name-typer-caret" aria-hidden="true"></span></span
+              >,</span
+            >
+            a full-stack software engineer with 5+ years of experience building
+            web and mobile products at scale.
+          </p>
+          <a class="about-cta" href="#works">
+            See my works
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 6 5 5 5-5" /><path d="m7 13 5 5 5-5" /></svg>
+          </a>
+          <!--
+          <div class="about-item">
+            <svg class="about-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect width="20" height="14" x="2" y="7" rx="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+            <p>
+              At LMWN, I work on the
+              <a
+                href="https://apps.apple.com/th/app/wongnai-merchant-app-wma/id1157870935"
+                target="_blank"
+                >Wongnai Merchant App</a
+              >
+              for 700k+ restaurants and led Dine-in Deals on
+              <a href="https://lmwn.com/lineman/" target="_blank">LINE MAN</a>
+              from the ground up.
+            </p>
+          </div>
+          <div class="about-item">
+            <svg class="about-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect width="16" height="20" x="4" y="2" rx="2" />
+              <path d="M9 22v-4h6v4" />
+              <path d="M8 6h.01" />
+              <path d="M12 6h.01" />
+              <path d="M16 6h.01" />
+              <path d="M8 10h.01" />
+              <path d="M12 10h.01" />
+              <path d="M16 10h.01" />
+              <path d="M8 14h.01" />
+              <path d="M12 14h.01" />
+              <path d="M16 14h.01" />
+            </svg>
+            <p>
+              Previously, I worked on
+              <a href="https://shop.line.me/" target="_blank">LINE SHOPPING</a>
+              at LINE Thailand and
+              <a
+                href="https://www.scb.co.th/en/corporate-banking/business-cash-management/scb-business-collection/scb-e-presentment-and-payment.html"
+                target="_blank"
+                >SCB ePP</a
+              >
+              at Siam Commercial Bank, and built client web apps for Big C and
+              <span class="nowrap">7-Eleven</span> at
+              <a href="https://www.jenosize.com/" target="_blank">Jenosize</a>.
+            </p>
+          </div>
+          <div class="about-item">
+            <svg class="about-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+              />
+              <path d="M22 10v6" />
+              <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+            </svg>
+            <p>
+              Before that, I built the
+              <a href="#OCSC">OCSC Learning Platform</a> for 250k government
+              staff and was a <a href="#Hospin">YWC #18</a> finalist.
+            </p>
+          </div>
+          -->
+        </div>
         <h2>Education</h2>
-        <ul style="margin-left: 10px; list-style-type: none">
-          <li><i>2017 - 2021</i></li>
-          <li>
-            <strong>B.S. Computer Science</strong><br />
-            <strong>Chulalongkorn University</strong> (Bangkok, Thailand)
-          </li>
-        </ul>
-        <ul style="margin-left: 10px; list-style-type: none">
-          <li><i>2010 - 2016</i></li>
-          <li><strong>Montfort College</strong> (Chiang Mai, Thailand)</li>
-        </ul>
-        <br />
-        <h2>Work Experience</h2>
         <div>
           <table>
             <tbody>
               <tr>
-                <td width="65" style="border-bottom: 0; padding-bottom: 12px">
+                <td
+                  width="65"
+                  style="
+                    border-bottom: 0;
+                    padding-bottom: 12px;
+                    padding-top: 14px;
+                    vertical-align: top;
+                  "
+                >
+                  <div class="edu-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                      />
+                      <path d="M22 10v6" />
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+                    </svg>
+                  </div>
+                </td>
+                <td style="border-bottom: 0; padding-bottom: 12px">
+                  <ul
+                    style="
+                      margin-left: 10px;
+                      list-style-type: none;
+                      margin-bottom: 0;
+                    "
+                  >
+                    <li><i>2017 - 2021</i></li>
+                    <li>
+                      <strong>B.S. Computer Science</strong> at
+                      <a href="https://www.chula.ac.th/" target="_blank">Chulalongkorn University</a>
+                    </li>
+                    <li class="text-sm job-highlights">Bangkok, Thailand</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  width="65"
+                  style="
+                    border-bottom: 0;
+                    padding-bottom: 12px;
+                    padding-top: 14px;
+                    vertical-align: top;
+                  "
+                >
+                  <div class="edu-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
+                      <path
+                        d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10"
+                      />
+                      <path d="M18 5v17" />
+                      <path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6" />
+                      <path d="M6 5v17" />
+                      <circle cx="12" cy="9" r="2" />
+                    </svg>
+                  </div>
+                </td>
+                <td style="border-bottom: 0; padding-bottom: 12px">
+                  <ul
+                    style="
+                      margin-left: 10px;
+                      list-style-type: none;
+                      margin-bottom: 0;
+                    "
+                  >
+                    <li><i>2010 - 2016</i></li>
+                    <li>
+                      <strong>Gifted Science</strong> at
+                      <a href="http://www.montfort.ac.th/" target="_blank">Montfort College</a>
+                    </li>
+                    <li class="text-sm job-highlights">Chiang Mai, Thailand</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+        <div class="section-head">
+          <h2>Work Experience</h2>
+          <a
+            class="more-link"
+            href="https://www.linkedin.com/in/bellmcp/"
+            target="_blank"
+          >
+            View on LinkedIn
+            <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
+          </a>
+        </div>
+        <div>
+          <table>
+            <tbody>
+              <tr>
+                <td
+                  width="65"
+                  style="
+                    border-bottom: 0;
+                    padding-bottom: 12px;
+                    padding-top: 14px;
+                    vertical-align: top;
+                  "
+                >
                   <img
                     class="img-circle"
                     width="45"
@@ -264,22 +545,35 @@
                   >
                     <li>
                       <i
-                        >Oct 2024 - Present
+                        >Nov 2024 - Present
                         <span style="margin: 0px 6px; opacity: 30%">|</span>
                         Full-Time</i
                       >
                     </li>
                     <li>
                       <strong>Software Engineer, Full Stack (Mobile)</strong> at
-                      <a href="https://lmwn.com/" target="_blank"
-                        >LINE MAN Wongnai</a
+                      <a href="https://lmwn.com/" target="_blank">LMWN</a>
+                    </li>
+                    <li class="text-sm job-highlights">
+                      <span class="job-highlights-label"
+                        >Key contributions:</span
                       >
+                      Dine-in Deals · Wongnai Merchant App · LINE MINI Eats ·
+                      AI-assisted engineering
                     </li>
                   </ul>
                 </td>
               </tr>
               <tr>
-                <td width="65" style="border-bottom: 0; padding-bottom: 12px">
+                <td
+                  width="65"
+                  style="
+                    border-bottom: 0;
+                    padding-bottom: 12px;
+                    padding-top: 14px;
+                    vertical-align: top;
+                  "
+                >
                   <img
                     class="img-circle"
                     width="45"
@@ -310,11 +604,26 @@
                         >LINE Thailand</a
                       >
                     </li>
+                    <li class="text-sm job-highlights">
+                      <span class="job-highlights-label"
+                        >Key contributions:</span
+                      >
+                      SEND GIFT · Seller dashboard · Wallet 4.0 · Universal
+                      coupon
+                    </li>
                   </ul>
                 </td>
               </tr>
               <tr>
-                <td width="65" style="border-bottom: 0; padding-bottom: 12px">
+                <td
+                  width="65"
+                  style="
+                    border-bottom: 0;
+                    padding-bottom: 12px;
+                    padding-top: 14px;
+                    vertical-align: top;
+                  "
+                >
                   <img
                     class="img-circle"
                     width="45"
@@ -334,7 +643,7 @@
                   >
                     <li>
                       <i
-                        >Feb 2022 - Present
+                        >Feb 2022 - Sep 2024
                         <span style="margin: 0px 6px; opacity: 30%">|</span>
                         Part-Time</i
                       >
@@ -345,11 +654,25 @@
                         >Jenosize Digital Group</a
                       >
                     </li>
+                    <li class="text-sm job-highlights">
+                      <span class="job-highlights-label"
+                        >Featured clients:</span
+                      >
+                      Big C · 7-Eleven · Property Perfect
+                    </li>
                   </ul>
                 </td>
               </tr>
               <tr>
-                <td width="65" style="border-bottom: 0; padding-bottom: 12px">
+                <td
+                  width="65"
+                  style="
+                    border-bottom: 0;
+                    padding-bottom: 12px;
+                    padding-top: 14px;
+                    vertical-align: top;
+                  "
+                >
                   <img
                     class="img-circle"
                     width="45"
@@ -368,7 +691,7 @@
                   >
                     <li>
                       <i
-                        >Jun 2021 - Sep 2022
+                        >Jun 2021 - Oct 2022
                         <span style="margin: 0px 6px; opacity: 30%">|</span>
                         Full-Time</i
                       >
@@ -379,17 +702,32 @@
                         >Siam Commercial Bank</a
                       >
                     </li>
+                    <li class="text-sm job-highlights">
+                      <span class="job-highlights-label"
+                        >Key contributions:</span
+                      >
+                      SCB ePP · New onboarding flow · Discount profile · Partial
+                      invoice
+                    </li>
                   </ul>
                 </td>
               </tr>
               <tr>
-                <td width="65" style="border-bottom: 0; padding-bottom: 12px">
+                <td
+                  width="65"
+                  style="
+                    border-bottom: 0;
+                    padding-bottom: 12px;
+                    padding-top: 14px;
+                    vertical-align: top;
+                  "
+                >
                   <img
                     class="img-circle"
                     width="45"
                     height="45"
-                    data-src="./logo/wongnai.png"
-                    alt="Wongnai Media"
+                    data-src="./logo/lmwn.png"
+                    alt="LINE MAN Wongnai"
                     style="box-shadow: rgb(0 0 0 / 8%) 0px 2px 6px"
                   />
                 </td>
@@ -409,16 +747,28 @@
                       >
                     </li>
                     <li>
-                      <strong>Software Engineer, Frontend</strong> at
-                      <a href="https://www.wongnai.com/" target="_blank"
-                        >Wongnai Media</a
+                      <strong>Software Engineer, Frontend (Intern)</strong> at
+                      <a href="https://lmwn.com/" target="_blank">LMWN</a>
+                    </li>
+                    <li class="text-sm job-highlights">
+                      <span class="job-highlights-label"
+                        >Key contributions:</span
                       >
+                      Wongnai Rewards · User dropdown menu
                     </li>
                   </ul>
                 </td>
               </tr>
               <tr>
-                <td width="65" style="border-bottom: 0; padding-bottom: 12px">
+                <td
+                  width="65"
+                  style="
+                    border-bottom: 0;
+                    padding-bottom: 12px;
+                    padding-top: 14px;
+                    vertical-align: top;
+                  "
+                >
                   <img
                     class="img-circle"
                     width="45"
@@ -437,7 +787,7 @@
                   >
                     <li>
                       <i
-                        >May 2019 - Present
+                        >May 2019 - Jun 2020
                         <span style="margin: 0px 6px; opacity: 30%">|</span>
                         Part-Time</i
                       >
@@ -448,11 +798,17 @@
                         >Soscity Space</a
                       >
                     </li>
+                    <li class="text-sm job-highlights">
+                      <span class="job-highlights-label"
+                        >Featured clients:</span
+                      >
+                      COTTO · Kyocera · TOYOX
+                    </li>
                   </ul>
                 </td>
               </tr>
               <!-- <tr>
-                <td width="65" style="border-bottom: 0; padding-bottom: 12px">
+                <td width="65" style="border-bottom: 0; padding-bottom: 12px; padding-top: 14px; vertical-align: top">
                   <img
                     class="img-circle"
                     width="45"
@@ -491,104 +847,179 @@
         </p> -->
         <br />
         <h2>Professional Activities</h2>
-        <ul style="margin-left: 10px; list-style-type: none">
-          <li><i>2019</i></li>
-          <li>
-            <strong>Head of Public Relations</strong> at
-            <a href="https://www.facebook.com/ChulaCMCamp" target="_blank"
-              >20<sup>th</sup> CUCM Camp</a
-            >
-          </li>
-          <li>
-            <strong>Head of Public Relations</strong> at
-            <a
-              href="http://www.math.sc.chula.ac.th/www.math.sc.chula.ac.th/th/index.html"
-              target="_blank"
-              >25<sup>th</sup> CSCU Camp</a
-            >
-          </li>
-        </ul>
-        <ul style="margin-left: 10px; list-style-type: none">
-          <li><i>2018</i></li>
-          <li>
-            <strong>Graphic Designer</strong> at
-            <a href="http://sciren.club" target="_blank">SCIREN Club</a>
-          </li>
-          <li>
-            <strong>Head of Public Relations</strong> at
-            <a href="http://www.instagram.com/baanlaijai" target="_blank"
-              >23<sup>rd</sup> Baanlaijai</a
-            >
-          </li>
-        </ul>
-        <ul style="margin-left: 10px; list-style-type: none">
-          <li><i>2018</i></li>
-          <li>
-            <strong>Public Relations</strong> at
-            <a href="https://www.facebook.com/cuband" target="_blank"
-              >CU Band</a
-            >
-          </li>
-          <li>
-            <strong>Public Relations</strong> at
-            <a href="https://www.facebook.com/chulasccu" target="_blank"
-              >CU Student Council</a
-            >
-          </li>
-        </ul>
+        <div class="activities">
+          <div class="activity-year">
+            <span class="activity-label">2019</span>
+            <ul>
+              <li><strong>Head of Public Relations</strong> <span class="activity-at">at</span> <a href="https://www.facebook.com/ChulaCMCamp" target="_blank">20<sup>th</sup> CUCM Camp</a></li>
+              <li><strong>Head of Public Relations</strong> <span class="activity-at">at</span> <a href="http://www.math.sc.chula.ac.th/www.math.sc.chula.ac.th/th/index.html" target="_blank">25<sup>th</sup> CSCU Camp</a></li>
+            </ul>
+          </div>
+          <div class="activity-year">
+            <span class="activity-label">2018</span>
+            <ul>
+              <li><strong>Head of Public Relations</strong> <span class="activity-at">at</span> <a href="http://www.instagram.com/baanlaijai" target="_blank">23<sup>rd</sup> Baanlaijai</a></li>
+              <li><strong>Graphic Designer</strong> <span class="activity-at">at</span> <a href="http://sciren.club" target="_blank">SCIREN Club</a></li>
+              <li><strong>Public Relations</strong> <span class="activity-at">at</span> <a href="https://www.facebook.com/cuband" target="_blank">CU Band</a></li>
+              <li><strong>Public Relations</strong> <span class="activity-at">at</span> <a href="https://www.facebook.com/chulasccu" target="_blank">CU Student Council</a></li>
+            </ul>
+          </div>
+        </div>
         <!-- <p class="text-xs">
           * References available upon request,
           <a href="./get/reference/" target="_blank">Request References</a>
         </p> -->
         <br />
         <h2>Skills</h2>
-        <div class="table-responsive">
-          <table class="table">
-            <tbody>
-              <tr>
-                <td width="35%">
-                  <h4 class="level-title">Languages</h4>
-                </td>
-                <td>
-                  JavaScript, TypeScript, Golang, Python, Java, SQL
-                  <br />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <h4 class="level-title">Frameworks</h4>
-                </td>
-                <td>NodeJS, React, Vue, Next, Nuxt, Redux, VueX, Jest</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4 class="level-title">Tools</h4>
-                </td>
-                <td>Git, MongoDB, GraphQL, Redis, RabbitMQ, Firebase</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4 class="level-title">UX/UI Design</h4>
-                </td>
-                <td>
-                  XD, Sketch, Figma
-                  <br />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <h4 class="level-title">Graphic Design</h4>
-                </td>
-                <td>Photoshop, Illustrator, InDesign</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4 class="level-title">Media Production</h4>
-                </td>
-                <td>Premiere Pro, Animate</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+              Languages
+            </div>
+            <div class="skill-items">
+              JavaScript, TypeScript, Golang, Java, Python
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"
+                />
+                <path d="M10 19v-3.96 3.15" />
+                <path d="M7 19h5" />
+                <rect width="6" height="10" x="16" y="12" rx="2" />
+              </svg>
+              Frontend
+            </div>
+            <div class="skill-items">
+              React Native, React, NextJS, Vue, NuxtJS
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect width="20" height="8" x="2" y="2" rx="2" />
+                <rect width="20" height="8" x="2" y="14" rx="2" />
+                <line x1="6" x2="6.01" y1="6" y2="6" />
+                <line x1="6" x2="6.01" y1="18" y2="18" />
+              </svg>
+              Backend
+            </div>
+            <div class="skill-items">
+              NodeJS, GraphQL, RabbitMQ, Elasticsearch
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                <path d="M3 12A9 3 0 0 0 21 12" />
+              </svg>
+              Databases
+            </div>
+            <div class="skill-items">MySQL, MongoDB, Redis, Firebase</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"
+                />
+                <path d="M8.5 2h7" />
+                <path d="M7 16h10" />
+              </svg>
+              Testing &amp; CI
+            </div>
+            <div class="skill-items">Vitest, Jest, Detox, GitLab CI</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
+                />
+                <path d="m3.3 7 8.7 5 8.7-5" />
+                <path d="M12 22V12" />
+              </svg>
+              DevOps
+            </div>
+            <div class="skill-items">Git, Docker, Kubernetes</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                />
+              </svg>
+              AI Tools
+            </div>
+            <div class="skill-items">Claude Code, Cursor, Agent Skills</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"
+                />
+                <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" />
+                <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" />
+              </svg>
+              UI
+            </div>
+            <div class="skill-items">Styled-components, Tailwind, MUI</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"
+                />
+                <path
+                  d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"
+                />
+                <path d="m2.3 2.3 7.286 7.286" />
+                <circle cx="11" cy="11" r="2" />
+              </svg>
+              UX/UI Design
+            </div>
+            <div class="skill-items">XD, Sketch, Figma</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="13.5" cy="6.5" r=".5" />
+                <circle cx="17.5" cy="10.5" r=".5" />
+                <circle cx="8.5" cy="7.5" r=".5" />
+                <circle cx="6.5" cy="12.5" r=".5" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                />
+              </svg>
+              Graphic Design
+            </div>
+            <div class="skill-items">Photoshop, Illustrator, InDesign</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-head">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"
+                />
+                <path d="m6.2 5.3 3.1 3.9" />
+                <path d="m12.4 3.4 3.1 4" />
+                <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z" />
+              </svg>
+              Media Production
+            </div>
+            <div class="skill-items">Premiere Pro, Animate</div>
+          </div>
         </div>
         <br />
         <!-- <a class="anchor" id="accomplishments"></a>
@@ -598,7 +1029,7 @@
             <tr>
               <td width="30%">
                 <h4 class="level-title">
-                  Courses<br /><a href="./get/transcript/">See Transcript</a>
+                  Courses<br /><a class="more-link" href="./get/transcript/">See Transcript <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
                 </h4>
               </td>
               <td>
@@ -635,11 +1066,10 @@
                     <strong>Full-Stack Web Development with React</strong>
                     <br />by The Hong Kong University of Science and Technology
                     on Coursera<br /><i>Sep 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.coursera.org/account/accomplishments/specialization/certificate/KH474MRV6WWW"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                 </ul>
                 <ul style="width: 100%; padding-left: 20px">
@@ -649,11 +1079,10 @@
                       MongoDB</strong
                     >
                     <br /><i>Sep 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.coursera.org/account/accomplishments/certificate/HEGZY2NF9UPG"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                   <li style="padding-bottom: 10px">
                     <strong
@@ -661,20 +1090,18 @@
                       Native</strong
                     >
                     <br /><i>Sep 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.coursera.org/account/accomplishments/certificate/3G5Z5Q7K8HLP"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                   <li style="padding-bottom: 10px">
                     <strong>Front-End Web Development with React</strong>
                     <br /><i>Aug 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.coursera.org/account/accomplishments/certificate/M895DRDH6DRK"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                   <li>
                     <strong
@@ -682,44 +1109,40 @@
                       4</strong
                     >
                     <br /><i>Aug 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.coursera.org/account/accomplishments/certificate/DCVLHRER7G88"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                 </ul>
                 <ul style="list-style-type: none">
                   <li>
                     <strong>React - The Complete Guide</strong> <br />by
                     Maximilian Schwarzmüller on Udemy<br /><i>Aug 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.udemy.com/certificate/UC-08103c60-8ada-46df-ad49-70286e0b7699/"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                 </ul>
                 <ul style="list-style-type: none">
                   <li>
                     <strong>Fundamentals of Digital Marketing</strong> <br />by
                     Google Digital Garage<br /><i>May 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="./get/Google-Certificate-Wutipat-MKU-3AS-BZS.pdf"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                 </ul>
                 <ul style="list-style-type: none">
                   <li>
                     <strong>Intro to Data Science</strong> <br />by Virot
                     Chiraphadhanakul on Skooldio <br /><i>Apr 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.skooldio.com/certificate/13412eb6-0c3e-4c74-ba9a-2e3ca7b530a1"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                 </ul>
                 <ul style="list-style-type: none">
@@ -727,51 +1150,46 @@
                     <strong>UI / UX Design Specialization</strong> <br />by
                     California Institute of the Arts on Coursera <br /><i
                       >Apr 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.coursera.org/account/accomplishments/specialization/certificate/63QWYSCGQNG2"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                 </ul>
                 <ul style="width: 100%; padding-left: 20px">
                   <li style="padding-bottom: 10px">
                     <strong>Web Design: Wireframes to Prototypes</strong>
                     <br /><i>Apr 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.coursera.org/account/accomplishments/certificate/XC43BKUE67V7"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                   <li style="padding-bottom: 10px">
                     <strong
                       >Web Design: Strategy &amp; Info Architecture</strong
                     >
                     <br /><i>Mar 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.coursera.org/account/accomplishments/verify/87DT73PCKWDH"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                   <li style="padding-bottom: 10px">
                     <strong>UX Design Fundamentals</strong> <br /><i
                       >Mar 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.coursera.org/account/accomplishments/verify/ZPKR2FGLVQE7"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                   <li>
                     <strong>Visual Elements of UI Design</strong> <br /><i
                       >Oct 2019, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.coursera.org/account/accomplishments/verify/CC9Y6VWWJ2F2"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                 </ul>
                 <ul style="list-style-type: none">
@@ -784,20 +1202,18 @@
                   <li style="padding-bottom: 10px">
                     <strong>Advanced CSS and Sass</strong> <br /><i
                       >Feb 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.udemy.com/certificate/UC-55d2cd1f-c646-4d35-a2e5-250ae866bba2/"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                   <li>
                     <strong>The Complete JavaScript Course 2020</strong>
                     <br /><i>Jan 2020, </i
-                    ><a
+                    ><a class="more-link"
                       href="https://www.udemy.com/certificate/UC-SGHVEXWG/"
                       target="_blank"
-                      >See Credential</a
-                    >
+                      >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                   </li>
                 </ul>
               </td>
@@ -806,39 +1222,33 @@
         </div>
         <br /> -->
         <h2>Honors & Awards</h2>
-        <div class="table-responsive">
-          <table class="table">
-            <tr>
-              <td>
-                <h4 class="level-title">Finalist</h4>
-              </td>
-              <td>
-                <strong
-                  >18<sup>th</sup> Young Webmaster Camp – Programming
-                  Major</strong
-                >
-                <br /><i
-                  >One of 20 last candidates chosen from 200 developers</i
-                >
-                <br /><br /><strong>KBank – K Capstone 3 Internship</strong>
-                <br /><i>One of 80 last candidates chosen from 700 students</i>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4 class="level-title">Winner</h4>
-              </td>
-              <td>
+        <div class="activities awards">
+          <div class="activity-year">
+            <span class="activity-label">Finalist</span>
+            <ul>
+              <li>
+                <strong>18<sup>th</sup> Young Webmaster Camp – Programming Major</strong>
+                <span class="award-desc">One of 20 last candidates chosen from 200 developers</span>
+              </li>
+              <li>
+                <strong>KBank – K Capstone 3 Internship</strong>
+                <span class="award-desc">One of 80 last candidates chosen from 700 students</span>
+              </li>
+            </ul>
+          </div>
+          <div class="activity-year">
+            <span class="activity-label">Winner</span>
+            <ul>
+              <li>
                 <strong>KTB x AFAPS Debit Card Design Contest 2018</strong>
-                <br /><i>1<sup>st</sup> Place Winner</i>
-                <br />
-                <br /><strong
-                  >2D Animation — Student Handicraft Fair 2013</strong
-                >
-                <br /><i>2<sup>nd</sup> Place, Gold Prize</i>
-              </td>
-            </tr>
-          </table>
+                <span class="award-desc">1<sup>st</sup> Place Winner</span>
+              </li>
+              <li>
+                <strong>2D Animation – Student Handicraft Fair 2013</strong>
+                <span class="award-desc">2<sup>nd</sup> Place, Gold Prize</span>
+              </li>
+            </ul>
+          </div>
           <!-- <p class="text-xs">
             * References available upon request,
             <a href="./get/reference/" target="_blank">Request References</a>
@@ -906,42 +1316,40 @@
         <h2>Senior Project</h2>
         <a class="anchor" id="OCSC"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/SeniorProj_OCSC-min.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="Senior Project: OCSC Learning Platform"
-                    />
-                  </div>
-                </div>
-                <br />
-                <p class="text-sm">
-                  <i>August 2020 - April 2021</i><br />
-                  <strong>Senior Project: OCSC Learning Platform</strong><br />
-                  <i>Frontend Developer and UX/UI Designer</i>
-                  <br />
-                  <br />
-                  Develop an e-Learning platform for the Office of the Civil
-                  Service Commission (OCSC). Students which are more than 250k
-                  government personnel can learn in an online, accessible, and
-                  adaptive learning environment. Developed by using TypeScript,
-                  React, Material-UI, .NET Core, MariaDB, and more.
-                  <br />
-                  <br /><a
-                    href="https://github.com/bellmcp/OCSC-Learning-Platform"
-                    target="_blank"
-                    >See on GitHub</a
-                  >
-                  <span style="margin: 0px 6px; opacity: 30%">|</span>
-                  <a
-                    href="https://learningportal.ocsc.go.th/learningspace"
-                    target="_blank"
-                    >Visit site</a
-                  >
-                </p>
-              </div>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/SeniorProj_OCSC-min.jpg"
+                width="100%"
+                height="auto"
+                alt="Senior Project: OCSC Learning Platform"
+              />
+            </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>August 2020 - April 2021</i><br />
+            <strong>Senior Project: OCSC Learning Platform</strong><br />
+            <i>Frontend Developer and UX/UI Designer</i>
+            <br />
+            <br />
+            Develop an e-Learning platform for the Office of the Civil Service
+            Commission (OCSC). Students which are more than 250k government
+            personnel can learn in an online, accessible, and adaptive learning
+            environment. Developed by using TypeScript, React, Material-UI, .NET
+            Core, MariaDB, and more.
+            <br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/OCSC-Learning-Platform"
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+            <span class="link-sep" aria-hidden="true">·</span>
+            <a class="more-link"
+              href="https://learningportal.ocsc.go.th/learningspace"
+              target="_blank"
+              >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <h2>OCSC Project</h2>
         <br />
@@ -966,113 +1374,32 @@
                   Service Commission (OCSC). Developed by using TypeScript,
                   React, Material-UI, .NET Core, MariaDB, and more.
                 </p>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td
-                        width="50%"
-                        valign="top"
-                        style="padding: 0; padding-right: 8px"
-                      >
-                        <p class="text-sm">
-                          <i>August 2022</i><br />
-                          <strong>OCSC Accrediation</strong>
-                          <br />
-                          <span
-                            >ระบบการพิจารณารับรองคุณวุฒิด้วยระบบอิเล็กทรอนิกส์</span
-                          >
-                          <br />
-                          <br />
-                          <a
-                            href="https://accreditation.ocsc.go.th/accreditation"
-                            target="_blank"
-                            >Visit site</a
-                          >
-                          <br />
-                        </p>
-                      </td>
-                      <td
-                        width="50%"
-                        valign="top"
-                        style="padding: 0; padding-left: 8px"
-                      >
-                        <p class="text-sm">
-                          <i>July 2023</i><br />
-                          <strong>OCSC Accrediation Admin</strong>
-                          <br />
-                          <span>
-                            กลุ่มงานรับรองคุณวุฒิ สำนักงาน ก.พ.
-                            สำหรับผู้ปฏิบัติงาน และหัวหน้างาน</span
-                          >
-                          <br />
-                          <br />
-                          <a
-                            href="https://accreditation.ocsc.go.th/accreditationadmin"
-                            target="_blank"
-                            >Visit site</a
-                          >
-                          <br />
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        width="50%"
-                        valign="top"
-                        style="
-                          padding: 0;
-                          border-bottom: none;
-                          padding-right: 8px;
-                        "
-                      >
-                        <p style="margin-bottom: 0" class="text-sm">
-                          <br />
-                          <i>June 2022</i><br />
-                          <strong>OCSC NCS</strong>
-                          <br />
-                          <span>
-                            ระบบรายงานผลการพัฒนาในช่วงการทดลองปฏิบัติหน้าที่ราชการ</span
-                          >
-                          <br />
-                          <br />
-                          <a
-                            href="https://learningportal.ocsc.go.th/ncs"
-                            target="_blank"
-                            >Visit site</a
-                          >
-                          <br />
-                        </p>
-                      </td>
-                      <td
-                        width="50%"
-                        valign="top"
-                        style="
-                          padding: 0;
-                          border-bottom: none;
-                          padding-left: 8px;
-                        "
-                      >
-                        <p style="margin-bottom: 0" class="text-sm">
-                          <br />
-                          <i>May 2024</i><br />
-                          <strong>OCSC Job</strong>
-                          <br />
-                          <span
-                            >ระบบบริหารจัดการสมาชิกสำหรับเจ้าหน้าที่ของส่วนราชการ</span
-                          >
-                          <br />
-                          <br />
-                          <a
-                            href="https://accreditation.ocsc.go.th/job"
-                            target="_blank"
-                            >Visit site</a
-                          >
-                          <br />
-                        </p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="subprojects">
+                  <div class="subproject">
+                    <span class="subproject-date">August 2022</span>
+                    <strong class="subproject-title">OCSC Accrediation</strong>
+                    <span class="subproject-desc" lang="th">ระบบการพิจารณารับรองคุณวุฒิด้วยระบบอิเล็กทรอนิกส์</span>
+                    <a class="more-link" href="https://accreditation.ocsc.go.th/accreditation" target="_blank">Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                  </div>
+                  <div class="subproject">
+                    <span class="subproject-date">July 2023</span>
+                    <strong class="subproject-title">OCSC Accrediation Admin</strong>
+                    <span class="subproject-desc" lang="th">กลุ่มงานรับรองคุณวุฒิ สำนักงาน ก.พ. สำหรับผู้ปฏิบัติงาน และหัวหน้างาน</span>
+                    <a class="more-link" href="https://accreditation.ocsc.go.th/accreditationadmin" target="_blank">Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                  </div>
+                  <div class="subproject">
+                    <span class="subproject-date">June 2022</span>
+                    <strong class="subproject-title">OCSC NCS</strong>
+                    <span class="subproject-desc" lang="th">ระบบรายงานผลการพัฒนาในช่วงการทดลองปฏิบัติหน้าที่ราชการ</span>
+                    <a class="more-link" href="https://learningportal.ocsc.go.th/ncs" target="_blank">Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                  </div>
+                  <div class="subproject">
+                    <span class="subproject-date">May 2024</span>
+                    <strong class="subproject-title">OCSC Job</strong>
+                    <span class="subproject-desc" lang="th">ระบบบริหารจัดการสมาชิกสำหรับเจ้าหน้าที่ของส่วนราชการ</span>
+                    <a class="more-link" href="https://accreditation.ocsc.go.th/job" target="_blank">Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+                  </div>
+                </div>
                 <!-- <div
                   style="
                     display: flex;
@@ -1141,11 +1468,10 @@
                   </div>
                   <div>
                     <p class="text-sm">
-                      <a
+                      <a class="more-link"
                         href="https://learningportal.ocsc.go.th/ncs"
                         target="_blank"
-                        >Visit site</a
-                      >
+                        >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
                     </p>
                   </div>
                 </div> -->
@@ -1157,1583 +1483,1523 @@
         <h2>Internship Project</h2>
         <a class="anchor" id="Wongnai"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Recent_Wongnai-min.jpg"
-                      width="100%"
-                      height="auto"
-                      alt=">Wongnai Rewards & All-new User Dropdown Menu"
-                    />
-                  </div>
-                </div>
-                <br />
-                <p class="text-sm">
-                  <i>June - July 2020</i><br />
-                  <strong>Wongnai Rewards & All-new User Dropdown Menu</strong
-                  ><br />
-                  <i>Software Engineer, Frontend (Intern) at Wongnai Media</i>
-                  <br />
-                  <br />Developed Wongnai Rewards, a page that allows users to
-                  discover, redeem, and track the status of vouchers. Also,
-                  Implemented an All-new User Dropdown Menu and migrated to the
-                  central repository called Shared-Modules, code size was
-                  reduced 60% compared to the traditional one. Developed using
-                  React, TypeScript, Jest, and more.<br />
-                  <br /><a href="./work/Wongnai#top">Read more...</a>
-                </p>
-              </div>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_Wongnai-min.jpg"
+                width="100%"
+                height="auto"
+                alt=">Wongnai Rewards & All-new User Dropdown Menu"
+              />
+            </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>June - July 2020</i><br />
+            <strong>Wongnai Rewards & All-new User Dropdown Menu</strong><br />
+            <i>Software Engineer, Frontend (Intern) at LMWN</i>
+            <br />
+            <br />Developed Wongnai Rewards, a page that allows users to
+            discover, redeem, and track the status of vouchers. Also,
+            Implemented an All-new User Dropdown Menu and migrated to the
+            central repository called Shared-Modules, code size was reduced 60%
+            compared to the traditional one. Developed using React, TypeScript,
+            Jest, and more.<br />
+            <br /><a class="more-link" href="./work/Wongnai#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <h2>18<sup>th</sup> Young Webmaster Camp</h2>
         <a class="anchor" id="Hospin"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Projects_Hospin.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="Hospin - Your Alternative Medical"
-                    />
-                  </div>
-                </div>
-                <br />
-                <p class="text-sm">
-                  <i>August 2021</i><br />
-                  <strong>Hospin - Your Alternative Medical</strong><br />
-                  <i>18<sup>th</sup> Young Webmaster Camp</i>
-                  <br />
-                  <br />One of the 20 last candidates chosen from 200
-                  developers, Collaborated with a team of 8 people (2
-                  developers) to developed “Hospin” web application, an
-                  alternative medical services portal. Developed by using React,
-                  NextJS, and Ant Design.<br />
-                  <br /><a href="./ywc18/#0" target="_blank"
-                    >View live keynote</a
-                  >
-                  <span style="margin: 0px 6px; opacity: 30%">|</span>
-                  <a href="./get/YWC18_Certificate.jpg" target="_blank"
-                    >See credential</a
-                  >
-                </p>
-              </div>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Projects_Hospin.jpg"
+                width="100%"
+                height="auto"
+                alt="Hospin - Your Alternative Medical"
+              />
+            </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>August 2021</i><br />
+            <strong>Hospin - Your Alternative Medical</strong><br />
+            <i>18<sup>th</sup> Young Webmaster Camp</i>
+            <br />
+            <br />One of the 20 last candidates chosen from 200 developers,
+            Collaborated with a team of 8 people (2 developers) to developed
+            “Hospin” web application, an alternative medical services portal.
+            Developed by using React, NextJS, and Ant Design.<br />
+            <br /><a class="more-link" href="./ywc18/#0" target="_blank">View live keynote <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+            <span class="link-sep" aria-hidden="true">·</span>
+            <a class="more-link" href="./get/YWC18_Certificate.jpg" target="_blank"
+              >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="YWC"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Recent_YWC-min.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="Interview Assignment: HalfEach (Kon-La-Krueng Project)
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_YWC-min.jpg"
+                width="100%"
+                height="auto"
+                alt="Interview Assignment: HalfEach (Kon-La-Krueng Project)
                       Clone"
-                    />
-                  </div>
-                </div>
-                <br />
-                <p class="text-sm">
-                  <i>December 2020</i><br />
-                  <strong
-                    >Interview Assignment: HalfEach (Kon-La-Krueng Project)
-                    Clone</strong
-                  ><br />
-                  <i
-                    >18<sup>th</sup> Young Webmaster Camp – Programming Major
-                    Finalist</i
-                  >
-                  <br />
-                  <br />Built a HalfEach clone with React and Ant Design,
-                  Deployed using GitHub Pages. One of 20 last candidates chosen
-                  from 200 developers, The event will take place on 12-15 August
-                  2021. <br />
-                  <br /><a
-                    href="https://github.com/bellmcp/YWC18-HalfEach"
-                    target="_blank"
-                    >See on GitHub</a
-                  >
-                  <span style="margin: 0px 6px; opacity: 30%">|</span>
-                  <a href="./get/YWC18_Wutipat_Credential.pdf" target="_blank"
-                    >See credential</a
-                  >
-                  <span style="margin: 0px 6px; opacity: 30%">|</span>
-                  <a href="/YWC18-HalfEach/" target="_blank"
-                    >Visit site</a
-                  >
-                </p>
-              </div>
+              />
+            </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>December 2020</i><br />
+            <strong
+              >Interview Assignment: HalfEach (Kon-La-Krueng Project)
+              Clone</strong
+            ><br />
+            <i
+              >18<sup>th</sup> Young Webmaster Camp – Programming Major
+              Finalist</i
+            >
+            <br />
+            <br />Built a HalfEach clone with React and Ant Design, Deployed
+            using GitHub Pages. One of 20 last candidates chosen from 200
+            developers, The event will take place on 12-15 August 2021. <br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/YWC18-HalfEach"
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+            <span class="link-sep" aria-hidden="true">·</span>
+            <a class="more-link" href="./get/YWC18_Wutipat_Credential.pdf" target="_blank"
+              >See credential <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+            <span class="link-sep" aria-hidden="true">·</span>
+            <a class="more-link" href="/YWC18-HalfEach/" target="_blank">Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <h2>Self-paced Projects</h2>
         <a class="anchor" id="Graduation"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Projects_Graduation.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="Wutipat's Graduation Ceremony"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <div>
-                    <p class="text-sm">
-                      <i>April 2022</i><br />
-                      <strong>Wutipat's Graduation Ceremony</strong><br />
-                      Web Application, Self-paced
-                    </p>
-                  </div>
-                  <div>
-                    <p class="text-sm">
-                      <a href="/graduation/" target="_blank"
-                        >Visit site</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Projects_Graduation.jpg"
+                width="100%"
+                height="auto"
+                alt="Wutipat's Graduation Ceremony"
+              />
+            </div>
+          </div>
+          <br />
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <p class="text-sm">
+                <i>April 2022</i><br />
+                <strong>Wutipat's Graduation Ceremony</strong><br />
+                Web Application, Self-paced
+              </p>
+            </div>
+            <div>
+              <p class="text-sm">
+                <a class="more-link" href="/graduation/" target="_blank">Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+              </p>
+            </div>
+          </div>
+        </div>
         <a class="anchor" id="PineApple"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Recent_PineApple-min.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="PineApple Online Store"
-                    />
-                  </div>
-                </div>
-                <br />
-                <p class="text-sm">
-                  <i>January 2021</i><br />
-                  <strong>PineApple Online Store</strong><br />
-                  Web Application, Self-paced
-                  <br />
-                  <br />An e-commerce website inspired by Apple. Developed using
-                  React, Redux, and Material-UI. Deployed using Vercel. Featured
-                  products categorization, user-adaptive dark mode, and best
-                  practices of Redux store implemented.<br />
-                  <br /><a
-                    href="https://github.com/bellmcp/PineApple-Online-Store"
-                    target="_blank"
-                    >See on GitHub</a
-                  >
-                  <span style="margin: 0px 6px; opacity: 30%">|</span>
-                  <a
-                    href="https://pineapple-online-store.vercel.app/"
-                    target="_blank"
-                    >Visit site</a
-                  >
-                </p>
-              </div>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_PineApple-min.jpg"
+                width="100%"
+                height="auto"
+                alt="PineApple Online Store"
+              />
+            </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>January 2021</i><br />
+            <strong>PineApple Online Store</strong><br />
+            Web Application, Self-paced
+            <br />
+            <br />An e-commerce website inspired by Apple. Developed using
+            React, Redux, and Material-UI. Deployed using Vercel. Featured
+            products categorization, user-adaptive dark mode, and best practices
+            of Redux store implemented.<br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/PineApple-Online-Store"
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+            <span class="link-sep" aria-hidden="true">·</span>
+            <a class="more-link" href="https://pineapple-online-store.vercel.app/" target="_blank"
+              >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="ConFusion"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Recent_ConFusion-min.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="ConFusion Restaurant Website and Mobile App"
-                    />
-                  </div>
-                </div>
-                <br />
-                <p class="text-sm">
-                  <i>August 2020</i><br />
-                  <strong>ConFusion Restaurant Website and Mobile App</strong
-                  ><br />
-                  Web and Mobile Application, Self-paced
-                  <br />
-                  <br />
-                  Developed full-stack restaurant interactive website and mobile
-                  app using React, React Native, Bootstrap, NodeJS, MongoDB, and
-                  Firebase. Deployed using Vercel. Featured Google
-                  authentication, customer reviews, and best practices of
-                  Firebase Cloud Firestore integration.<br />
-                  <br /><a
-                    href="https://github.com/search?q=user%3Abellmcp+confusion"
-                    target="_blank"
-                    >See the projects on GitHub</a
-                  >
-                  <span style="margin: 0px 6px; opacity: 30%">|</span>
-                  <a
-                    href="https://bellmcp-confusion.vercel.app/"
-                    target="_blank"
-                    >Visit site</a
-                  >
-                </p>
-              </div>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_ConFusion-min.jpg"
+                width="100%"
+                height="auto"
+                alt="ConFusion Restaurant Website and Mobile App"
+              />
+            </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>August 2020</i><br />
+            <strong>ConFusion Restaurant Website and Mobile App</strong><br />
+            Web and Mobile Application, Self-paced
+            <br />
+            <br />
+            Developed full-stack restaurant interactive website and mobile app
+            using React, React Native, Bootstrap, NodeJS, MongoDB, and Firebase.
+            Deployed using Vercel. Featured Google authentication, customer
+            reviews, and best practices of Firebase Cloud Firestore
+            integration.<br />
+            <br /><a class="more-link"
+              href="https://github.com/search?q=user%3Abellmcp+confusion"
+              target="_blank"
+              >See the projects on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+            <span class="link-sep" aria-hidden="true">·</span>
+            <a class="more-link" href="https://bellmcp-confusion.vercel.app/" target="_blank"
+              >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="cookify"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Projects_Cookify.png"
-                    width="100%"
-                    height="auto"
-                    alt="Cookify — Your Kitchen Companion"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>January 2020</i> <br /><strong
-                  >Cookify — Your Kitchen Companion</strong
-                >
-                <br />Web Application, Self-paced
-                <br />
-                <br />Cookify is your on-the-go app for any delicious food
-                recipes. Over 1,000,000 recipes now at your fingertips. An app
-                which serves as your own cookbook, an incredible search tool and
-                a personalized shopping list.
-                <br />
-                <br /><a
-                  href="https://github.com/bellmcp/Cookify-Cooking-App"
-                  target="_blank"
-                  >See on GitHub</a
-                >
-                <span style="margin: 0px 6px; opacity: 30%">|</span>
-                <a
-                  href="https://bellmcp-cookify.vercel.app/#54454"
-                  target="_blank"
-                  >Visit site</a
-                >
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Projects_Cookify.png"
+                width="100%"
+                height="auto"
+                alt="Cookify — Your Kitchen Companion"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>January 2020</i> <br /><strong
+              >Cookify — Your Kitchen Companion</strong
+            >
+            <br />Web Application, Self-paced
+            <br />
+            <br />Cookify is your on-the-go app for any delicious food recipes.
+            Over 1,000,000 recipes now at your fingertips. An app which serves
+            as your own cookbook, an incredible search tool and a personalized
+            shopping list.
+            <br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/Cookify-Cooking-App"
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+            <span class="link-sep" aria-hidden="true">·</span>
+            <a class="more-link" href="https://bellmcp-cookify.vercel.app/#54454" target="_blank"
+              >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="onetwotea"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-special-image-wrapper">
-                  <img
-                    data-src="./work/OneTwoTea/Projects_OneTwoTea.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="One Two Tea — Customizable Bubble Tea"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>March 2020</i> <br /><strong
-                  >One Two Tea — Customizable Bubble Tea</strong
-                >
-                <br />UX/UI Design, Self-paced<br />
-                <br />Developed wireframes and prototypes. One Two Tea is an
-                online bubble tea delivery that would serve the finest bubble
-                tea right at your door. Once you taste One Two Tea, you will
-                know why it is the best one you will ever try.<br />
-                <br /><a href="./work/OneTwoTea#top">Read more...</a>
-              </p>
+          <div class="text-center">
+            <div class="main-special-image-wrapper">
+              <img
+                data-src="./work/OneTwoTea/Projects_OneTwoTea.jpg"
+                width="100%"
+                height="auto"
+                alt="One Two Tea — Customizable Bubble Tea"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>March 2020</i> <br /><strong
+              >One Two Tea — Customizable Bubble Tea</strong
+            >
+            <br />UX/UI Design, Self-paced<br />
+            <br />Developed wireframes and prototypes. One Two Tea is an online
+            bubble tea delivery that would serve the finest bubble tea right at
+            your door. Once you taste One Two Tea, you will know why it is the
+            best one you will ever try.<br />
+            <br /><a class="more-link" href="./work/OneTwoTea#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="advancecss"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Web_advancedcss.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="Natours, Nexter, and Trillo"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>February 2020</i> <br /><strong
-                  >Natours, Nexter, and Trillo</strong
-                >
-                <br />Web Application, Self-paced
-                <br />
-                <br />Natours, Nexter, and Trillo are web development projects
-                built to practice cutting-edge CSS and Sass techniques to create
-                stunning designs and effects eg. Grid, Flexbox, Animations and
-                so much more.
-                <br />
-                <br /><a
-                  href="https://github.com/bellmcp/Natours-Nexter-Trillo"
-                  target="_blank"
-                  >See on GitHub</a
-                >
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Web_advancedcss.jpg"
+                width="100%"
+                height="auto"
+                alt="Natours, Nexter, and Trillo"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>February 2020</i> <br /><strong
+              >Natours, Nexter, and Trillo</strong
+            >
+            <br />Web Application, Self-paced
+            <br />
+            <br />Natours, Nexter, and Trillo are web development projects built
+            to practice cutting-edge CSS and Sass techniques to create stunning
+            designs and effects eg. Grid, Flexbox, Animations and so much more.
+            <br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/Natours-Nexter-Trillo"
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="xpense"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Projects_xPense.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="xPense — Simple Budget Manager"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>January 2020</i> <br /><strong
-                  >xPense — Simple Budget Manager</strong
-                >
-                <br />Web Application, Self-paced
-                <br />
-                <br />Application that helps you manage and track your daily
-                expenses. Designed to be simple and intuitive, this application
-                will help you manage and always be aware of what is happening in
-                your own wallet. A great budget manager for everyone who is
-                concerned about their spending.
-                <br />
-                <br /><a
-                  href="https://github.com/bellmcp/xPense-Budget-Manager/"
-                  target="_blank"
-                  >See on GitHub</a
-                >
-                <span style="margin: 0px 6px; opacity: 30%">|</span
-                ><a href="./demo/xPense" target="_blank">Visit site</a>
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Projects_xPense.jpg"
+                width="100%"
+                height="auto"
+                alt="xPense — Simple Budget Manager"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>January 2020</i> <br /><strong
+              >xPense — Simple Budget Manager</strong
+            >
+            <br />Web Application, Self-paced
+            <br />
+            <br />Application that helps you manage and track your daily
+            expenses. Designed to be simple and intuitive, this application will
+            help you manage and always be aware of what is happening in your own
+            wallet. A great budget manager for everyone who is concerned about
+            their spending.
+            <br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/xPense-Budget-Manager/"
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+            <span style="margin: 0px 6px; opacity: 30%">|</span
+            ><a class="more-link" href="./demo/xPense" target="_blank">Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <a class="anchor" id="projects"></a>
         <h2>Undergraduate Projects</h2>
         <a class="anchor" id="cupopq"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-special-image-wrapper">
-                  <img
-                    data-src="./img/Projects_CUPopQ_final.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="CU PopQ — CU POP Bus Queue Management System"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>April 2020</i> <br /><strong
-                  >CU PopQ — CU POP Bus Queue Management System</strong
-                >
-                <br />UX/UI Design, Part of 2301350 User Interface Design
-                <br />
-                <br />CU PopQ is a mobile application that helps manage the
-                Chulalongkorn University Shuttle Bus (Pop Bus) queuing lines.
-                Allow users to book a queue, determine the current queue,
-                determine estimate waiting time, see a real-time bus location
-                and get notified when the bus arrives.
-                <br />
-                <br /><a href="./work/CUPopQ#top">Read more...</a>
-              </p>
+          <div class="text-center">
+            <div class="main-special-image-wrapper">
+              <img
+                data-src="./img/Projects_CUPopQ_final.jpg"
+                width="100%"
+                height="auto"
+                alt="CU PopQ — CU POP Bus Queue Management System"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>April 2020</i> <br /><strong
+              >CU PopQ — CU POP Bus Queue Management System</strong
+            >
+            <br />UX/UI Design, Part of 2301350 User Interface Design
+            <br />
+            <br />CU PopQ is a mobile application that helps manage the
+            Chulalongkorn University Shuttle Bus (Pop Bus) queuing lines. Allow
+            users to book a queue, determine the current queue, determine
+            estimate waiting time, see a real-time bus location and get notified
+            when the bus arrives.
+            <br />
+            <br /><a class="more-link" href="./work/CUPopQ#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="ML"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Projects_ML-min.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="Price Prediction — Machine Learning Project"
-                    />
-                  </div>
-                </div>
-                <br />
-                <p class="text-sm">
-                  <i>April 2020</i> <br /><strong
-                    >Price Prediction — Machine Learning Project</strong
-                  >
-                  <br />Python, Part of 2301457 Machine Learning<br />
-                  <br />A machine learning model to predict the selling price of
-                  goods to help an entrepreneur understand important pricing
-                  factors in the industry. Highly comprehensive analysis with
-                  validity steps explained in detail.<br />
-                  <br /><a
-                    href="https://github.com/bellmcp/Machine-Learning-Price-Prediction"
-                    target="_blank"
-                    >See on GitHub</a
-                  >
-                </p>
-              </div>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Projects_ML-min.jpg"
+                width="100%"
+                height="auto"
+                alt="Price Prediction — Machine Learning Project"
+              />
+            </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>April 2020</i> <br /><strong
+              >Price Prediction — Machine Learning Project</strong
+            >
+            <br />Python, Part of 2301457 Machine Learning<br />
+            <br />A machine learning model to predict the selling price of goods
+            to help an entrepreneur understand important pricing factors in the
+            industry. Highly comprehensive analysis with validity steps
+            explained in detail.<br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/Machine-Learning-Price-Prediction"
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="tictactoe"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Projects_TicTacToe-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="Tic. Tac. Toe."
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>August 2019</i> <br /><strong>Tic. Tac. Toe.</strong>
-                <br />C# Application, Part of 2301371 Operating System
-                <br />
-                <br />A revolutionary version for the classic Tic Tac Toe game.
-                Tic. Tac. Toe is the most professional version of the classic
-                Tic Tac Toe game. It offers hours of addictive fun, brain
-                exercising and great user experience.
-                <br />
-                <br /><a
-                  href="https://github.com/bellmcp/Tic.Tac.Toe."
-                  target="_blank"
-                  >See on GitHub</a
-                >
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Projects_TicTacToe-min.jpg"
+                width="100%"
+                height="auto"
+                alt="Tic. Tac. Toe."
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>August 2019</i> <br /><strong>Tic. Tac. Toe.</strong> <br />C#
+            Application, Part of 2301371 Operating System
+            <br />
+            <br />A revolutionary version for the classic Tic Tac Toe game. Tic.
+            Tac. Toe is the most professional version of the classic Tic Tac Toe
+            game. It offers hours of addictive fun, brain exercising and great
+            user experience.
+            <br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/Tic.Tac.Toe."
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <a class="anchor" id="calculator"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Projects_Calculator-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="4-Digit Calculator"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>December 2018</i> <br /><strong>4-Digit Calculator</strong>
-                <br />LogicWorks Project, Part of 2301274 Computer System
-                <br />
-                <br />A 4-Digit Calculator developed using LogicWorks with a
-                user-friendly user interface. Fully packed with professional
-                calculator functions. Assembled from a complex arithmetic logic
-                circuits.
-                <br />
-                <br /><a
-                  href="https://github.com/bellmcp/4-Digit-Calculator"
-                  target="_blank"
-                  >See on GitHub</a
-                >
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Projects_Calculator-min.jpg"
+                width="100%"
+                height="auto"
+                alt="4-Digit Calculator"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>December 2018</i> <br /><strong>4-Digit Calculator</strong>
+            <br />LogicWorks Project, Part of 2301274 Computer System
+            <br />
+            <br />A 4-Digit Calculator developed using LogicWorks with a
+            user-friendly user interface. Fully packed with professional
+            calculator functions. Assembled from a complex arithmetic logic
+            circuits.
+            <br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/4-Digit-Calculator"
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="knightstour"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Projects_KnightsTour-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="Knight's Tour Solver"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>November 2018</i> <br /><strong>Knight's Tour Solver</strong>
-                <br />Java Application, Part of 2301233 Discrete Math
-                <br />
-                <br />The knight's tour problem is the mathematical problem of
-                finding a knight's tour. Creating a program to find a knight's
-                tour is a challenge given to computer science students.
-                <br />
-                <br /><a
-                  href="https://github.com/bellmcp/Knights-Tour-Solver"
-                  target="_blank"
-                  >See on GitHub</a
-                >
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Projects_KnightsTour-min.jpg"
+                width="100%"
+                height="auto"
+                alt="Knight's Tour Solver"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>November 2018</i> <br /><strong>Knight's Tour Solver</strong>
+            <br />Java Application, Part of 2301233 Discrete Math
+            <br />
+            <br />The knight's tour problem is the mathematical problem of
+            finding a knight's tour. Creating a program to find a knight's tour
+            is a challenge given to computer science students.
+            <br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/Knights-Tour-Solver"
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <a class="anchor" id="airlines"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Projects_Decibel-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="Decibel Airlines Reservation System"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>May 2018</i> <br /><strong
-                  >Decibel Airlines Reservation System</strong
-                >
-                <br />Java Application, Part of 2301260 Programming Techniques
-                <br />
-                <br />An airplane reservation system developed with infinite
-                lines of Java code compiled using Netbeans IDE. Perfectly
-                combined with the handcrafted design graphic user interface.
-                <br />
-                <br /><a
-                  href="https://github.com/bellmcp/Decibel-Airlines-Reservation-System"
-                  target="_blank"
-                  >See on GitHub</a
-                >
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Projects_Decibel-min.jpg"
+                width="100%"
+                height="auto"
+                alt="Decibel Airlines Reservation System"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>May 2018</i> <br /><strong
+              >Decibel Airlines Reservation System</strong
+            >
+            <br />Java Application, Part of 2301260 Programming Techniques
+            <br />
+            <br />An airplane reservation system developed with infinite lines
+            of Java code compiled using Netbeans IDE. Perfectly combined with
+            the handcrafted design graphic user interface.
+            <br />
+            <br /><a class="more-link"
+              href="https://github.com/bellmcp/Decibel-Airlines-Reservation-System"
+              target="_blank"
+              >See on GitHub <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <h2>Web Development Projects</h2>
         <a class="anchor" id="LiveRich"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Web_LiveRich.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="Live Rich Books"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <div>
-                    <p class="text-sm">
-                      <i>May 2022</i><br />
-                      <strong>Live Rich Books</strong><br />
-                    </p>
-                  </div>
-                  <div>
-                    <p class="text-sm">
-                      <a href="https://liverich.co.th/" target="_blank"
-                        >Visit site</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Web_LiveRich.jpg"
+                width="100%"
+                height="auto"
+                alt="Live Rich Books"
+              />
+            </div>
+          </div>
+          <br />
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <p class="text-sm">
+                <i>May 2022</i><br />
+                <strong>Live Rich Books</strong><br />
+              </p>
+            </div>
+            <div>
+              <p class="text-sm">
+                <a class="more-link" href="https://liverich.co.th/" target="_blank">Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+              </p>
+            </div>
+          </div>
+        </div>
         <a class="anchor" id="ZTEC"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Web_ZTEC.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="ZI-TEC - Kyocera Authorized Distributor"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <div>
-                    <p class="text-sm">
-                      <i>April 2022</i><br />
-                      <strong>ZI-TEC - Kyocera Authorized Distributor</strong
-                      ><br />
-                    </p>
-                  </div>
-                  <div>
-                    <p class="text-sm">
-                      <a href="https://kyocera-zitec.com/" target="_blank"
-                        >Visit site</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Web_ZTEC.jpg"
+                width="100%"
+                height="auto"
+                alt="ZI-TEC - Kyocera Authorized Distributor"
+              />
+            </div>
+          </div>
+          <br />
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <p class="text-sm">
+                <i>April 2022</i><br />
+                <strong>ZI-TEC - Kyocera Authorized Distributor</strong><br />
+              </p>
+            </div>
+            <div>
+              <p class="text-sm">
+                <a class="more-link" href="https://kyocera-zitec.com/" target="_blank"
+                  >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+              </p>
+            </div>
+          </div>
+        </div>
         <a class="anchor" id="Raceline"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Web_Raceline.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="Raceline Superbike Studio"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <div>
-                    <p class="text-sm">
-                      <i>March 2022</i><br />
-                      <strong>Raceline Superbike Studio</strong><br />
-                    </p>
-                  </div>
-                  <div>
-                    <p class="text-sm">
-                      <a href="https://racelinesuperbike.com/" target="_blank"
-                        >Visit site</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Web_Raceline.jpg"
+                width="100%"
+                height="auto"
+                alt="Raceline Superbike Studio"
+              />
+            </div>
+          </div>
+          <br />
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <p class="text-sm">
+                <i>March 2022</i><br />
+                <strong>Raceline Superbike Studio</strong><br />
+              </p>
+            </div>
+            <div>
+              <p class="text-sm">
+                <a class="more-link" href="https://racelinesuperbike.com/" target="_blank"
+                  >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+              </p>
+            </div>
+          </div>
+        </div>
         <a class="anchor" id="COTT"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Recent_COTT-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="COTTO — 'How Smart Are You?' Interactive Display"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>November 2019</i> <br /><strong
-                  >COTTO — 'How Smart Are You?' Interactive Display</strong
-                ><br /><i>Siam Sanitary Ware Industry Co., Ltd.</i>
-                <br />
-                <br />Designed and developed COTTO 'How Smart Are You?'
-                Interactive personality test, which generates the toilet style
-                specially picked for the user. It is optimized for the display
-                signage, which attracts every single eye of the visitor at ACT
-                Forum’19 Exhibition.
-                <br />
-                <br /><a href="./work/COTT#top">Read more...</a>
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_COTT-min.jpg"
+                width="100%"
+                height="auto"
+                alt="COTTO — 'How Smart Are You?' Interactive Display"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>November 2019</i> <br /><strong
+              >COTTO — 'How Smart Are You?' Interactive Display</strong
+            ><br /><i>Siam Sanitary Ware Industry Co., Ltd.</i>
+            <br />
+            <br />Designed and developed COTTO 'How Smart Are You?' Interactive
+            personality test, which generates the toilet style specially picked
+            for the user. It is optimized for the display signage, which
+            attracts every single eye of the visitor at ACT Forum’19 Exhibition.
+            <br />
+            <br /><a class="more-link" href="./work/COTT#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Web_TTTW-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="TOYOX Trading Thailand Co., Ltd."
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>August 2020</i> <br /><strong
-                  >TOYOX Trading Thailand Co., Ltd.</strong
-                >
-                <br />WordPress
-                <br />
-                <br />TOYOX is a specialized manufacturer that works on
-                developing products and custom-made products that help solve
-                on-site issues with hoses and couplings and improve
-                productivity.
-                <br />
-                <br /><a href="https://toyoxthai.com/" target="_blank"
-                  >Visit site</a
-                >
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Web_TTTW-min.jpg"
+                width="100%"
+                height="auto"
+                alt="TOYOX Trading Thailand Co., Ltd."
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>August 2020</i> <br /><strong
+              >TOYOX Trading Thailand Co., Ltd.</strong
+            >
+            <br />WordPress
+            <br />
+            <br />TOYOX is a specialized manufacturer that works on developing
+            products and custom-made products that help solve on-site issues
+            with hoses and couplings and improve productivity.
+            <br />
+            <br /><a class="more-link" href="https://toyoxthai.com/" target="_blank"
+              >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Web_MPEW-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="A.Q.M. Co.,Ltd."
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>June 2020</i> <br /><strong>A.Q.M. Co.,Ltd.</strong>
-                <br />WordPress
-                <br />
-                <br />TE Connectivity / Raychem products have been synonymous
-                with reliability in extreme environments and conditions. This
-                family of products has been a global leader in material science,
-                engineering, and manufacturing.
-                <br />
-                <br /><a href="https://soscity.space/demo/mpew" target="_blank"
-                  >Visit site</a
-                >
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Web_MPEW-min.jpg"
+                width="100%"
+                height="auto"
+                alt="A.Q.M. Co.,Ltd."
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>June 2020</i> <br /><strong>A.Q.M. Co.,Ltd.</strong>
+            <br />WordPress
+            <br />
+            <br />TE Connectivity / Raychem products have been synonymous with
+            reliability in extreme environments and conditions. This family of
+            products has been a global leader in material science, engineering,
+            and manufacturing.
+            <br />
+            <br /><a class="more-link" href="https://soscity.space/demo/mpew" target="_blank"
+              >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Web_portrait.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="Portrait Consult — Aesthetic Hospital"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>October 2019</i> <br /><strong
-                  >Portrait Consult — Aesthetic Hospital</strong
-                >
-                <br />WordPress
-                <br />
-                <br />Portrait Consult offers a wide range of cosmetic surgery
-                and medical aesthetic services to get along with body
-                contouring, facial rejuvenation, and anti-aging treatments.
-                Their goals are to help you achieve your goals of living a
-                beautiful and healthy life.
-                <br />
-                <br /><a
-                  href="https://soscity.space/demo/portraitconsult"
-                  target="_blank"
-                  >Visit site</a
-                >
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Web_portrait.jpg"
+                width="100%"
+                height="auto"
+                alt="Portrait Consult — Aesthetic Hospital"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>October 2019</i> <br /><strong
+              >Portrait Consult — Aesthetic Hospital</strong
+            >
+            <br />WordPress
+            <br />
+            <br />Portrait Consult offers a wide range of cosmetic surgery and
+            medical aesthetic services to get along with body contouring, facial
+            rejuvenation, and anti-aging treatments. Their goals are to help you
+            achieve your goals of living a beautiful and healthy life.
+            <br />
+            <br /><a class="more-link"
+              href="https://soscity.space/demo/portraitconsult"
+              target="_blank"
+              >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Web_hive.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="Hive Ventures Co. Ltd."
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>September 2019</i> <br /><strong
-                  >Hive Ventures Co. Ltd.</strong
-                >
-                <br />WordPress
-                <br />
-                <br />HIVE POS is a cloud-based point-of-sale system with
-                complete restaurant management tools for your cafe, coffee shop,
-                restaurant, bar, bistro, or food truck. The point-of-sale system
-                provides multiple useful features for your restaurant and easily
-                outperforms an old school system.
-                <br />
-                <br /><a
-                  href="https://www.hive.world/en/home-en/"
-                  target="_blank"
-                  >Visit site</a
-                >
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Web_hive.jpg"
+                width="100%"
+                height="auto"
+                alt="Hive Ventures Co. Ltd."
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>September 2019</i> <br /><strong>Hive Ventures Co. Ltd.</strong>
+            <br />WordPress
+            <br />
+            <br />HIVE POS is a cloud-based point-of-sale system with complete
+            restaurant management tools for your cafe, coffee shop, restaurant,
+            bar, bistro, or food truck. The point-of-sale system provides
+            multiple useful features for your restaurant and easily outperforms
+            an old school system.
+            <br />
+            <br /><a class="more-link" href="https://www.hive.world/en/home-en/" target="_blank"
+              >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <h2>Design Projects</h2>
         <a class="anchor" id="CUSF"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Design_CUSF.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="Chula Sustainability Fest 2022: Low Carbon Lifestyle
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Design_CUSF.jpg"
+                width="100%"
+                height="auto"
+                alt="Chula Sustainability Fest 2022: Low Carbon Lifestyle
                       Exhibition"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <div>
-                    <p class="text-sm">
-                      <i>August 2022</i><br />
-                      <strong
-                        >Chula Sustainability Fest 2022: Low Carbon Lifestyle
-                        Exhibition</strong
-                      ><br />
-                    </p>
-                  </div>
-                  <div>
-                    <p class="text-sm">
-                      <a
-                        href="https://www.facebook.com/chulasustainability"
-                        target="_blank"
-                        >Visit site</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+              />
+            </div>
+          </div>
+          <br />
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <p class="text-sm">
+                <i>August 2022</i><br />
+                <strong
+                  >Chula Sustainability Fest 2022: Low Carbon Lifestyle
+                  Exhibition</strong
+                ><br />
+              </p>
+            </div>
+            <div>
+              <p class="text-sm">
+                <a class="more-link"
+                  href="https://www.facebook.com/chulasustainability"
+                  target="_blank"
+                  >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+              </p>
+            </div>
+          </div>
+        </div>
         <a class="anchor" id="GreenOffice"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Design_GreenOffice.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="Chula Zero Waste: Green Office"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <div>
-                    <p class="text-sm">
-                      <i>March 2021</i><br />
-                      <strong>Chula Zero Waste: Green Office</strong><br />
-                      <i
-                        >Office of Physical Resources Management, Chulalongkorn
-                        University</i
-                      >
-                    </p>
-                  </div>
-                  <div>
-                    <p class="text-sm">
-                      <a
-                        href="http://www.chulazerowaste.chula.ac.th/"
-                        target="_blank"
-                        >Visit site</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-        <a class="anchor" id="4separate"></a>
-        <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Recent_4Separate-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="4 SEPARATE x CU Zero Waste Project"
-                  />
-                </div>
-              </div>
-              <br />
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Design_GreenOffice.jpg"
+                width="100%"
+                height="auto"
+                alt="Chula Zero Waste: Green Office"
+              />
+            </div>
+          </div>
+          <br />
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div>
               <p class="text-sm">
-                <i>December 2020</i> <br /><strong
-                  >4 SEPARATE x CU Zero Waste Project</strong
-                ><br />
+                <i>March 2021</i><br />
+                <strong>Chula Zero Waste: Green Office</strong><br />
                 <i
                   >Office of Physical Resources Management, Chulalongkorn
                   University</i
                 >
-                <br />
-                <br />Redesigned trash can stickers for Chula Zero Waste
-                campaign, which is going to be installed more than 10 buildings
-                in the campus area. The 4 SEPARATE project aims to help develop
-                strategies aimed at promoting the waste separation process to
-                reducing the amount of municipal waste production.
-                <br />
-                <br /><a href="./work/4separate#top">Read more...</a>
               </p>
             </div>
+            <div>
+              <p class="text-sm">
+                <a class="more-link" href="http://www.chulazerowaste.chula.ac.th/" target="_blank"
+                  >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <a class="anchor" id="4separate"></a>
+        <div class="section-block">
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_4Separate-min.jpg"
+                width="100%"
+                height="auto"
+                alt="4 SEPARATE x CU Zero Waste Project"
+              />
+            </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>December 2020</i> <br /><strong
+              >4 SEPARATE x CU Zero Waste Project</strong
+            ><br />
+            <i
+              >Office of Physical Resources Management, Chulalongkorn
+              University</i
+            >
+            <br />
+            <br />Redesigned trash can stickers for Chula Zero Waste campaign,
+            which is going to be installed more than 10 buildings in the campus
+            area. The 4 SEPARATE project aims to help develop strategies aimed
+            at promoting the waste separation process to reducing the amount of
+            municipal waste production.
+            <br />
+            <br /><a class="more-link" href="./work/4separate#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="RIDR"></a>
         <div class="section-block">
-                <div class="text-center">
-                  <div class="main-image-wrapper">
-                    <img
-                      data-src="./img/Web_RIDR.jpg"
-                      width="100%"
-                      height="auto"
-                      alt="RIDR Technologies"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <div>
-                    <p class="text-sm">
-                      <i>December 2019</i><br />
-                      <strong>RIDR Technologies</strong><br />
-                    </p>
-                  </div>
-                  <div>
-                    <p class="text-sm">
-                      <a href="https://soscity.space/demo/ridr/" target="_blank"
-                        >Visit site</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-        <a class="anchor" id="JISOTravel"></a>
-        <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Recent_JISOTravel-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="JISO Travel Tour Packages"
-                  />
-                </div>
-              </div>
-              <br />
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Web_RIDR.jpg"
+                width="100%"
+                height="auto"
+                alt="RIDR Technologies"
+              />
+            </div>
+          </div>
+          <br />
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div>
               <p class="text-sm">
-                <i>August 2019</i> <br /><strong
-                  >JISO Travel Tour Packages</strong
-                >
-                <br /><i>JISO Travel Co., Ltd.</i>
-                <br />
-                <br />Designed tour packages and guidelines for JISO Travel,
-                Thailand’s leading travel agencies, and package tour providers.
-                They provide a first-rate personalized service to all of the
-                clients from the initial inquiry stages to the completion of the
-                tour.
-                <br />
-                <br /><a href="./work/JISOTravel#top">Read more...</a>
+                <i>December 2019</i><br />
+                <strong>RIDR Technologies</strong><br />
               </p>
             </div>
+            <div>
+              <p class="text-sm">
+                <a class="more-link" href="https://soscity.space/demo/ridr/" target="_blank"
+                  >Visit site <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <a class="anchor" id="JISOTravel"></a>
+        <div class="section-block">
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_JISOTravel-min.jpg"
+                width="100%"
+                height="auto"
+                alt="JISO Travel Tour Packages"
+              />
+            </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>August 2019</i> <br /><strong>JISO Travel Tour Packages</strong>
+            <br /><i>JISO Travel Co., Ltd.</i>
+            <br />
+            <br />Designed tour packages and guidelines for JISO Travel,
+            Thailand’s leading travel agencies, and package tour providers. They
+            provide a first-rate personalized service to all of the clients from
+            the initial inquiry stages to the completion of the tour.
+            <br />
+            <br /><a class="more-link" href="./work/JISOTravel#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <a class="anchor" id="ASW19"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Recent_ASW19-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="ASEAN Week 2019 Event Backdrop & Certificate"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>July 2019</i> <br /><strong
-                  >ASEAN Week 2019 Event Backdrop & Certificate</strong
-                >
-                <br /><i>ASEAN Studies Center, Chulalongkorn University</i>
-                <br />
-                <br />Designed an event backdrop and certificate for ASEAN Week
-                2019, the forum is organized to promote the broader and more
-                in-depth understanding of the ASEAN Community and to provide a
-                setting for academic exchange and discussions among leading
-                scholars, experts, policymakers, practitioners and the wider
-                public.
-                <br />
-                <br /><a href="./work/ASW19#top">Read more...</a>
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_ASW19-min.jpg"
+                width="100%"
+                height="auto"
+                alt="ASEAN Week 2019 Event Backdrop & Certificate"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>July 2019</i> <br /><strong
+              >ASEAN Week 2019 Event Backdrop & Certificate</strong
+            >
+            <br /><i>ASEAN Studies Center, Chulalongkorn University</i>
+            <br />
+            <br />Designed an event backdrop and certificate for ASEAN Week
+            2019, the forum is organized to promote the broader and more
+            in-depth understanding of the ASEAN Community and to provide a
+            setting for academic exchange and discussions among leading
+            scholars, experts, policymakers, practitioners and the wider public.
+            <br />
+            <br /><a class="more-link" href="./work/ASW19#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <a class="anchor" id="MedTravel"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Recent_MedTravel-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="MedTravel Portal Co., Ltd."
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>July 2019</i> <br /><strong
-                  >MedTravel Portal Company Profile</strong
-                >
-                <br /><i>MedTravel Portal Co., Ltd.</i>
-                <br />
-                <br />Designed company profile and printing media for MedTravel
-                Portal, a platform where medical services and worldwide medical
-                demands are connected, provided a team of leading physicians who
-                have been providing medical services for international clients
-                for a decade.
-                <br />
-                <br /><a href="./work/MedTravel#top">Read more...</a>
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_MedTravel-min.jpg"
+                width="100%"
+                height="auto"
+                alt="MedTravel Portal Co., Ltd."
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>July 2019</i> <br /><strong
+              >MedTravel Portal Company Profile</strong
+            >
+            <br /><i>MedTravel Portal Co., Ltd.</i>
+            <br />
+            <br />Designed company profile and printing media for MedTravel
+            Portal, a platform where medical services and worldwide medical
+            demands are connected, provided a team of leading physicians who
+            have been providing medical services for international clients for a
+            decade.
+            <br />
+            <br /><a class="more-link" href="./work/MedTravel#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="Soscity"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Recent_Soscity-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="Soscity.Space Website & Office Front"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>June 2019</i> <br /><strong
-                  >Soscity.Space Website & Office Front</strong
-                >
-                <br /><i>Soscity Space Co., Ltd.</i>
-                <br />
-                <br />Designed website and office front for Soscity.Space, a
-                creative service agency, which provides a professional team of
-                specialists, Soscity.Space’s experience runs deep in graphic
-                design, media production, marketing solution, and website
-                development.
-                <br />
-                <br /><a href="./work/Soscity#top">Read more...</a>
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_Soscity-min.jpg"
+                width="100%"
+                height="auto"
+                alt="Soscity.Space Website & Office Front"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>June 2019</i> <br /><strong
+              >Soscity.Space Website & Office Front</strong
+            >
+            <br /><i>Soscity Space Co., Ltd.</i>
+            <br />
+            <br />Designed website and office front for Soscity.Space, a
+            creative service agency, which provides a professional team of
+            specialists, Soscity.Space’s experience runs deep in graphic design,
+            media production, marketing solution, and website development.
+            <br />
+            <br /><a class="more-link" href="./work/Soscity#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="afaps"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Recent_Afaps-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="KTB x AFAPS Smart Debit Card Design Contest 2018"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>1st Place Winner</i> <br /><strong
-                  >KTB x AFAPS Smart Debit Card Design Contest 2018</strong
-                >
-                <br />
-                <br />A debit card reimagined — insignificant utility as a
-                beautiful touchpoint that links you to your finances. Now it can
-                become an expression of who you are, and elevate your purchasing
-                experience. 4 different color strips represented the unity of 4
-                army forces.
-                <br />
-                <br /><a href="./work/afaps#top">Read more...</a>
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_Afaps-min.jpg"
+                width="100%"
+                height="auto"
+                alt="KTB x AFAPS Smart Debit Card Design Contest 2018"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>1st Place Winner</i> <br /><strong
+              >KTB x AFAPS Smart Debit Card Design Contest 2018</strong
+            >
+            <br />
+            <br />A debit card reimagined — insignificant utility as a beautiful
+            touchpoint that links you to your finances. Now it can become an
+            expression of who you are, and elevate your purchasing experience. 4
+            different color strips represented the unity of 4 army forces.
+            <br />
+            <br /><a class="more-link" href="./work/afaps#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="cupress"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Recent_Cupress-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="Chula Press Logo Design 2019"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>First Round Contestant</i> <br /><strong
-                  >Chula Press Logo Design 2019</strong
-                >
-                <br />
-                <br />A different shape combined as a thai alphabet stands for
-                Chula Press in the way of colorfulness represented by CMYK, a
-                vibrant standard model of printing color.
-                <br />
-                <br /><a href="./work/cupress#top">Read more...</a>
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_Cupress-min.jpg"
+                width="100%"
+                height="auto"
+                alt="Chula Press Logo Design 2019"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>First Round Contestant</i> <br /><strong
+              >Chula Press Logo Design 2019</strong
+            >
+            <br />
+            <br />A different shape combined as a thai alphabet stands for Chula
+            Press in the way of colorfulness represented by CMYK, a vibrant
+            standard model of printing color.
+            <br />
+            <br /><a class="more-link" href="./work/cupress#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <a class="anchor" id="billie"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Recent_Billie-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="Adobe x Billie Eilish's Creative Challenge 2019"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>First Round Contestant</i> <br /><strong
-                  >Adobe x Billie Eilish's Creative Challenge 2019</strong
-                >
-                <br />
-                <br />Where do we go when we fall asleep? The evil little twin
-                represented a nightmare surrounded by the darkness and creepy
-                things. Inspired by Stanley Kubrick's The Shining (1980).
-                <br />
-                <br /><a href="./work/billie#top">Read more...</a>
-              </p>
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_Billie-min.jpg"
+                width="100%"
+                height="auto"
+                alt="Adobe x Billie Eilish's Creative Challenge 2019"
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>First Round Contestant</i> <br /><strong
+              >Adobe x Billie Eilish's Creative Challenge 2019</strong
+            >
+            <br />
+            <br />Where do we go when we fall asleep? The evil little twin
+            represented a nightmare surrounded by the darkness and creepy
+            things. Inspired by Stanley Kubrick's The Shining (1980).
+            <br />
+            <br /><a class="more-link" href="./work/billie#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <a class="anchor" id="nsc17"></a>
         <div class="section-block">
-              <div class="text-center">
-                <div class="main-image-wrapper">
-                  <img
-                    data-src="./img/Recent_Fissix-min.jpg"
-                    width="100%"
-                    height="auto"
-                    alt="FISSIX — 17th National Software Contest
+          <div class="text-center">
+            <div class="main-image-wrapper">
+              <img
+                data-src="./img/Recent_Fissix-min.jpg"
+                width="100%"
+                height="auto"
+                alt="FISSIX — 17th National Software Contest
                     2015"
-                  />
-                </div>
-              </div>
-              <br />
-              <p class="text-sm">
-                <i>1 of 108 Teams to the Semi-final Round</i> <br /><strong
-                  >FISSIX — 17<sup>th</sup> National Software Contest
-                  2015</strong
-                >
-                <br />Mobile Application
-                <br />
-                <br />FISSIX is easy to use, free education app that covers most
-                of the vital concepts, equations, and formulas of physics. This
-                educational application is a must-have guide, whether you want
-                to refresh your knowledge, prepare for an exam, or just refresh
-                the core concepts of physics.
-                <br />
-                <br /><a href="https://invis.io/5BRGG86KETM" target="_blank"
-                  >See the prototype on InVision</a
-                >
-              </p>
+              />
             </div>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>1 of 108 Teams to the Semi-final Round</i> <br /><strong
+              >FISSIX — 17<sup>th</sup> National Software Contest 2015</strong
+            >
+            <br />Mobile Application
+            <br />
+            <br />FISSIX is easy to use, free education app that covers most of
+            the vital concepts, equations, and formulas of physics. This
+            educational application is a must-have guide, whether you want to
+            refresh your knowledge, prepare for an exam, or just refresh the
+            core concepts of physics.
+            <br />
+            <br /><a class="more-link" href="https://invis.io/5BRGG86KETM" target="_blank"
+              >See the prototype on InVision <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <h2>Artworks</h2>
         <div><br /></div>
-<div class="layout-grid grid-halves">
-<div>
-              <div class="text-center">
-                <div class="poster1-image-wrapper">
-                  <img
-                    data-src="./img/Artworks_CUCM20.png"
-                    width="100%"
-                    alt="CUCM Camp"
-                  />
-                </div>
+        <div class="layout-grid grid-halves">
+          <div>
+            <div class="text-center">
+              <div class="poster1-image-wrapper">
+                <img
+                  data-src="./img/Artworks_CUCM20.png"
+                  width="100%"
+                  alt="CUCM Camp"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Chulalympics</strong> <br />CUCM Camp
-                <br />
-              </p>
             </div>
-<div>
-              <div class="text-center">
-                <div class="poster1-image-wrapper">
-                  <img
-                    data-src="./img/Artworks_Smoniti.jpg"
-                    width="100%"
-                    alt="Smo Niti Poster"
-                  />
-                </div>
+            <br />
+            <p class="text-sm">
+              <strong>Chulalympics</strong> <br />CUCM Camp
+              <br />
+            </p>
+          </div>
+          <div>
+            <div class="text-center">
+              <div class="poster1-image-wrapper">
+                <img
+                  data-src="./img/Artworks_Smoniti.jpg"
+                  width="100%"
+                  alt="Smo Niti Poster"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Smo Niti Poster </strong> <br />Law Enlightenment Party
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>Smo Niti Poster </strong> <br />Law Enlightenment Party
               <br />
-              <div class="text-center">
-                <div class="poster1-image-wrapper">
-                  <img
-                    data-src="./img/Artworks_Sccudebate.jpg"
-                    width="100%"
-                    alt="CU See Your Mind"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster1-image-wrapper">
+                <img
+                  data-src="./img/Artworks_Sccudebate.jpg"
+                  width="100%"
+                  alt="CU See Your Mind"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>CU See Your Mind</strong> <br />Student Council of CU
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>CU See Your Mind</strong> <br />Student Council of CU
               <br />
-              <div class="text-center">
-                <div class="poster1-image-wrapper">
-                  <img
-                    data-src="./img/Artworks_AtomSearch.jpg"
-                    width="100%"
-                    alt="Atom Search 2018"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster1-image-wrapper">
+                <img
+                  data-src="./img/Artworks_AtomSearch.jpg"
+                  width="100%"
+                  alt="Atom Search 2018"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Atom Search 2018 </strong> <br />Smo Vidya x SCIREN
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>Atom Search 2018 </strong> <br />Smo Vidya x SCIREN
               <br />
-              <div class="text-center">
-                <div class="poster1-image-wrapper">
-                  <img
-                    data-src="./img/Artworks_Chulawatit.jpg"
-                    width="100%"
-                    alt="Chulavatid 202"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster1-image-wrapper">
+                <img
+                  data-src="./img/Artworks_Chulawatit.jpg"
+                  width="100%"
+                  alt="Chulavatid 202"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Chulavatid 202</strong> <br />CU Band
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>Chulavatid 202</strong> <br />CU Band
               <br />
-              <div class="text-center">
-                <div class="poster1-image-wrapper">
-                  <img
-                    data-src="./img/Artworks_Fullmoon.jpg"
-                    width="100%"
-                    alt="Chulavatid 203"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster1-image-wrapper">
+                <img
+                  data-src="./img/Artworks_Fullmoon.jpg"
+                  width="100%"
+                  alt="Chulavatid 203"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Chulavatid 203</strong> <br />CU Band
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>Chulavatid 203</strong> <br />CU Band
               <br />
-              <div class="text-center">
-                <div class="poster3-image-wrapper">
-                  <img
-                    data-src="./img/Artworks_Lasttake.jpg"
-                    width="100%"
-                    alt="Lai Jai Last Take"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster3-image-wrapper">
+                <img
+                  data-src="./img/Artworks_Lasttake.jpg"
+                  width="100%"
+                  alt="Lai Jai Last Take"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Lai Jai Last Take</strong> <br />Baanlaijai
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>Lai Jai Last Take</strong> <br />Baanlaijai
               <br />
-              <div class="text-center">
-                <div class="poster3-image-wrapper">
-                  <img
-                    data-src="./img/Artworks_Recruit.jpg"
-                    width="100%"
-                    alt="Lai Jai Recruit"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster3-image-wrapper">
+                <img
+                  data-src="./img/Artworks_Recruit.jpg"
+                  width="100%"
+                  alt="Lai Jai Recruit"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Lai Jai Recruit</strong> <br />Baanlaijai
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>Lai Jai Recruit</strong> <br />Baanlaijai
               <br />
-              <div class="text-center">
-                <div class="poster2-image-wrapper">
-                  <img
-                    data-src="./img/Artworks_Trip.jpg"
-                    width="100%"
-                    alt="Lai Jai Trip"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster2-image-wrapper">
+                <img
+                  data-src="./img/Artworks_Trip.jpg"
+                  width="100%"
+                  alt="Lai Jai Trip"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Lai Jai Trip</strong> <br />Baanlaijai
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>Lai Jai Trip</strong> <br />Baanlaijai
               <br />
-              <div class="text-center">
-                <div class="poster2-image-wrapper">
-                  <img
-                    data-src="./img/Artworks_Jurassic.jpg"
-                    width="100%"
-                    alt="Age of Jurassic"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster2-image-wrapper">
+                <img
+                  data-src="./img/Artworks_Jurassic.jpg"
+                  width="100%"
+                  alt="Age of Jurassic"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Age of Jurassic</strong> <br />Gifted Science
-                <br />
-              </p>
             </div>
-</div>
+            <br />
+            <p class="text-sm">
+              <strong>Age of Jurassic</strong> <br />Gifted Science
+              <br />
+            </p>
+          </div>
+        </div>
         <br />
         <h2>Design</h2>
         <div><br /></div>
-<div class="layout-grid grid-halves">
-<div>
-              <div class="text-center">
-                <div class="poster3-image-wrapper">
-                  <img
-                    data-src="./img/Design_CSCUTag.jpg"
-                    width="100%"
-                    alt="Avengers, Assemble!"
-                  />
-                </div>
+        <div class="layout-grid grid-halves">
+          <div>
+            <div class="text-center">
+              <div class="poster3-image-wrapper">
+                <img
+                  data-src="./img/Design_CSCUTag.jpg"
+                  width="100%"
+                  alt="Avengers, Assemble!"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Avengers, Assemble!</strong> <br />CSCU 25
-                <br />
-              </p>
             </div>
-<div>
-              <div class="text-center">
-                <div class="poster3-image-wrapper">
-                  <img
-                    data-src="./img/Design_CSCUShirt.jpg"
-                    width="100%"
-                    alt="Infinity Wars"
-                  />
-                </div>
+            <br />
+            <p class="text-sm">
+              <strong>Avengers, Assemble!</strong> <br />CSCU 25
+              <br />
+            </p>
+          </div>
+          <div>
+            <div class="text-center">
+              <div class="poster3-image-wrapper">
+                <img
+                  data-src="./img/Design_CSCUShirt.jpg"
+                  width="100%"
+                  alt="Infinity Wars"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Infinity Wars</strong> <br />CSCU 25
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>Infinity Wars</strong> <br />CSCU 25
               <br />
-              <div class="text-center">
-                <div class="poster3-image-wrapper">
-                  <img
-                    data-src="./img/Design_LaijaiShirt.jpg"
-                    width="100%"
-                    alt="The Oasis"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster3-image-wrapper">
+                <img
+                  data-src="./img/Design_LaijaiShirt.jpg"
+                  width="100%"
+                  alt="The Oasis"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>The Oasis</strong> <br />Baanlaijai
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>The Oasis</strong> <br />Baanlaijai
               <br />
-              <div class="text-center">
-                <div class="poster3-image-wrapper">
-                  <img
-                    data-src="./img/Design_YaowaratShirt.jpg"
-                    width="100%"
-                    alt="Yaowarat"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster3-image-wrapper">
+                <img
+                  data-src="./img/Design_YaowaratShirt.jpg"
+                  width="100%"
+                  alt="Yaowarat"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Yaowarat </strong> <br />Gifted Science
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>Yaowarat </strong> <br />Gifted Science
               <br />
-              <div class="text-center">
-                <div class="poster3-image-wrapper">
-                  <img
-                    data-src="./img/Design_Book1.jpg"
-                    width="100%"
-                    alt="Golden Ratio"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster3-image-wrapper">
+                <img
+                  data-src="./img/Design_Book1.jpg"
+                  width="100%"
+                  alt="Golden Ratio"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Golden Ratio</strong> <br />Montfort College
-                <br />
-              </p>
             </div>
-<div>
+            <br />
+            <p class="text-sm">
+              <strong>Golden Ratio</strong> <br />Montfort College
               <br />
-              <div class="text-center">
-                <div class="poster3-image-wrapper">
-                  <img
-                    data-src="./img/Design_Book2.jpg"
-                    width="100%"
-                    alt="Distortion"
-                  />
-                </div>
+            </p>
+          </div>
+          <div>
+            <br />
+            <div class="text-center">
+              <div class="poster3-image-wrapper">
+                <img
+                  data-src="./img/Design_Book2.jpg"
+                  width="100%"
+                  alt="Distortion"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <strong>Distortion</strong> <br />Montfort College
-                <br />
-              </p>
             </div>
-</div>
+            <br />
+            <p class="text-sm">
+              <strong>Distortion</strong> <br />Montfort College
+              <br />
+            </p>
+          </div>
+        </div>
         <br />
         <a class="anchor" id="youthquake"></a>
         <h2>Videos</h2>
         <div class="section-block">
-              <div class="text-center">
-                <a href="./work/youthquake#top">
-                  <div class="vdo-image-wrapper">
-                    <img
-                      border="0"
-                      data-src="./img/Video_Youthquake.jpg"
-                      width="100%"
-                      alt="Chula YouthQuake — Sustainable Development"
-                    />
-                  </div>
-                </a>
+          <div class="text-center">
+            <a href="./work/youthquake#top">
+              <div class="vdo-image-wrapper">
+                <img
+                  border="0"
+                  data-src="./img/Video_Youthquake.jpg"
+                  width="100%"
+                  alt="Chula YouthQuake — Sustainable Development"
+                />
               </div>
-              <br />
-              <p class="text-sm">
-                <i>October 2018</i> <br /><strong
-                  >Chula YouthQuake — Sustainable Development</strong
-                >
-                <br /><strong>Bangkok Forum 2018</strong>
-                <br />
-                <br />The YouthQuake pilot project delivers a short film that
-                reflects students and young professionals’ perspectives on the
-                campus sustainability. The interview dialogue engages basic
-                sustainable questions such as perceptions, activities on campus,
-                sustainable courses, lifestyles, and expectations. The messages
-                from this film create a voice that can convey helpful
-                information to reviewing and planning a successful sustainable
-                campus in the future.
-                <br />
-                <br /><a href="./work/youthquake#top">Read more...</a>
-              </p>
-            </div>
+            </a>
+          </div>
+          <br />
+          <p class="text-sm">
+            <i>October 2018</i> <br /><strong
+              >Chula YouthQuake — Sustainable Development</strong
+            >
+            <br /><strong>Bangkok Forum 2018</strong>
+            <br />
+            <br />The YouthQuake pilot project delivers a short film that
+            reflects students and young professionals’ perspectives on the
+            campus sustainability. The interview dialogue engages basic
+            sustainable questions such as perceptions, activities on campus,
+            sustainable courses, lifestyles, and expectations. The messages from
+            this film create a voice that can convey helpful information to
+            reviewing and planning a successful sustainable campus in the
+            future.
+            <br />
+            <br /><a class="more-link" href="./work/youthquake#top">Read more <svg class="icon-next" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          </p>
+        </div>
         <br />
         <a class="anchor" id="admin"></a>
         <h2>Public Relations</h2>
         <div class="layout-grid grid-fifths">
-<div>
-              <h4>
-                <a href="https://www.facebook.com/chulasccu" target="_blank"
-                  ><div class="logo-image-wrapper">
-                    <img
-                      class="img-circle"
-                      data-src="./img/PR_SCCU-min.png"
-                      width="auto"
-                      height="auto"
-                      alt="SCCU"
-                    /></div
-                ></a>
-              </h4>
-            </div>
-<div>
-              <h4>
-                <a href="https://www.facebook.com/cuband" target="_blank">
-                  <div class="logo-image-wrapper">
-                    <img
-                      class="img-circle"
-                      data-src="./img/PR_CUBand-min.png"
-                      width="auto"
-                      height="auto"
-                      alt="CU Band"
-                    /></div
-                ></a>
-              </h4>
-            </div>
-<div>
-              <h4>
-                <a href="https://www.facebook.com/ChulaCMCamp" target="_blank"
-                  ><div class="logo-image-wrapper">
-                    <img
-                      class="img-circle"
-                      data-src="./img/PR_CUCM-min.png"
-                      width="auto"
-                      height="auto"
-                      alt="CUCM"
-                    /></div
-                ></a>
-              </h4>
-            </div>
-<div>
-              <h4>
-                <a href="https://www.instagram.com/baanlaijai" target="_blank"
-                  ><div class="logo-image-wrapper">
-                    <img
-                      class="img-circle"
-                      data-src="./img/PR_Baanlaijai-min.png"
-                      width="auto"
-                      height="auto"
-                      alt="Baanlaijai"
-                    /></div
-                ></a>
-              </h4>
-            </div>
-<div>
-              <h4>
-                <a href="https://www.facebook.com/AgeOfJurassic" target="_blank"
-                  ><div class="logo-image-wrapper">
-                    <img
-                      class="img-circle"
-                      data-src="./img/PR_AgeOfJurassic-min.png"
-                      width="auto"
-                      height="auto"
-                      alt="Age Of Jurassic"
-                    /></div
-                ></a>
-              </h4>
-            </div>
-</div>
+          <div>
+            <h4>
+              <a href="https://www.facebook.com/chulasccu" target="_blank"
+                ><div class="logo-image-wrapper">
+                  <img
+                    class="img-circle"
+                    data-src="./img/PR_SCCU-min.png"
+                    width="auto"
+                    height="auto"
+                    alt="SCCU"
+                  /></div
+              ></a>
+            </h4>
+          </div>
+          <div>
+            <h4>
+              <a href="https://www.facebook.com/cuband" target="_blank">
+                <div class="logo-image-wrapper">
+                  <img
+                    class="img-circle"
+                    data-src="./img/PR_CUBand-min.png"
+                    width="auto"
+                    height="auto"
+                    alt="CU Band"
+                  /></div
+              ></a>
+            </h4>
+          </div>
+          <div>
+            <h4>
+              <a href="https://www.facebook.com/ChulaCMCamp" target="_blank"
+                ><div class="logo-image-wrapper">
+                  <img
+                    class="img-circle"
+                    data-src="./img/PR_CUCM-min.png"
+                    width="auto"
+                    height="auto"
+                    alt="CUCM"
+                  /></div
+              ></a>
+            </h4>
+          </div>
+          <div>
+            <h4>
+              <a href="https://www.instagram.com/baanlaijai" target="_blank"
+                ><div class="logo-image-wrapper">
+                  <img
+                    class="img-circle"
+                    data-src="./img/PR_Baanlaijai-min.png"
+                    width="auto"
+                    height="auto"
+                    alt="Baanlaijai"
+                  /></div
+              ></a>
+            </h4>
+          </div>
+          <div>
+            <h4>
+              <a href="https://www.facebook.com/AgeOfJurassic" target="_blank"
+                ><div class="logo-image-wrapper">
+                  <img
+                    class="img-circle"
+                    data-src="./img/PR_AgeOfJurassic-min.png"
+                    width="auto"
+                    height="auto"
+                    alt="Age Of Jurassic"
+                  /></div
+              ></a>
+            </h4>
+          </div>
+        </div>
         <a class="anchor" id="jobs"></a>
         <br />
         <div class="followMeBar">
           <h1>Hiring</h1>
         </div>
         <br />
-        <div><tr>
+        <div>
+          <tr>
             I’m available to hire for freelance work or projects.
             <a href="/contact/">Contact me</a>
             or See the
             <a href="./get/priceguide/">Pricing Guidelines</a>
             for consideration. Offers, haggling, and negotiations are accepted.
             Here is the scope of works:<br />
-          </tr></div>
-<div class="layout-grid grid-thirds">
-<div>
-              <h4><br />Graphic Design</h4>
-            </div>
-<div>
-              <h4><br />Media Design</h4>
-            </div>
-<div>
-              <h4><br />VDO Production</h4>
-            </div>
-<div>
-              <br />- Poster <br />- Artwork <br />- Logo <br />- Mockup <br />-
-              Brand Identity <br />- Web / UI
-            </div>
-<div>
-              <br />- PDF <br />- Presentation <br />- Book <br />- Magazine
-              <br />- Brochure <br />- CV / Portfolio
-              <br />
-              <br />
-            </div>
-<div>
-              <br />- Video Editing <br />- Color Grading <br />- Sound Editing
-              <br />- Subtitles <br />- 2D Motion
-              <br />
-            </div>
-</div>
+          </tr>
+        </div>
+        <div class="layout-grid grid-thirds">
+          <div>
+            <h4><br />Graphic Design</h4>
+          </div>
+          <div>
+            <h4><br />Media Design</h4>
+          </div>
+          <div>
+            <h4><br />VDO Production</h4>
+          </div>
+          <div>
+            <br />- Poster <br />- Artwork <br />- Logo <br />- Mockup <br />-
+            Brand Identity <br />- Web / UI
+          </div>
+          <div>
+            <br />- PDF <br />- Presentation <br />- Book <br />- Magazine
+            <br />- Brochure <br />- CV / Portfolio
+            <br />
+            <br />
+          </div>
+          <div>
+            <br />- Video Editing <br />- Color Grading <br />- Sound Editing
+            <br />- Subtitles <br />- 2D Motion
+            <br />
+          </div>
+        </div>
         <br />
         <a class="anchor" id="files"></a>
         <div class="followMeBar">
@@ -2741,131 +3007,97 @@
         </div>
         <br />
         <div class="section-block">
-              <p class="text-sm">
-                <strong>SCB EPPd Dev Sharing Session — YWC 18</strong> (23
-                September 2021) <br /><a href="./ywc18/#0" target="_blank"
-                  >View Live Keynote</a
-                ><br />
-              </p>
-              <p class="text-sm">
-                <strong>CU Pop+ (Formerly CU PopQ) Project Keynote</strong> (23
-                April 2020) <br /><a
-                  href="./work/UI_DesignThinking_CUPopPlus.pdf"
-                  target="_blank"
-                  >Download (.pdf | 7.9 MB)</a
-                ><br />
-              </p>
-              <p class="text-sm">
-                <strong>Blackboard VS Zoom UI Research Keynote</strong> (16
-                April 2020) <br /><a
-                  href="./work/UI_BlackboardVsZoom.pdf"
-                  target="_blank"
-                  >Download (.pdf | 10.8 MB)</a
-                ><br />
-              </p>
-              <p class="text-sm">
-                <strong>CUCM 20 PR First Meet Keynote</strong> (29 October 2019)
-                <br /><a href="./work/PR_cucm_291019.pdf" target="_blank"
-                  >Download (.pdf | 6.3 MB)</a
-                >
-              </p>
-              <p class="text-sm">
-                <strong>PulseSense Sample UI Elements Design</strong> (16
-                October 2019) <br /><a
-                  href="./work/PulseSense_sample.pdf"
-                  target="_blank"
-                  >Download (.pdf | 1.1 MB)</a
-                >
-              </p>
-              <p class="text-sm">
-                <strong>CU PopQ Project Keynote</strong> (28 August 2019)
-                <br /><a href="./work/CU_PopQ_final.pdf" target="_blank"
-                  >Download (.pdf | 3.8 MB)</a
-                >
-              </p>
-              <p class="text-sm">
-                <strong>Soscity.Space Office Front Design</strong> (4 July 2019)
-                <br /><a
-                  href="./work/soscity_officefront_design.pdf"
-                  target="_blank"
-                  >Download (.pdf | 435 KB)</a
-                >
-              </p>
-              <p class="text-sm">
-                <strong>JISO Travel PDF Guidelines</strong> (27 June 2019)
-                <br /><a href="./work/jiso_pdf_guidelines.pdf" target="_blank"
-                  >Download (.pdf | 2.7 MB)</a
-                >
-              </p>
-              <p class="text-sm">
-                <strong>Soscity.Space Web Redesign Keynote</strong> (10 June
-                2019) <br /><a
-                  href="./work/soscityspace_redesign.pdf"
-                  target="_blank"
-                  >Download (.pdf | 1.1 MB)</a
-                >
-              </p>
-              <p class="text-sm">
-                <strong>4 Separate Project Keynote</strong> (15 April 2019)
-                <br /><a href="./work/4 Separate_final.pdf" target="_blank"
-                  >Download (.pdf | 11.5 MB)</a
-                >
-              </p>
-              <p class="text-sm">
-                <strong>Baanlaijai PR Recruitment Keynote</strong> (9 April
-                2019) <br /><a href="./work/Baanlaijai_PR.pdf" target="_blank"
-                  >Download (.pdf | 7.6 MB)</a
-                >
-              </p>
-              <p class="text-sm">
-                <strong>SCCU Debate PR Keynote</strong> (21 March 2018) <br /><a
-                  href="./work/SCCU_debate_PR.pdf"
-                  target="_blank"
-                  >Download (.pdf | 1.5 MB)</a
-                >
-              </p>
-            </div>
-        <div class="text-center">
-          <p class="text-xs">
-            <br />
-            <br />Copyright © 2023 Wutipat Khamnuansin, All rights reserved.
+          <p class="text-sm">
+            <strong>SCB EPPd Dev Sharing Session — YWC 18</strong> (23 September
+            2021) <br /><a class="more-link" href="./ywc18/#0" target="_blank"
+              >View live keynote <svg class="icon-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a><br />
           </p>
-          <a
-            href="https://webring.wonderful.software/#/bellmcp.work"
-            title="วงแหวนเว็บ"
-          >
-            <img
-              alt="วงแหวนเว็บ"
-              width="32"
-              height="32"
-              src="https://webring.wonderful.software/webring.black.svg"
-              data-src="https://webring.wonderful.software/webring.black.svg"
-              style="
-                filter: invert(43%) sepia(41%) saturate(904%) hue-rotate(162deg)
-                  brightness(91%) contrast(90%);
-              "
-            />
-          </a>
+          <p class="text-sm">
+            <strong>CU Pop+ (Formerly CU PopQ) Project Keynote</strong> (23
+            April 2020) <br /><a class="more-link"
+              href="./work/UI_DesignThinking_CUPopPlus.pdf"
+              target="_blank"
+              >Download (.pdf | 7.9 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a><br />
+          </p>
+          <p class="text-sm">
+            <strong>Blackboard VS Zoom UI Research Keynote</strong> (16 April
+            2020) <br /><a class="more-link" href="./work/UI_BlackboardVsZoom.pdf" target="_blank"
+              >Download (.pdf | 10.8 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a><br />
+          </p>
+          <p class="text-sm">
+            <strong>CUCM 20 PR First Meet Keynote</strong> (29 October 2019)
+            <br /><a class="more-link" href="./work/PR_cucm_291019.pdf" target="_blank"
+              >Download (.pdf | 6.3 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
+          </p>
+          <p class="text-sm">
+            <strong>PulseSense Sample UI Elements Design</strong> (16 October
+            2019) <br /><a class="more-link" href="./work/PulseSense_sample.pdf" target="_blank"
+              >Download (.pdf | 1.1 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
+          </p>
+          <p class="text-sm">
+            <strong>CU PopQ Project Keynote</strong> (28 August 2019) <br /><a class="more-link"
+              href="./work/CU_PopQ_final.pdf"
+              target="_blank"
+              >Download (.pdf | 3.8 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
+          </p>
+          <p class="text-sm">
+            <strong>Soscity.Space Office Front Design</strong> (4 July 2019)
+            <br /><a class="more-link"
+              href="./work/soscity_officefront_design.pdf"
+              target="_blank"
+              >Download (.pdf | 435 KB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
+          </p>
+          <p class="text-sm">
+            <strong>JISO Travel PDF Guidelines</strong> (27 June 2019) <br /><a class="more-link"
+              href="./work/jiso_pdf_guidelines.pdf"
+              target="_blank"
+              >Download (.pdf | 2.7 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
+          </p>
+          <p class="text-sm">
+            <strong>Soscity.Space Web Redesign Keynote</strong> (10 June 2019)
+            <br /><a class="more-link" href="./work/soscityspace_redesign.pdf" target="_blank"
+              >Download (.pdf | 1.1 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
+          </p>
+          <p class="text-sm">
+            <strong>4 Separate Project Keynote</strong> (15 April 2019) <br /><a class="more-link"
+              href="./work/4 Separate_final.pdf"
+              target="_blank"
+              >Download (.pdf | 11.5 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
+          </p>
+          <p class="text-sm">
+            <strong>Baanlaijai PR Recruitment Keynote</strong> (9 April 2019)
+            <br /><a class="more-link" href="./work/Baanlaijai_PR.pdf" target="_blank"
+              >Download (.pdf | 7.6 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
+          </p>
+          <p class="text-sm">
+            <strong>SCCU Debate PR Keynote</strong> (21 March 2018) <br /><a class="more-link"
+              href="./work/SCCU_debate_PR.pdf"
+              target="_blank"
+              >Download (.pdf | 1.5 MB) <svg class="icon-download" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg></a>
+          </p>
+        </div>
+        <div class="site-footer">
+          <p>© <span class="current-year">2026</span> Wutipat Khamnuansin</p>
+          <div class="site-footer-actions">
+            <a class="back-to-top" href="#">
+              Back to top
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 7-7 7 7" /><path d="M12 19V5" /></svg>
+            </a>
+            <a
+              class="webring"
+              href="https://webring.wonderful.software/#/bellmcp.work"
+              title="วงแหวนเว็บ"
+            >
+              <img
+                alt="วงแหวนเว็บ"
+                width="20"
+                height="20"
+                src="https://webring.wonderful.software/webring.black.svg"
+              />
+            </a>
+          </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.0/lib/darkmode-js.min.js"></script>
-        <script>
-          var options = {
-            bottom: '32px',
-            right: '32px',
-            left: 'unset',
-            time: '0.5s',
-            mixColor: '#fff',
-            backgroundColor: '#fff',
-            buttonColorDark: '#111',
-            buttonColorLight: '#fff',
-            saveInCookies: true,
-            label: '◐',
-            autoMatchOsTheme: true,
-          }
-          const darkmode = new Darkmode(options)
-          darkmode.showWidget()
-        </script>
         <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
         <script>
           ;(function () {
@@ -2873,71 +3105,6 @@
               threshold: 500,
             })
           })()
-        </script>
-        <script>
-          var stickyHeaders = (function () {
-            var $window = $(window),
-              $stickies
-            var load = function (stickies) {
-              if (
-                typeof stickies === 'object' &&
-                stickies instanceof jQuery &&
-                stickies.length > 0
-              ) {
-                $stickies = stickies.each(function () {
-                  var $thisSticky = $(this).wrap('<div class="followWrap" />')
-                  $thisSticky
-                    .data('originalPosition', $thisSticky.offset().top)
-                    .data('originalHeight', $thisSticky.outerHeight())
-                    .parent()
-                    .height($thisSticky.outerHeight())
-                })
-                $window
-                  .off('scroll.stickies')
-                  .on('scroll.stickies', function () {
-                    _whenScrolling()
-                  })
-              }
-            }
-            var _whenScrolling = function () {
-              $stickies.each(function (i) {
-                var $thisSticky = $(this),
-                  $stickyPosition = $thisSticky.data('originalPosition')
-                if ($stickyPosition <= $window.scrollTop()) {
-                  var $nextSticky = $stickies.eq(i + 1),
-                    $nextStickyPosition =
-                      $nextSticky.data('originalPosition') -
-                      $thisSticky.data('originalHeight')
-                  $thisSticky.addClass('fixed')
-                  if (
-                    $nextSticky.length > 0 &&
-                    $thisSticky.offset().top >= $nextStickyPosition
-                  ) {
-                    $thisSticky
-                      .addClass('absolute')
-                      .css('top', $nextStickyPosition)
-                  }
-                } else {
-                  var $prevSticky = $stickies.eq(i - 1)
-                  $thisSticky.removeClass('fixed')
-                  if (
-                    $prevSticky.length > 0 &&
-                    $window.scrollTop() <=
-                      $thisSticky.data('originalPosition') -
-                        $thisSticky.data('originalHeight')
-                  ) {
-                    $prevSticky.removeClass('absolute').removeAttr('style')
-                  }
-                }
-              })
-            }
-            return {
-              load: load,
-            }
-          })()
-          $(function () {
-            stickyHeaders.load($('.followMeBar'))
-          })
         </script>
         <script>
           $('a[href*="#"]')
@@ -2975,7 +3142,62 @@
               }
             })
         </script>
+        <script>
+          ;(function () {
+            var links = Array.prototype.slice.call(
+              document.querySelectorAll(
+                '#navigation-menu a.nav-link[href^="#"]',
+              ),
+            )
+            var targets = links.map(function (link) {
+              return document.getElementById(link.getAttribute('href').slice(1))
+            })
+            var lockUntil = 0
+
+            function setActive(index) {
+              links.forEach(function (link, i) {
+                link.classList.toggle('active', i === index)
+                if (i === index) link.setAttribute('aria-current', 'true')
+                else link.removeAttribute('aria-current')
+              })
+            }
+
+            function update() {
+              if (Date.now() < lockUntil) return
+              var line = window.scrollY + window.innerHeight * 0.3
+              var atBottom =
+                window.innerHeight + window.scrollY >=
+                document.documentElement.scrollHeight - 2
+              var index = 0
+              targets.forEach(function (target, i) {
+                if (
+                  target &&
+                  target.getBoundingClientRect().top + window.scrollY <= line
+                ) {
+                  index = i
+                }
+              })
+              if (atBottom) index = targets.length - 1
+              setActive(index)
+            }
+
+            links.forEach(function (link, i) {
+              link.addEventListener('click', function () {
+                setActive(i)
+                lockUntil = Date.now() + 1100
+                setTimeout(update, 1150)
+                link.blur()
+              })
+            })
+
+            window.addEventListener('scroll', update, { passive: true })
+            window.addEventListener('resize', update)
+            update()
+          })()
+        </script>
       </section>
     </div>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/site.js"></script>
   </body>
 </html>

@@ -371,3 +371,63 @@
 .grid-fifths {
   grid-template-columns: repeat(5, 20%);
 }
+
+.about-intro {
+  margin: 0 0 24px 10px;
+  line-height: 1.7;
+}
+
+.about-intro strong {
+  color: #222;
+}
+
+.job-highlights {
+  margin-top: 4px;
+  line-height: 1.6;
+  color: #777;
+}
+
+.job-highlights-label {
+  font-weight: 600;
+  color: #555;
+}
+
+.profile-meta {
+  margin: 0 0 20px;
+}
+
+.profile-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.9;
+  white-space: nowrap;
+}
+
+.profile-meta-icon {
+  flex: none;
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.profile-role {
+  font-weight: 600;
+  color: #222;
+}
+
+.nickname {
+  font-size: 0.6em;
+  font-weight: 400;
+  color: #8d9197;
+  letter-spacing: 0;
+  vertical-align: 0.15em;
+}
+
+.contact-list {
+  margin-bottom: 24px;
+}
